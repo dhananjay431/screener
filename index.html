@@ -52,7 +52,12 @@
             ],
             columns: [
               // { title: 'priority', data: 'priority' },
-              { title: 'symbol', data: 'symbol' },
+              { title: 'symbol', data: 'symbol',render:(data,type,row)=>{
+                  return `<a href='https://www.tradingview.com/chart/ceDp98UV/?symbol=NSE:${data}' target="_blank">${data}</a>`
+              } },
+              
+               { title: 'industry',  render: (data, type, row) =>
+               row.meta.industry,},
               // { title: 'identifier', data: 'identifier' },
               // { title: 'open', data: 'open' },
               // { title: 'dayHigh', data: 'dayHigh' },
