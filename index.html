@@ -33,8 +33,8 @@
           <div class="col-12">
             <table
               id="example"
-              class="table table-sm"
-              style="width: 100%"
+              class="table table-sm table-striped table-hover"
+              
             ></table>
           </div>
         </div>
@@ -81,7 +81,7 @@
                 render: (data, type, row) =>
                   Number((data / 1000000).toFixed(2)),
               },
-              { title: 'lastUpdateTime', data: 'lastUpdateTime' },
+              // { title: 'lastUpdateTime', data: 'lastUpdateTime' },
               {
                 title: 'nearWKH',
                 data: 'nearWKH',
@@ -93,8 +93,8 @@
                 render: (data, type, row) => Number(data.toFixed(2)),
               },
               { title: 'perChange365d', data: 'perChange365d' },
-              { title: 'date365dAgo', data: 'date365dAgo' },
-              { title: 'date30dAgo', data: 'date30dAgo' },
+              // { title: 'date365dAgo', data: 'date365dAgo' },
+              // { title: 'date30dAgo', data: 'date30dAgo' },
               { title: 'perChange30d', data: 'perChange30d' },
             ],
             data: R.filter((d) => {
