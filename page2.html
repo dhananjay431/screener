@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Other page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
-    </nav>
-    <main>
-      <h1>My other page</h1>
-    </main>
-  </body>
-</html>
+<div x-data="{ drop:[{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVE',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }">
+  <select>
+    <template x-for="post in drop">
+    <option x-bind:value="post.data" x-text="post.title"></option>
+  </template>
+  </select>
+</div>

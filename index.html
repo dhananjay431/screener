@@ -40,6 +40,30 @@
         </select>
 
       </div>
+      <div class="col-3" x-data="{ drop:[{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVE',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }">
+        
+          <select id="get1" class="form-select form-select-sm" >
+            <template x-for="post in drop">
+            <option x-bind:value="post.data" x-text="post.title"></option>
+          </template>
+          </select>
+        
+      </div>
+      <div class="col-3">
+        <select  id="get2"  class="form-select form-select-sm" >
+          <option value="gt">  > </option>
+          <option value="gte"> >= </option>
+          <option value="lt"> < </option>
+          <option value="lte"> <= </option>
+          <option value="qe"> = </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <input id="get3" type="text" class="form-control form-control-sm">
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary btn-sm" id="add">Add</button>
+      </div>
       <div clas="col-12">
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>

@@ -1,5 +1,5 @@
 var table = null;
-
+var data;
 document.getElementById("index").addEventListener("change",function(ev){
    
    let url = `https://www.nseindia.com/api/equity-stockIndices?index=${ev.target.value}`
@@ -9,7 +9,7 @@ document
 .getElementById('exampleFormControlTextarea1')
 .addEventListener('change', function (ev) {
 
-     var data = JSON.parse(ev.target.value);
+    data = JSON.parse(ev.target.value);
     const f = R.filter(d1 => d1.priority == 0);
     const g =  R.groupBy(d1 => d1.meta.industry)
   //   const r = R.reduce( (a,b)=>{ a.push( R.sort((a1,b1) => a1.ffmc < b1.ffmc )(b)); return a; },[])
@@ -54,10 +54,6 @@ document
         title: 'Industry', name: 'meta.industry', render: (data, type, row) =>
           row.meta.industry,
       },
-      // { title: 'identifier', data: 'identifier' },
-      // { title: 'open', data: 'open' },
-      // { title: 'dayHigh', data: 'dayHigh' },
-      // { title: 'dayLow', data: 'dayLow' },
       { name: 'lastPrice', title: 'LastPrice', data: 'lastPrice' },
       { name: 'previousClose', title: 'PreviousClose', data: 'previousClose' },
       { name: 'change', title: 'Change', data: 'change' },
@@ -85,7 +81,6 @@ document
         render: (data, type, row) =>
           Number((data / 1000000).toFixed(2)),
       },
-      // { title: 'lastUpdateTime', data: 'lastUpdateTime' },
       {
         name: "nearWKH",
         title: 'WKH',
@@ -99,10 +94,15 @@ document
         render: (data, type, row) => Number(data.toFixed(2)),
       },
       { name: "perChange365d", title: '365d%', data: 'perChange365d' },
-      // { title: 'date365dAgo', data: 'date365dAgo' },
-      // { title: 'date30dAgo', data: 'date30dAgo' },
       { name: "perChange30d", title: '30d%', data: 'perChange30d' },
     ],
     data: data.data
   });
 });
+
+document.getElementById("add").addEventListener('click',function(){
+   let prop =document.getElementById("get1").value;
+   let condi =document.getElementById("get2").value;
+   let value =document.getElementById("get3").value;
+   console.log(data.data);
+})
