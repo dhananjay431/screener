@@ -22,9 +22,9 @@ document
       //data.data = R.sort(R.ascend(R.prop('ffmc')),a.data)descend
 
       if(dataTablesParameters.order.length > 0 && dataTablesParameters.order[0].dir == 'asc'){
-        data.data = R.sort(R.ascend(R.prop(dataTablesParameters.order[0].name)),data.data)
+        data.data = R.sort(R.ascend(R.path(dataTablesParameters.order[0].name.split("."))),data.data)
       }else if(dataTablesParameters.order.length > 0 && dataTablesParameters.order[0].dir == 'desc'){
-        data.data = R.sort(R.descend(R.prop(dataTablesParameters.order[0].name)),data.data)
+        data.data = R.sort(R.descend(R.path(dataTablesParameters.order[0].name.split("."))),data.data)
       }
       callback({
         recordsTotal: data.data.length,
