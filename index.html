@@ -1,112 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.30.0/ramda.min.js"></script>
-    <script src="https://cdn.datatables.net/2.1.4/js/dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/2.1.4/js/dataTables.bootstrap5.js"></script>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div clas="col-12">
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Example textarea</label
-            >
-            <textarea
-              class="form-control form-control-sm"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-          <div class="col-12">
-            <table
-              id="example"
-              class="table table-sm table-striped table-hover"
-              
-            ></table>
-          </div>
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.30.0/ramda.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.4/js/dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.4/js/dataTables.bootstrap5.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div clas="col-12">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <table id="example" class="table table-sm table-striped table-hover"></table>
         </div>
       </div>
     </div>
-    <script>
-      document
-        .getElementById('exampleFormControlTextarea1')
-        .addEventListener('change', function (ev) {
-          console.log(ev.target.value);
-          new DataTable('#example', {
-            lengthMenu: [
-              [10, 25, 50, -1],
-              [10, 25, 50, 'All'],
-            ],
-            columns: [
-              // { title: 'priority', data: 'priority' },
-              { title: 'symbol', data: 'symbol',render:(data,type,row)=>{
-                  return `<a href='https://www.tradingview.com/chart/ceDp98UV/?symbol=NSE:${data}' target="_blank">${data}</a>`
-              } },
-              
-               { title: 'industry',  render: (data, type, row) =>
-               row.meta.industry,},
-              // { title: 'identifier', data: 'identifier' },
-              // { title: 'open', data: 'open' },
-              // { title: 'dayHigh', data: 'dayHigh' },
-              // { title: 'dayLow', data: 'dayLow' },
-              { title: 'lastPrice', data: 'lastPrice' },
-              { title: 'previousClose', data: 'previousClose' },
-              { title: 'change', data: 'change' },
-              { title: 'pChange', data: 'pChange' },
-              {
-                title: 'ffmc',
-                data: 'ffmc',
-                render: (data, type, row) =>
-                  Number((data / 1000000000).toFixed(2)),
-              },
-              { title: 'yearHigh', data: 'yearHigh' },
-              { title: 'yearLow', data: 'yearLow' },
-              {
-                title: 'totalTradedVolume',
-                data: 'totalTradedVolume',
-                render: (data, type, row) =>
-                  Number((data / 1000000).toFixed(2)),
-              },
-              {
-                title: 'totalTradedValue',
-                data: 'totalTradedValue',
-                render: (data, type, row) =>
-                  Number((data / 1000000).toFixed(2)),
-              },
-              // { title: 'lastUpdateTime', data: 'lastUpdateTime' },
-              {
-                title: 'nearWKH',
-                data: 'nearWKH',
-                render: (data, type, row) => Number(data.toFixed(2)),
-              },
-              {
-                title: 'nearWKL',
-                data: 'nearWKL',
-                render: (data, type, row) => Number(data.toFixed(2)),
-              },
-              { title: 'perChange365d', data: 'perChange365d' },
-              // { title: 'date365dAgo', data: 'date365dAgo' },
-              // { title: 'date30dAgo', data: 'date30dAgo' },
-              { title: 'perChange30d', data: 'perChange30d' },
-            ],
-            data: R.filter((d) => {
-              return d.priority == 0;
-            }, JSON.parse(ev.target.value).data),
-          });
+  </div>
+  <script>
+    document
+      .getElementById('exampleFormControlTextarea1')
+      .addEventListener('change', function (ev) {
+
+           var data = JSON.parse(ev.target.value);
+          const f = R.filter(d1 => d1.priority == 0);
+          const g =  R.groupBy(d1 => d1.meta.industry)
+        //   const r = R.reduce( (a,b)=>{ a.push( R.sort((a1,b1) => a1.ffmc < b1.ffmc )(b)); return a; },[])
+          var z=  R.flow(data.data,[f]);
+         data.data = z;
+
+        new DataTable('#example', {
+          processing: true,
+          serverSide: true,
+          ajax: (dataTablesParameters, callback) => {
+            console.log(dataTablesParameters);
+            //data.data = R.sort((a,b)=>{ a[dataTablesParameters.order[0].name] >b[dataTablesParameters.order[0].name] })(data.data);
+            //data.data = R.sort(R.ascend(R.prop('ffmc')),a.data)descend
+
+            if(dataTablesParameters.order.length > 0 && dataTablesParameters.order[0].dir == 'asc'){
+              data.data = R.sort(R.ascend(R.path(dataTablesParameters.order[0].name.split("."))),data.data)
+            }else if(dataTablesParameters.order.length > 0 && dataTablesParameters.order[0].dir == 'desc'){
+              data.data = R.sort(R.descend(R.path(dataTablesParameters.order[0].name.split("."))),data.data)
+            }
+            callback({
+              recordsTotal: data.data.length,
+              recordsFiltered: data.data.length,
+              data: dataTablesParameters.length == -1 ? R.filter((d => d.priority == 0))(R.clone(data.data)) : R.filter((d => d.priority == 0))(R.clone(data.data)).splice(dataTablesParameters.start, dataTablesParameters.length)
+            });
+          },
+          lengthMenu: [
+            [10, 25, 50, -1],
+            [10, 25, 50, 'All'],
+          ],
+          columns: [
+            // { title: 'priority', data: 'priority' },
+            {
+              name: 'symbol', title: 'Symbol', data: 'symbol', render: (data, type, row) => {
+                return `<a href='https://www.tradingview.com/chart/ceDp98UV/?symbol=NSE:${data}' target="_blank">${data}</a>`
+              }
+            },
+
+            {
+              title: 'Industry', name: 'meta.industry', render: (data, type, row) =>
+                row.meta.industry,
+            },
+            // { title: 'identifier', data: 'identifier' },
+            // { title: 'open', data: 'open' },
+            // { title: 'dayHigh', data: 'dayHigh' },
+            // { title: 'dayLow', data: 'dayLow' },
+            { name: 'lastPrice', title: 'LastPrice', data: 'lastPrice' },
+            { name: 'previousClose', title: 'PreviousClose', data: 'previousClose' },
+            { name: 'change', title: 'Change', data: 'change' },
+            { name: 'pChange', title: 'Change%', data: 'pChange' },
+            {
+              name: "ffmc",
+              title: 'FFMC',
+              data: 'ffmc',
+              render: (data, type, row) =>
+                Number((data / 1000000000).toFixed(2)),
+            },
+            { name: "yearHigh", title: 'YearHigh', data: 'yearHigh' },
+            { name: "YearLow", title: 'YearLow', data: 'yearLow' },
+            {
+              name: "totalTradedVolume",
+              title: 'TTVE',
+              data: 'totalTradedVolume',
+              render: (data, type, row) =>
+                Number((data / 1000000).toFixed(2)),
+            },
+            {
+              name: "totalTradedValue",
+              title: 'TTV',
+              data: 'totalTradedValue',
+              render: (data, type, row) =>
+                Number((data / 1000000).toFixed(2)),
+            },
+            // { title: 'lastUpdateTime', data: 'lastUpdateTime' },
+            {
+              name: "nearWKH",
+              title: 'WKH',
+              data: 'nearWKH',
+              render: (data, type, row) => Number(data.toFixed(2)),
+            },
+            {
+              name: "nearWKL",
+              title: 'WKL',
+              data: 'nearWKL',
+              render: (data, type, row) => Number(data.toFixed(2)),
+            },
+            { name: "perChange365d", title: '365d%', data: 'perChange365d' },
+            // { title: 'date365dAgo', data: 'date365dAgo' },
+            // { title: 'date30dAgo', data: 'date30dAgo' },
+            { name: "perChange30d", title: '30d%', data: 'perChange30d' },
+          ],
+          data: data.data
         });
-    </script>
-  </body>
+      });
+  </script>
+</body>
+
 </html>
