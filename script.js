@@ -1,4 +1,10 @@
 var table = null;
+
+document.getElementById("index").addEventListener("change",function(ev){
+   
+   let url = `https://www.nseindia.com/api/equity-stockIndices?index=${ev.target.value}`
+   window.open(url, '_blank');
+})
 document
 .getElementById('exampleFormControlTextarea1')
 .addEventListener('change', function (ev) {
