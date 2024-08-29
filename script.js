@@ -1,5 +1,6 @@
 var table = null;
 var data;
+var dynamicConditionArr = [];
 document.getElementById("index").addEventListener("change",function(ev){
    
    let url = `https://www.nseindia.com/api/equity-stockIndices?index=${ev.target.value}`
@@ -100,9 +101,39 @@ document
   });
 });
 
+/* 
+    <option value="gt">  > </option>
+          <option value="gte"> >= </option>
+          <option value="lt"> < </option>
+          <option value="lte"> <= </option>
+          <option value="eq"> = </option>
+           */
 document.getElementById("add").addEventListener('click',function(){
    let prop =document.getElementById("get1").value;
    let condi =document.getElementById("get2").value;
    let value =document.getElementById("get3").value;
+   if(condi == "gt"){
+    dynamicConditionArr.push(R.filter((d)=> d[prop] > Number(value)))
+   }
+   if(condi == "gte"){
+    dynamicConditionArr.push(R.filter((d)=> d[prop] >= Number(value)))
+   }
+   if(condi == "lt"){
+    dynamicConditionArr.push(R.filter((d)=> d[prop] < Number(value)))
+   }
+   if(condi == "lte"){
+    dynamicConditionArr.push(R.filter((d)=> d[prop] <= Number(value)))
+   }
+   if(condi == "eq"){
+    dynamicConditionArr.push(R.filter((d)=> d[prop] == Number(value)))
+   }
+
+   console.log(prop," ", condi," ",value)
    console.log(data.data);
+   
+})
+document.getElementById("search").addEventListener('click',function(){
+  
+  data.data = R.pipe(...dynamicConditionArr)(data.data)
+  table.draw();
 })
