@@ -3,9 +3,9 @@
 
 <head>
   <title>Home</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./assets/css/bootstrap.css" rel="stylesheet" />
 
   <script src="./assets/js/jquery-3.7.1.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-12 col-md-3 col-sm-3 col-lg-3"
         x-data="{ data:{'Broad Market Indices':['NIFTY 50','NIFTY NEXT 50','NIFTY MIDCAP 50','NIFTY MIDCAP 100','NIFTY MIDCAP 150','NIFTY SMALLCAP 50','NIFTY SMALLCAP 100','NIFTY SMALLCAP 250','NIFTY MIDSMALLCAP 400','NIFTY 100','NIFTY 200','NIFTY500 MULTICAP 50:25:25','NIFTY LARGEMIDCAP 250','NIFTY MIDCAP SELECT','NIFTY TOTAL MARKET','NIFTY MICROCAP 250','NIFTY 500'],'Sectoral Indices':['NIFTY AUTO','NIFTY BANK','NIFTY ENERGY','NIFTY FINANCIAL SERVICES','NIFTY FINANCIAL SERVICES 25/50','NIFTY FMCG','NIFTY IT','NIFTY MEDIA','NIFTY METAL','NIFTY PHARMA','NIFTY PSU BANK','NIFTY REALTY','NIFTY PRIVATE BANK','NIFTY HEALTHCARE INDEX','NIFTY CONSUMER DURABLES','NIFTY OIL & GAS','NIFTY MIDSMALL HEALTHCARE'],'Thematic Indices':['NIFTY COMMODITIES','NIFTY INDIA CONSUMPTION','NIFTY CPSE','NIFTY INFRASTRUCTURE','NIFTY MNC','NIFTY GROWTH SECTORS 15','NIFTY PSE','NIFTY SERVICES SECTOR','NIFTY100 LIQUID 15','NIFTY MIDCAP LIQUID 15','NIFTY INDIA DIGITAL','NIFTY100 ESG','NIFTY INDIA MANUFACTURING','NIFTY INDIA CORPORATE GROUP INDEX - TATA GROUP 25% CAP','NIFTY500 MULTICAP INDIA MANUFACTURING 50:30:20','NIFTY500 MULTICAP INFRASTRUCTURE 50:30:20'],'Strategy Indices':['NIFTY DIVIDEND OPPORTUNITIES 50','NIFTY50 VALUE 20','NIFTY100 QUALITY 30','NIFTY50 EQUAL WEIGHT','NIFTY100 EQUAL WEIGHT','NIFTY100 LOW VOLATILITY 30','NIFTY ALPHA 50','NIFTY200 QUALITY 30','NIFTY ALPHA LOW-VOLATILITY 30','NIFTY200 MOMENTUM 30','NIFTY MIDCAP150 QUALITY 50','NIFTY200 ALPHA 30','NIFTY MIDCAP150 MOMENTUM 50'],'Others':['Securities in F&O','Permitted to Trade']} }">
-        <select class="form-select form-select-sm"  name="index" id="index">
+        <select class="form-select"  name="index" id="index">
           <template x-for="post in data['Broad Market Indices']">
             <option x-text="post"></option>
           </template>
@@ -43,7 +43,7 @@
       </div>
       <div class="col-12 col-md-2 col-sm-2 col-lg-2" x-data="{ drop:[{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVE',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }">
         
-          <select id="get1" class="form-select form-select-sm" >
+          <select id="get1" class="form-select" >
             <template x-for="post in drop">
             <option x-bind:value="post.data" x-text="post.title"></option>
           </template>
@@ -51,7 +51,7 @@
         
       </div>
       <div class="col-12 col-md-2 col-sm-2 col-lg-2">
-        <select  id="get2"  class="form-select form-select-sm" >
+        <select  id="get2"  class="form-select" >
           <option value="gt">  > </option>
           <option value="gte"> >= </option>
           <option value="lt"> < </option>
@@ -60,18 +60,18 @@
         </select>
       </div>
       <div class="col-12 col-md-2 col-sm-2 col-lg-2">
-        <input id="get3" type="text" class="form-control form-control-sm">
+        <input id="get3" type="text" class="form-control">
       </div>
       <div class="col-12 col-md-3 col-sm-3 col-lg-3">
-        <button type="button" class="btn btn-primary btn-sm" id="add"><i class="bi bi-plus-lg"></i></button>
-        <button type="button" class="btn btn-primary btn-sm" id="search"><i class="bi bi-search"></i></button>
-        <button type="button" class="btn btn-primary btn-sm" id="clear"><i class="bi bi-x-lg"></i></button>
-        <button type="button" class="btn btn-primary btn-sm" id="download"><i class="bi bi-download"></i></button>
+        <button type="button" class="btn btn-primary" id="add"><i class="bi bi-plus-lg"></i></button>
+        <button type="button" class="btn btn-primary" id="search"><i class="bi bi-search"></i></button>
+        <button type="button" class="btn btn-primary" id="clear"><i class="bi bi-x-lg"></i></button>
+        <button type="button" class="btn btn-primary" id="download"><i class="bi bi-download"></i></button>
       </div>
       <div clas="col-12">
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="col-12">
           <div class="table-responsive">
