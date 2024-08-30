@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "start": "servor --reload"
+    "start": "servor --reload",
+    "scss":"sass /scss/bootstrap.scss /bootstrap.css"
   },
   "dependencies": {
+    "sass": "^1.77.8",
     "servor": "^4.0.2"
   }
 }
