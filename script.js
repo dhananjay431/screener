@@ -9,13 +9,34 @@ document.getElementById("index").addEventListener("change", function (ev) {
 document
   .getElementById('exampleFormControlTextarea1')
   .addEventListener('change', function (ev) {
-
+debugger;
     data = JSON.parse(ev.target.value);
-    const f = R.filter(d1 => d1.priority == 0);
-    const g = R.groupBy(d1 => d1.meta.industry)
-    //   const r = R.reduce( (a,b)=>{ a.push( R.sort((a1,b1) => a1.ffmc < b1.ffmc )(b)); return a; },[])
-    var z = R.flow(data.data, [f]);
-    data.data = z;
+    if(data.name != undefined){
+      const f = R.filter(d1 => d1.priority == 0);
+      const g = R.groupBy(d1 => d1.meta.industry)
+      //   const r = R.reduce( (a,b)=>{ a.push( R.sort((a1,b1) => a1.ffmc < b1.ffmc )(b)); return a; },[])
+      var z = R.flow(data.data, [f]);
+      data.data = z;
+    }
+    else{
+      data.data = data.data.map(d => { 
+        d.priority = 0;
+        d.lastPrice = Number(d.lastPrice),
+        d.previousClose = Number(d.previousClose),
+        d.change = Number(d.change),
+        d.pChange = Number(d.pChange),
+        d.ffmc = Number(d.ffmc),
+        d.yearHigh = Number(d.yearHigh),
+        d.yearLow = Number(d.yearLow),
+        d.totalTradedVolume = Number(d.totalTradedVolume),
+        d.totalTradedValue = Number(d.totalTradedValue),
+        d.nearWKH = Number(d.nearWKH),
+        d.nearWKL = Number(d.nearWKL),
+        d.perChange365d = Number(d.perChange365d),
+        d.perChange30d = Number(d.perChange30d),
+        d.QT = Number(d.QT);
+        return d;})
+    }
 
     if (table != null) {
       table.destroy();
@@ -55,7 +76,48 @@ document
           title: 'Industry', name: 'meta.industry', render: (data, type, row) =>
             row.meta.industry,
         },
-        { name: 'lastPrice', title: 'LastPrice', data: 'lastPrice' },
+        { name: 'lastPrice', title: 'LastPrice', data: 'lastPrice' ,render: (data, type, row) =>{
+           str = "";
+           if(row.nearWKH <=2  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_up">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>`;
+           }else if(row.nearWKH <=5  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_up">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>`;
+           }else if(row.nearWKH <=7  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_up">
+            <span></span><span></span>
+          </span>`;
+           }else if(row.nearWKH <=10  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_up">
+            <span></span>
+          </span>`;
+           }else if(row.nearWKL >=-2  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_down">
+            <span></span> <span></span> <span></span> <span></span>
+          </span>`;
+           }else if(row.nearWKL >=-5  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_down">
+            <span></span> <span></span> <span></span>
+          </span>`;
+           }else if(row.nearWKL >=-7  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_down">
+            <span></span> <span></span> 
+          </span>`;
+           }else if(row.nearWKL >=-10  ){
+            str = `<span role="img" aria-label="3 Up Arrows" class="multi_arrows_down">
+            <span></span> 
+          </span>`;
+           }
+           return str+ data;
+        }},
         { name: 'previousClose', title: 'PreviousClose', data: 'previousClose' },
         { name: 'change', title: 'Change', data: 'change' },
         { name: 'pChange', title: 'Change%', data: 'pChange' },
@@ -203,6 +265,7 @@ function _download(_jsonData){
     // Combine the headers and rows into a single CSV string
     return [headers, ...csvRows].join('\n');
   }
+  var max = R.pipe(R.filter((d)=>d.priority ==0),R.sort(R.descend(R.prop('lastPrice'))))(_jsonData)[0];
   let x = _jsonData.map((rd) => {
     
     return [
@@ -221,13 +284,61 @@ function _download(_jsonData){
 "nearWKL",
 "perChange365d",
 "perChange30d",
+'QT'
     ].reduce((a, b) => {
       let dtx = R.path(b.split("."),rd);
-
+       if(b != 'QT')
       a[b] = dtx;
+    else if(b == 'QT'){
+      a[b] =  Math.trunc(max.lastPrice/rd.lastPrice)
+    }
       return a;
     }, {});
   });
   downloadCSVFromJSON(x);
 }
+$("#mainup").click(function(){
+   $("#up").click();
+})
 
+
+document.getElementById('up').addEventListener('change', function(event) {
+  const file = event.target.files[0];
+  const reader = new FileReader();
+
+  reader.onload = function(e) {
+      const csvContent = e.target.result;
+      const lines = csvContent.split('\n');
+      const headers = lines[0].split(',');
+
+      const result = [];
+      for (let i = 1; i < lines.length; i++) {
+          var obj = {};
+          const currentLine = lines[i].split(',');
+
+          headers.forEach((header, index) => {
+          // obj[header.trim()] = currentLine[index].trim();
+           try{
+            obj =  R.assocPath(header.trim().split("."), currentLine[index].trim() || "", obj);
+           
+           }catch(err){
+
+            obj[header.trim()] = "";
+           }
+              
+          });
+
+          result.push(obj);
+      }
+
+      
+      $("#exampleFormControlTextarea1").val(JSON.stringify({
+        data:result
+     }));
+      //table.draw();
+      //console.log(result); 
+      //console.log(JSON.parse($("#exampleFormControlTextarea1").val())) // JSON result
+  };
+
+  reader.readAsText(file);
+});
