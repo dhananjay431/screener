@@ -1,12 +1,11 @@
-
-thead tr{
+thead tr {
   position: sticky;
-  top:0;
+  top: 0;
 }
 
 .multi_arrows_down {
   position: relative;
-  margin-right: 6px
+  margin-right: 6px;
 }
 
 .multi_arrows_down span:first-child {
@@ -22,7 +21,7 @@ thead tr{
   top: 3px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 
 .multi_arrows_down span:nth-child(2) {
@@ -38,7 +37,7 @@ thead tr{
   top: 0px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 
 .multi_arrows_down span:nth-child(3) {
@@ -54,7 +53,7 @@ thead tr{
   top: 6px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 .multi_arrows_down span:nth-child(4) {
   content: "";
@@ -69,12 +68,12 @@ thead tr{
   top: 8px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 
 .multi_arrows_up {
   position: relative;
-  margin-right: 6px
+  margin-right: 6px;
 }
 
 .multi_arrows_up span:first-child {
@@ -82,7 +81,7 @@ thead tr{
   width: 0;
   height: 0;
   padding: 3px;
-  border: solid #007A00;
+  border: solid #007a00;
   border-width: 0 1px 1px 0;
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
@@ -90,7 +89,7 @@ thead tr{
   top: 6px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 
 .multi_arrows_up span:nth-child(2) {
@@ -98,7 +97,7 @@ thead tr{
   width: 0;
   height: 0;
   padding: 3px;
-  border: solid #007A00;
+  border: solid #007a00;
   border-width: 0 1px 1px 0;
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
@@ -106,7 +105,7 @@ thead tr{
   top: 3px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 
 .multi_arrows_up span:nth-child(3) {
@@ -114,7 +113,7 @@ thead tr{
   width: 0;
   height: 0;
   padding: 3px;
-  border: solid #007A00;
+  border: solid #007a00;
   border-width: 0 1px 1px 0;
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
@@ -122,14 +121,14 @@ thead tr{
   top: 9px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
 .multi_arrows_up span:nth-child(4) {
   content: "";
   width: 0;
   height: 0;
   padding: 3px;
-  border: solid #007A00;
+  border: solid #007a00;
   border-width: 0 1px 1px 0;
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
@@ -137,5 +136,5 @@ thead tr{
   top: 12px;
   right: 0;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in
+  transition: all 0.2s ease-in;
 }
