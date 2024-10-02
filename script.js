@@ -2,8 +2,8 @@ var table = null;
 var data;
 var dynamicConditionArr = [];
 document.getElementById("index").addEventListener("change", function (ev) {
-  debugger;
-  let url = `/api/equity-stockIndices?index=${ev.target.value}`;
+
+  let url = `https://www.nseindia.com/api/equity-stockIndices?index=${ev.target.value}`;
   //window.open(url, "_blank");
 
   fetch(url)
@@ -15,7 +15,7 @@ document.getElementById("index").addEventListener("change", function (ev) {
 
 });
 function showData(dbValue) {
-  debugger;
+
   data = dbValue;
   if (data.name != undefined) {
     const f = R.filter((d1) => d1.priority == 0);
