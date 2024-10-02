@@ -1,135 +1,189 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <title>Home</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
 
-    <script src="./assets/js/jquery-3.7.1.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
-    <script src="./assets/js/ramda.min.js"></script>
-    <script src="./assets/js/dataTables.min.js"></script>
-    <script src="./assets/js/dataTables.bootstrap5.js"></script>
-    <script src="./assets/js/cdn.min.js" defer></script>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./assets/css/bootstrap.css" rel="stylesheet" />
 
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com"
-    />
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
-    </style>
-    <style>
-      body {
-        font-family: "Fira Code", monospace;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-      }
-      th {
-        display: table-cell;
-        vertical-align: inherit;
-        font-weight: normal !important;
-        color: red;
-      }
-    </style>
-  </head>
+  <script src="./assets/js/jquery-3.7.1.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+  <script src="./assets/js/ramda.min.js"></script>
+  <script src="./assets/js/dataTables.min.js"></script>
+  <script src="./assets/js/dataTables.bootstrap5.js"></script>
+  <script src="./assets/js/cdn.min.js" defer></script>
+  <script src="./script.js" defer></script>
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+  </style>
+  <style>
+    body {
+      font-family: "Fira Code", monospace;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
 
-  <body>
-    <div class="container-fluid">
-      <div class="row mt-2">
-        <div
-          class="col-12 col-md-3 col-sm-3 col-lg-3"
-          x-data="{ data:{'Broad Market Indices':['NIFTY 50','NIFTY NEXT 50','NIFTY MIDCAP 50','NIFTY MIDCAP 100','NIFTY MIDCAP 150','NIFTY SMALLCAP 50','NIFTY SMALLCAP 100','NIFTY SMALLCAP 250','NIFTY MIDSMALLCAP 400','NIFTY 100','NIFTY 200','NIFTY500 MULTICAP 50:25:25','NIFTY LARGEMIDCAP 250','NIFTY MIDCAP SELECT','NIFTY TOTAL MARKET','NIFTY MICROCAP 250','NIFTY 500'],'Sectoral Indices':['NIFTY AUTO','NIFTY BANK','NIFTY ENERGY','NIFTY FINANCIAL SERVICES','NIFTY FINANCIAL SERVICES 25/50','NIFTY FMCG','NIFTY IT','NIFTY MEDIA','NIFTY METAL','NIFTY PHARMA','NIFTY PSU BANK','NIFTY REALTY','NIFTY PRIVATE BANK','NIFTY HEALTHCARE INDEX','NIFTY CONSUMER DURABLES','NIFTY OIL & GAS','NIFTY MIDSMALL HEALTHCARE'],'Thematic Indices':['NIFTY COMMODITIES','NIFTY INDIA CONSUMPTION','NIFTY CPSE','NIFTY INFRASTRUCTURE','NIFTY MNC','NIFTY GROWTH SECTORS 15','NIFTY PSE','NIFTY SERVICES SECTOR','NIFTY100 LIQUID 15','NIFTY MIDCAP LIQUID 15','NIFTY INDIA DIGITAL','NIFTY100 ESG','NIFTY INDIA MANUFACTURING','NIFTY INDIA CORPORATE GROUP INDEX - TATA GROUP 25% CAP','NIFTY500 MULTICAP INDIA MANUFACTURING 50:30:20','NIFTY500 MULTICAP INFRASTRUCTURE 50:30:20'],'Strategy Indices':['NIFTY DIVIDEND OPPORTUNITIES 50','NIFTY50 VALUE 20','NIFTY100 QUALITY 30','NIFTY50 EQUAL WEIGHT','NIFTY100 EQUAL WEIGHT','NIFTY100 LOW VOLATILITY 30','NIFTY ALPHA 50','NIFTY200 QUALITY 30','NIFTY ALPHA LOW-VOLATILITY 30','NIFTY200 MOMENTUM 30','NIFTY MIDCAP150 QUALITY 50','NIFTY200 ALPHA 30','NIFTY MIDCAP150 MOMENTUM 50'],'Others':['Securities in F&O','Permitted to Trade']} }"
-        >
-          <select class="form-select" name="index" id="index">
-            <template x-for="post in data['Broad Market Indices']">
-              <option x-text="post"></option>
-            </template>
-            <template x-for="post in data['Sectoral Indices']">
-              <option x-text="post"></option>
-            </template>
-            <template x-for="post in data['Thematic Indices']">
-              <option x-text="post"></option>
-            </template>
-            <template x-for="post in data['Strategy Indices']">
-              <option x-text="post"></option>
-            </template>
-            <template x-for="post in data['Others']">
-              <option x-text="post"></option>
-            </template>
-          </select>
-        </div>
-        <div
-          class="col-12 col-md-2 col-sm-2 col-lg-2"
-          x-data="{ drop:[{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVE',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }"
-        >
-          <select id="get1" class="form-select">
-            <template x-for="post in drop">
-              <option x-bind:value="post.data" x-text="post.title"></option>
-            </template>
-          </select>
-        </div>
-        <div class="col-12 col-md-2 col-sm-2 col-lg-2">
-          <select id="get2" class="form-select">
-            <option value="gt">></option>
-            <option value="gte">>=</option>
-            <option value="lt"><</option>
-            <option value="lte"><=</option>
-            <option value="eq">=</option>
-          </select>
-        </div>
-        <div class="col-12 col-md-2 col-sm-2 col-lg-2">
-          <input id="get3" type="text" class="form-control" />
-        </div>
-        <div class="col-12 col-md-3 col-sm-3 col-lg-3">
-          <button type="button" class="btn btn-primary" id="add">
-            <i class="bi bi-plus-lg"></i>
-          </button>
-          <button type="button" class="btn btn-primary" id="search">
-            <i class="bi bi-search"></i>
-          </button>
-          <button type="button" class="btn btn-primary" id="clear">
-            <i class="bi bi-x-lg"></i>
-          </button>
-          <button type="button" class="btn btn-primary" id="download">
-            <i class="bi bi-download"></i>
-          </button>
-          <button type="button" class="btn btn-primary" id="mainup">
-            <i class="bi bi-upload"></i>
-          </button>
-          <input type="file" id="up" class="d-none" />
-        </div>
+    th {
+      display: table-cell;
+      vertical-align: inherit;
+      font-weight: normal !important;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row mt-2">
+      <div class="col-12 col-md-3 col-sm-3 col-lg-3">
+        <select class="form-select" name="index" id="index">
+
+          <option>NIFTY 50</option>
+          <option>NIFTY NEXT 50</option>
+          <option>NIFTY MIDCAP 50</option>
+          <option>NIFTY MIDCAP 100</option>
+          <option>NIFTY MIDCAP 150</option>
+          <option>NIFTY SMALLCAP 50</option>
+          <option>NIFTY SMALLCAP 100</option>
+          <option>NIFTY SMALLCAP 250</option>
+          <option>NIFTY MIDSMALLCAP 400</option>
+          <option>NIFTY 100</option>
+          <option>NIFTY 200</option>
+          <option>NIFTY500 MULTICAP 50:25:25</option>
+          <option>NIFTY LARGEMIDCAP 250</option>
+          <option>NIFTY MIDCAP SELECT</option>
+          <option>NIFTY TOTAL MARKET</option>
+          <option>NIFTY MICROCAP 250</option>
+          <option>NIFTY 500</option>
+
+          <option>NIFTY AUTO</option>
+          <option>NIFTY BANK</option>
+          <option>NIFTY ENERGY</option>
+          <option>NIFTY FINANCIAL SERVICES</option>
+          <option>NIFTY FINANCIAL SERVICES 25/50</option>
+          <option>NIFTY FMCG</option>
+          <option>NIFTY IT</option>
+          <option>NIFTY MEDIA</option>
+          <option>NIFTY METAL</option>
+          <option>NIFTY PHARMA</option>
+          <option>NIFTY PSU BANK</option>
+          <option>NIFTY REALTY</option>
+          <option>NIFTY PRIVATE BANK</option>
+          <option>NIFTY HEALTHCARE INDEX</option>
+          <option>NIFTY CONSUMER DURABLES</option>
+          <option>NIFTY OIL $ GAS</option>
+          <option>NIFTY MIDSMALL HEALTHCARE</option>
+
+          <option>NIFTY COMMODITIES</option>
+          <option>NIFTY INDIA CONSUMPTION</option>
+          <option>NIFTY CPSE</option>
+          <option>NIFTY INFRASTRUCTURE</option>
+          <option>NIFTY MNC</option>
+          <option>NIFTY GROWTH SECTORS 15</option>
+          <option>NIFTY PSE</option>
+          <option>NIFTY SERVICES SECTOR</option>
+          <option>NIFTY100 LIQUID 15</option>
+          <option>NIFTY MIDCAP LIQUID 15</option>
+          <option>NIFTY INDIA DIGITAL</option>
+          <option>NIFTY100 ESG</option>
+          <option>NIFTY INDIA MANUFACTURING</option>
+          <option>NIFTY INDIA CORPORATE GROUP INDEX - TATA GROUP 25% CAP</option>
+          <option>NIFTY500 MULTICAP INDIA MANUFACTURING 50:30:20</option>
+          <option>NIFTY500 MULTICAP INFRASTRUCTURE 50:30:20</option>
+
+          <option>NIFTY DIVIDEND OPPORTUNITIES 50</option>
+          <option>NIFTY50 VALUE 20</option>
+          <option>NIFTY100 QUALITY 30</option>
+          <option>NIFTY50 EQUAL WEIGHT</option>
+          <option>NIFTY100 EQUAL WEIGHT</option>
+          <option>NIFTY100 LOW VOLATILITY 30</option>
+          <option>NIFTY ALPHA 50</option>
+          <option>NIFTY200 QUALITY 30</option>
+          <option>NIFTY ALPHA LOW-VOLATILITY 30</option>
+          <option>NIFTY200 MOMENTUM 30</option>
+          <option>NIFTY MIDCAP150 QUALITY 50</option>
+          <option>NIFTY200 ALPHA 30</option>
+          <option>NIFTY MIDCAP150 MOMENTUM 50</option>
+
+          <option>Securities in F&O</option>
+          <option>Permitted to Trade</option>
+        </select>
       </div>
-      <div class="row mt-2">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea2"
-            rows="3"
-          ></textarea>
-        </div>
-        <div class="col-12 mt-1">
-          <div class="table-responsive">
-            <table
-              id="example"
-              class="table table-sm table-striped table-hover"
-            ></table>
-          </div>
-        </div>
+      <div class="col-12 col-md-2 col-sm-2 col-lg-2">
+        <select id="get1" class="form-select">
+
+          <option value="symbol">Symbol</option>
+          <option value="meta.industry">Industry</option>
+          <option value="lastPrice">LastPrice</option>
+          <option value="previousClose">PreviousClose</option>
+          <option value="change">Change</option>
+          <option value="pChange">Change%</option>
+          <option value="ffmc">FFMC</option>
+          <option value="yearHigh">YearHigh</option>
+          <option value="yearLow">YearLow</option>
+          <option value="totalTradedVolume">TTVE</option>
+          <option value="totalTradedValue">TTV</option>
+          <option value="nearWKH">WKH</option>
+          <option value="nearWKL">WKL</option>
+          <option value="perChange365d">365d%</option>
+          <option value="perChange30d">30d%</option>
+        </select>
+      </div>
+      <div class="col-12 col-md-2 col-sm-2 col-lg-2">
+        <select id="get2" class="form-select">
+          <option value="gt">></option>
+          <option value="gte">>=</option>
+          <option value="lt">
+            << /option>
+          <option value="lte">
+            <=< /option>
+          <option value="eq">=</option>
+        </select>
+      </div>
+      <div class="col-12 col-md-2 col-sm-2 col-lg-2">
+        <input id="get3" type="text" class="form-control" />
+      </div>
+      <div class="col-12 col-md-3 col-sm-3 col-lg-3">
+        <button type="button" class="btn btn-primary" id="add">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <button type="button" class="btn btn-primary" id="search">
+          <i class="bi bi-search"></i>
+        </button>
+        <button type="button" class="btn btn-primary" id="clear">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <button type="button" class="btn btn-primary" id="download">
+          <i class="bi bi-download"></i>
+        </button>
+        <button type="button" class="btn btn-primary" id="mainup">
+          <i class="bi bi-upload"></i>
+        </button>
+        <input type="file" id="up" class="d-none" />
       </div>
     </div>
+    <!-- <div class="row mt-2">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+      </div>
+      <div class="col-12 mt-1">
+        <div class="table-responsive">
+          <table id="example" class="table table-sm table-striped table-hover"></table>
+        </div>
+      </div>
+    </div> -->
+  </div>
 
-    <script src="./script.js"></script>
-  </body>
+
+</body>
+
 </html>
