@@ -273,8 +273,8 @@ document
       });
       var xx = v.map((d1) => {
         return {
-          name: d1.identifier,
-          id: d1.identifier,
+          name: d1.symbol,
+          id: d1.symbol,
           value: d1.ffmc,
           parent: k,
           colorValue: d1.pChange,
