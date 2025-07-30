@@ -113,11 +113,12 @@
           <select id="get2" class="form-select">
             <option value="gt">></option>
             <option value="gte">>=</option>
-            <option value="lt"><< /option></option>
+            <option value="lt"><</option>
 
-            <option value="lte"><=< /option></option>
+            <option value="lte"><=</option>
 
             <option value="eq">=</option>
+            <option value="eqstr">"="</option>
           </select>
         </div>
         <div class="col-12 col-md-2 col-sm-2 col-lg-2">
@@ -169,6 +170,18 @@
     </div>
 
     <figure class="highcharts-figure">
+      <div class="row">
+        <div
+          class="col-12 col-md-2 col-sm-2 col-lg-2"
+          x-data="{ drop:[{title: '-Select-', data: 'pChange'},{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVE',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }"
+        >
+          <select id="highchartsTreeMap" class="form-select">
+            <template x-for="post in drop">
+              <option x-bind:value="post.data" x-text="post.title"></option>
+            </template>
+          </select>
+        </div>
+      </div>
       <div id="db-container"></div>
       <p class="highcharts-description">
         This demo shows a large data set visualized with a tree map. Stock

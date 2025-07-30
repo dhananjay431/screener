@@ -110,14 +110,14 @@ const renderChart = (data) => {
       },
     ],
     title: {
-      text: "S&P 500 Companies",
+      text: "",
       align: "left",
       style: {
         color: "white",
       },
     },
     subtitle: {
-      text: 'Click points to drill down. Source: <a href="http://okfn.org/">okfn.org</a>.',
+      text: "",
       align: "left",
       style: {
         color: "silver",
@@ -206,6 +206,49 @@ const renderChart = (data) => {
     },
   });
 };
+var newDt = [];
+function renderChartRender(data) {
+  var r1 = R.filter((d1) => d1.priority == 0)(data.data);
+  var r2 = R.groupBy((d) => d.meta.industry)(r1);
+
+  newDt = [
+    {
+      name: "NSE",
+      id: "NSE",
+
+      custom: {
+        fullName: "NSE",
+      },
+    },
+  ];
+
+  R.forEachObjIndexed((v, k) => {
+    newDt.push({
+      name: k,
+      id: k,
+      parent: "NSE",
+      custom: {
+        fullName: k,
+      },
+    });
+    var xx = v.map((d1) => {
+      return {
+        name: d1.symbol,
+        id: d1.symbol,
+        value: d1.ffmc,
+        parent: k,
+        colorValue: d1[document.getElementById("highchartsTreeMap").value],
+        custom: {
+          fullName: d1.meta.companyName,
+          performance: `${d1[document.getElementById("highchartsTreeMap").value] > 0 ? "+" : ""}${d1[document.getElementById("highchartsTreeMap").value]}%`,
+        },
+      };
+    });
+    newDt.push(...xx);
+  })(r2);
+
+  renderChart(newDt);
+}
 Highcharts.addEvent(Highcharts.Series, "drawDataLabels", function () {
   if (this.type === "treemap") {
     this.points.forEach((point) => {
@@ -246,49 +289,10 @@ Highcharts.addEvent(Highcharts.Series, "drawDataLabels", function () {
 document
   .getElementById("exampleFormControlTextarea1")
   .addEventListener("change", function (ev) {
-    debugger;
     data = JSON.parse(ev.target.value);
-    var r1 = R.filter((d1) => d1.priority == 0)(data.data);
-    var r2 = R.groupBy((d) => d.meta.industry)(r1);
 
-    var newDt = [
-      {
-        name: "NSE",
-        id: "NSE",
+    renderChartRender(data);
 
-        custom: {
-          fullName: "NSE",
-        },
-      },
-    ];
-
-    R.forEachObjIndexed((v, k) => {
-      newDt.push({
-        name: k,
-        id: k,
-        parent: "NSE",
-        custom: {
-          fullName: k,
-        },
-      });
-      var xx = v.map((d1) => {
-        return {
-          name: d1.symbol,
-          id: d1.symbol,
-          value: d1.ffmc,
-          parent: k,
-          colorValue: d1.pChange,
-          custom: {
-            fullName: d1.meta.companyName,
-            performance: `${d1.pChange > 0 ? "+" : ""}${d1.pChange}%`,
-          },
-        };
-      });
-      newDt.push(...xx);
-    })(r2);
-
-    renderChart(newDt);
-    console.log(newDt);
     if (data.name != undefined) {
       const f = R.filter((d1) => d1.priority == 0);
       const g = R.groupBy((d1) => d1.meta.industry);
@@ -324,7 +328,6 @@ document
       processing: true,
       serverSide: true,
       ajax: (dataTablesParameters, callback) => {
-        console.log(dataTablesParameters);
         //data.data = R.sort((a,b)=>{ a[dataTablesParameters.order[0].name] >b[dataTablesParameters.order[0].name] })(data.data);
         //data.data = R.sort(R.ascend(R.prop('ffmc')),a.data)descend
 
@@ -477,6 +480,11 @@ document
           <option value="lte"> <= </option>
           <option value="eq"> = </option>
            */
+document
+  .getElementById("highchartsTreeMap")
+  .addEventListener("change", function () {
+    renderChartRender(data);
+  });
 document.getElementById("add").addEventListener("click", function () {
   let prop = document.getElementById("get1").value;
   let condi = document.getElementById("get2").value;
@@ -496,16 +504,19 @@ document.getElementById("add").addEventListener("click", function () {
   if (condi == "eq") {
     dynamicConditionArr.push(R.filter((d) => d[prop] == Number(value)));
   }
-
-  console.log(prop, " ", condi, " ", value);
-  console.log(data.data);
+  if (condi == "eqstr") {
+    // dynamicConditionArr.push(R.filter((d) => d[prop] == value));
+    dynamicConditionArr.push(
+      R.filter((d) => value == R.path(prop.split("."), d))
+    );
+  }
 });
 document.getElementById("search").addEventListener("click", function () {
   data.data = R.pipe(...dynamicConditionArr)(data.data);
+  renderChartRender(data);
   table.draw();
 });
 document.getElementById("clear").addEventListener("click", function () {
-  debugger;
   dynamicConditionArr = [];
   data = JSON.parse(
     document.getElementById("exampleFormControlTextarea1").value
@@ -513,6 +524,7 @@ document.getElementById("clear").addEventListener("click", function () {
   const f = R.filter((d1) => d1.priority == 0);
   var z = R.flow(data.data, [f]);
   data.data = z;
+  renderChartRender(data);
   table.draw();
 });
 document.getElementById("download").addEventListener("click", function () {
@@ -643,9 +655,6 @@ document.getElementById("up").addEventListener("change", function (event) {
         data: result,
       })
     );
-    //table.draw();
-    //console.log(result);
-    //console.log(JSON.parse($("#exampleFormControlTextarea1").val())) // JSON result
   };
 
   reader.readAsText(file);
