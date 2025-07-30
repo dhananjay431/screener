@@ -1,0 +1,6602 @@
+[
+  {
+    "id": "Technology",
+    "name": "Technology",
+    "custom": {
+      "fullName": "Technology"
+    }
+  },
+  {
+    "id": "Financial",
+    "name": "Financial",
+    "custom": {
+      "fullName": "Financial"
+    }
+  },
+  {
+    "id": "Consumer Cyclical",
+    "name": "Consumer Cyclical",
+    "custom": {
+      "fullName": "Consumer Cyclical"
+    }
+  },
+  {
+    "id": "Communication Services",
+    "name": "Communication Services",
+    "custom": {
+      "fullName": "Communication Services"
+    }
+  },
+  {
+    "id": "Healthcare",
+    "name": "Healthcare",
+    "custom": {
+      "fullName": "Healthcare"
+    }
+  },
+  {
+    "id": "Consumer Defensive",
+    "name": "Consumer Defensive",
+    "custom": {
+      "fullName": "Consumer Defensive"
+    }
+  },
+  {
+    "id": "Industrials",
+    "name": "Industrials",
+    "custom": {
+      "fullName": "Industrials"
+    }
+  },
+  {
+    "id": "Real Estate",
+    "name": "Real Estate",
+    "custom": {
+      "fullName": "Real Estate"
+    }
+  },
+  {
+    "id": "Energy",
+    "name": "Energy",
+    "custom": {
+      "fullName": "Energy"
+    }
+  },
+  {
+    "id": "Utilities",
+    "name": "Utilities",
+    "custom": {
+      "fullName": "Utilities"
+    }
+  },
+  {
+    "id": "Basic Materials",
+    "name": "Basic Materials",
+    "custom": {
+      "fullName": "Basic Materials"
+    }
+  },
+  {
+    "id": "Sector",
+    "name": "Sector",
+    "custom": {
+      "fullName": "Sector"
+    }
+  },
+  {
+    "id": "Industrial Conglomerates",
+    "parent": "Industrials",
+    "name": "Industrial Conglomerates",
+    "custom": {
+      "fullName": "Industrial Conglomerates"
+    }
+  },
+  {
+    "id": "Building Products",
+    "parent": "Industrials",
+    "name": "Building Products",
+    "custom": {
+      "fullName": "Building Products"
+    }
+  },
+  {
+    "id": "Health Care Equipment",
+    "parent": "Healthcare",
+    "name": "Health Care Equipment",
+    "custom": {
+      "fullName": "Health Care Equipment"
+    }
+  },
+  {
+    "id": "Biotechnology",
+    "parent": "Healthcare",
+    "name": "Biotechnology",
+    "custom": {
+      "fullName": "Biotechnology"
+    }
+  },
+  {
+    "id": "IT Consulting & Other Services",
+    "parent": "Technology",
+    "name": "IT Consulting & Other Services",
+    "custom": {
+      "fullName": "IT Consulting & Other Services"
+    }
+  },
+  {
+    "id": "Application Software",
+    "parent": "Technology",
+    "name": "Application Software",
+    "custom": {
+      "fullName": "Application Software"
+    }
+  },
+  {
+    "id": "Semiconductors",
+    "parent": "Technology",
+    "name": "Semiconductors",
+    "custom": {
+      "fullName": "Semiconductors"
+    }
+  },
+  {
+    "id": "Independent Power Producers & Energy Traders",
+    "parent": "Energy",
+    "name": "Independent Power Producers & Energy Traders",
+    "custom": {
+      "fullName": "Independent Power Producers & Energy Traders"
+    }
+  },
+  {
+    "id": "Life & Health Insurance",
+    "parent": "Financial",
+    "name": "Life & Health Insurance",
+    "custom": {
+      "fullName": "Life & Health Insurance"
+    }
+  },
+  {
+    "id": "Life Sciences Tools & Services",
+    "parent": "Healthcare",
+    "name": "Life Sciences Tools & Services",
+    "custom": {
+      "fullName": "Life Sciences Tools & Services"
+    }
+  },
+  {
+    "id": "Industrial Gases",
+    "parent": "Basic Materials",
+    "name": "Industrial Gases",
+    "custom": {
+      "fullName": "Industrial Gases"
+    }
+  },
+  {
+    "id": "Hotels, Resorts & Cruise Lines",
+    "parent": "Consumer Cyclical",
+    "name": "Hotels, Resorts & Cruise Lines",
+    "custom": {
+      "fullName": "Hotels, Resorts & Cruise Lines"
+    }
+  },
+  {
+    "id": "Internet Services & Infrastructure",
+    "parent": "Technology",
+    "name": "Internet Services & Infrastructure",
+    "custom": {
+      "fullName": "Internet Services & Infrastructure"
+    }
+  },
+  {
+    "id": "Specialty Chemicals",
+    "parent": "Basic Materials",
+    "name": "Specialty Chemicals",
+    "custom": {
+      "fullName": "Specialty Chemicals"
+    }
+  },
+  {
+    "id": "Office REITs",
+    "parent": "Real Estate",
+    "name": "Office REITs",
+    "custom": {
+      "fullName": "Office REITs"
+    }
+  },
+  {
+    "id": "Health Care Supplies",
+    "parent": "Healthcare",
+    "name": "Health Care Supplies",
+    "custom": {
+      "fullName": "Health Care Supplies"
+    }
+  },
+  {
+    "id": "Electric Utilities",
+    "parent": "Utilities",
+    "name": "Electric Utilities",
+    "custom": {
+      "fullName": "Electric Utilities"
+    }
+  },
+  {
+    "id": "Property & Casualty Insurance",
+    "parent": "Financial",
+    "name": "Property & Casualty Insurance",
+    "custom": {
+      "fullName": "Property & Casualty Insurance"
+    }
+  },
+  {
+    "id": "Interactive Media & Services",
+    "parent": "Communication Services",
+    "name": "Interactive Media & Services",
+    "custom": {
+      "fullName": "Interactive Media & Services"
+    }
+  },
+  {
+    "id": "Tobacco",
+    "parent": "Consumer Defensive",
+    "name": "Tobacco",
+    "custom": {
+      "fullName": "Tobacco"
+    }
+  },
+  {
+    "id": "Broadline Retail",
+    "parent": "Consumer Cyclical",
+    "name": "Broadline Retail",
+    "custom": {
+      "fullName": "Broadline Retail"
+    }
+  },
+  {
+    "id": "Paper & Plastic Packaging Products & Materials",
+    "parent": "Basic Materials",
+    "name": "Paper & Plastic Packaging Products & Materials",
+    "custom": {
+      "fullName": "Paper & Plastic Packaging Products & Materials"
+    }
+  },
+  {
+    "id": "Diversified Support Services",
+    "parent": "Industrials",
+    "name": "Diversified Support Services",
+    "custom": {
+      "fullName": "Diversified Support Services"
+    }
+  },
+  {
+    "id": "Multi-Utilities",
+    "parent": "Utilities",
+    "name": "Multi-Utilities",
+    "custom": {
+      "fullName": "Multi-Utilities"
+    }
+  },
+  {
+    "id": "Consumer Finance",
+    "parent": "Financial",
+    "name": "Consumer Finance",
+    "custom": {
+      "fullName": "Consumer Finance"
+    }
+  },
+  {
+    "id": "Multi-line Insurance",
+    "parent": "Financial",
+    "name": "Multi-line Insurance",
+    "custom": {
+      "fullName": "Multi-line Insurance"
+    }
+  },
+  {
+    "id": "Telecom Tower REITs",
+    "parent": "Real Estate",
+    "name": "Telecom Tower REITs",
+    "custom": {
+      "fullName": "Telecom Tower REITs"
+    }
+  },
+  {
+    "id": "Water Utilities",
+    "parent": "Utilities",
+    "name": "Water Utilities",
+    "custom": {
+      "fullName": "Water Utilities"
+    }
+  },
+  {
+    "id": "Asset Management & Custody Banks",
+    "parent": "Financial",
+    "name": "Asset Management & Custody Banks",
+    "custom": {
+      "fullName": "Asset Management & Custody Banks"
+    }
+  },
+  {
+    "id": "Electrical Components & Equipment",
+    "parent": "Industrials",
+    "name": "Electrical Components & Equipment",
+    "custom": {
+      "fullName": "Electrical Components & Equipment"
+    }
+  },
+  {
+    "id": "Electronic Components",
+    "parent": "Technology",
+    "name": "Electronic Components",
+    "custom": {
+      "fullName": "Electronic Components"
+    }
+  },
+  {
+    "id": "Insurance Brokers",
+    "parent": "Financial",
+    "name": "Insurance Brokers",
+    "custom": {
+      "fullName": "Insurance Brokers"
+    }
+  },
+  {
+    "id": "Oil & Gas Exploration & Production",
+    "parent": "Energy",
+    "name": "Oil & Gas Exploration & Production",
+    "custom": {
+      "fullName": "Oil & Gas Exploration & Production"
+    }
+  },
+  {
+    "id": "Technology Hardware, Storage & Peripherals",
+    "parent": "Technology",
+    "name": "Technology Hardware, Storage & Peripherals",
+    "custom": {
+      "fullName": "Technology Hardware, Storage & Peripherals"
+    }
+  },
+  {
+    "id": "Semiconductor Materials & Equipment",
+    "parent": "Technology",
+    "name": "Semiconductor Materials & Equipment",
+    "custom": {
+      "fullName": "Semiconductor Materials & Equipment"
+    }
+  },
+  {
+    "id": "Automotive Parts & Equipment",
+    "parent": "Consumer Cyclical",
+    "name": "Automotive Parts & Equipment",
+    "custom": {
+      "fullName": "Automotive Parts & Equipment"
+    }
+  },
+  {
+    "id": "Agricultural Products & Services",
+    "parent": "Consumer Defensive",
+    "name": "Agricultural Products & Services",
+    "custom": {
+      "fullName": "Agricultural Products & Services"
+    }
+  },
+  {
+    "id": "Communications Equipment",
+    "parent": "Technology",
+    "name": "Communications Equipment",
+    "custom": {
+      "fullName": "Communications Equipment"
+    }
+  },
+  {
+    "id": "Integrated Telecommunication Services",
+    "parent": "Communication Services",
+    "name": "Integrated Telecommunication Services",
+    "custom": {
+      "fullName": "Integrated Telecommunication Services"
+    }
+  },
+  {
+    "id": "Gas Utilities",
+    "parent": "Utilities",
+    "name": "Gas Utilities",
+    "custom": {
+      "fullName": "Gas Utilities"
+    }
+  },
+  {
+    "id": "Human Resource & Employment Services",
+    "parent": "Industrials",
+    "name": "Human Resource & Employment Services",
+    "custom": {
+      "fullName": "Human Resource & Employment Services"
+    }
+  },
+  {
+    "id": "Automotive Retail",
+    "parent": "Consumer Cyclical",
+    "name": "Automotive Retail",
+    "custom": {
+      "fullName": "Automotive Retail"
+    }
+  },
+  {
+    "id": "Multi-Family Residential REITs",
+    "parent": "Real Estate",
+    "name": "Multi-Family Residential REITs",
+    "custom": {
+      "fullName": "Multi-Family Residential REITs"
+    }
+  },
+  {
+    "id": "Aerospace & Defense",
+    "parent": "Industrials",
+    "name": "Aerospace & Defense",
+    "custom": {
+      "fullName": "Aerospace & Defense"
+    }
+  },
+  {
+    "id": "Oil & Gas Equipment & Services",
+    "parent": "Energy",
+    "name": "Oil & Gas Equipment & Services",
+    "custom": {
+      "fullName": "Oil & Gas Equipment & Services"
+    }
+  },
+  {
+    "id": "Metal, Glass & Plastic Containers",
+    "parent": "Basic Materials",
+    "name": "Metal, Glass & Plastic Containers",
+    "custom": {
+      "fullName": "Metal, Glass & Plastic Containers"
+    }
+  },
+  {
+    "id": "Diversified Banks",
+    "parent": "Financial",
+    "name": "Diversified Banks",
+    "custom": {
+      "fullName": "Diversified Banks"
+    }
+  },
+  {
+    "id": "Multi-Sector Holdings",
+    "parent": "Financial",
+    "name": "Multi-Sector Holdings",
+    "custom": {
+      "fullName": "Multi-Sector Holdings"
+    }
+  },
+  {
+    "id": "Computer & Electronics Retail",
+    "parent": "Consumer Cyclical",
+    "name": "Computer & Electronics Retail",
+    "custom": {
+      "fullName": "Computer & Electronics Retail"
+    }
+  },
+  {
+    "id": "Pharmaceuticals",
+    "parent": "Healthcare",
+    "name": "Pharmaceuticals",
+    "custom": {
+      "fullName": "Pharmaceuticals"
+    }
+  },
+  {
+    "id": "Data Processing & Outsourced Services",
+    "parent": "Technology",
+    "name": "Data Processing & Outsourced Services",
+    "custom": {
+      "fullName": "Data Processing & Outsourced Services"
+    }
+  },
+  {
+    "id": "Distillers & Vintners",
+    "parent": "Consumer Defensive",
+    "name": "Distillers & Vintners",
+    "custom": {
+      "fullName": "Distillers & Vintners"
+    }
+  },
+  {
+    "id": "Air Freight & Logistics",
+    "parent": "Industrials",
+    "name": "Air Freight & Logistics",
+    "custom": {
+      "fullName": "Air Freight & Logistics"
+    }
+  },
+  {
+    "id": "Casinos & Gaming",
+    "parent": "Consumer Cyclical",
+    "name": "Casinos & Gaming",
+    "custom": {
+      "fullName": "Casinos & Gaming"
+    }
+  },
+  {
+    "id": "Packaged Foods & Meats",
+    "parent": "Consumer Defensive",
+    "name": "Packaged Foods & Meats",
+    "custom": {
+      "fullName": "Packaged Foods & Meats"
+    }
+  },
+  {
+    "id": "Health Care Distributors",
+    "parent": "Healthcare",
+    "name": "Health Care Distributors",
+    "custom": {
+      "fullName": "Health Care Distributors"
+    }
+  },
+  {
+    "id": "Construction Machinery & Heavy Transportation Equipment",
+    "parent": "Industrials",
+    "name": "Construction Machinery & Heavy Transportation Equipment",
+    "custom": {
+      "fullName": "Construction Machinery & Heavy Transportation Equipment"
+    }
+  },
+  {
+    "id": "Financial Exchanges & Data",
+    "parent": "Financial",
+    "name": "Financial Exchanges & Data",
+    "custom": {
+      "fullName": "Financial Exchanges & Data"
+    }
+  },
+  {
+    "id": "Real Estate Services",
+    "parent": "Real Estate",
+    "name": "Real Estate Services",
+    "custom": {
+      "fullName": "Real Estate Services"
+    }
+  },
+  {
+    "id": "Technology Distributors",
+    "parent": "Technology",
+    "name": "Technology Distributors",
+    "custom": {
+      "fullName": "Technology Distributors"
+    }
+  },
+  {
+    "id": "Managed Health Care",
+    "parent": "Healthcare",
+    "name": "Managed Health Care",
+    "custom": {
+      "fullName": "Managed Health Care"
+    }
+  },
+  {
+    "id": "Fertilizers & Agricultural Chemicals",
+    "parent": "Basic Materials",
+    "name": "Fertilizers & Agricultural Chemicals",
+    "custom": {
+      "fullName": "Fertilizers & Agricultural Chemicals"
+    }
+  },
+  {
+    "id": "Investment Banking & Brokerage",
+    "parent": "Financial",
+    "name": "Investment Banking & Brokerage",
+    "custom": {
+      "fullName": "Investment Banking & Brokerage"
+    }
+  },
+  {
+    "id": "Cable & Satellite",
+    "parent": "Communication Services",
+    "name": "Cable & Satellite",
+    "custom": {
+      "fullName": "Cable & Satellite"
+    }
+  },
+  {
+    "id": "Integrated Oil & Gas",
+    "parent": "Energy",
+    "name": "Integrated Oil & Gas",
+    "custom": {
+      "fullName": "Integrated Oil & Gas"
+    }
+  },
+  {
+    "id": "Restaurants",
+    "parent": "Consumer Cyclical",
+    "name": "Restaurants",
+    "custom": {
+      "fullName": "Restaurants"
+    }
+  },
+  {
+    "id": "Household Products",
+    "parent": "Consumer Defensive",
+    "name": "Household Products",
+    "custom": {
+      "fullName": "Household Products"
+    }
+  },
+  {
+    "id": "Health Care Services",
+    "parent": "Healthcare",
+    "name": "Health Care Services",
+    "custom": {
+      "fullName": "Health Care Services"
+    }
+  },
+  {
+    "id": "Regional Banks",
+    "parent": "Financial",
+    "name": "Regional Banks",
+    "custom": {
+      "fullName": "Regional Banks"
+    }
+  },
+  {
+    "id": "Soft Drinks & Non-alcoholic Beverages",
+    "parent": "Consumer Defensive",
+    "name": "Soft Drinks & Non-alcoholic Beverages",
+    "custom": {
+      "fullName": "Soft Drinks & Non-alcoholic Beverages"
+    }
+  },
+  {
+    "id": "Transaction & Payment Processing Services",
+    "parent": "Technology",
+    "name": "Transaction & Payment Processing Services",
+    "custom": {
+      "fullName": "Transaction & Payment Processing Services"
+    }
+  },
+  {
+    "id": "Consumer Staples Merchandise Retail",
+    "parent": "Consumer Defensive",
+    "name": "Consumer Staples Merchandise Retail",
+    "custom": {
+      "fullName": "Consumer Staples Merchandise Retail"
+    }
+  },
+  {
+    "id": "Systems Software",
+    "parent": "Technology",
+    "name": "Systems Software",
+    "custom": {
+      "fullName": "Systems Software"
+    }
+  },
+  {
+    "id": "Rail Transportation",
+    "parent": "Industrials",
+    "name": "Rail Transportation",
+    "custom": {
+      "fullName": "Rail Transportation"
+    }
+  },
+  {
+    "id": "Homebuilding",
+    "parent": "Consumer Cyclical",
+    "name": "Homebuilding",
+    "custom": {
+      "fullName": "Homebuilding"
+    }
+  },
+  {
+    "id": "Footwear",
+    "parent": "Consumer Cyclical",
+    "name": "Footwear",
+    "custom": {
+      "fullName": "Footwear"
+    }
+  },
+  {
+    "id": "Agricultural & Farm Machinery",
+    "parent": "Consumer Cyclical",
+    "name": "Agricultural & Farm Machinery",
+    "custom": {
+      "fullName": "Agricultural & Farm Machinery"
+    }
+  },
+  {
+    "id": "Passenger Airlines",
+    "parent": "Industrials",
+    "name": "Passenger Airlines",
+    "custom": {
+      "fullName": "Passenger Airlines"
+    }
+  },
+  {
+    "id": "Data Center REITs",
+    "parent": "Real Estate",
+    "name": "Data Center REITs",
+    "custom": {
+      "fullName": "Data Center REITs"
+    }
+  },
+  {
+    "id": "Industrial Machinery & Supplies & Components",
+    "parent": "Industrials",
+    "name": "Industrial Machinery & Supplies & Components",
+    "custom": {
+      "fullName": "Industrial Machinery & Supplies & Components"
+    }
+  },
+  {
+    "id": "Commodity Chemicals",
+    "parent": "Basic Materials",
+    "name": "Commodity Chemicals",
+    "custom": {
+      "fullName": "Commodity Chemicals"
+    }
+  },
+  {
+    "id": "Interactive Home Entertainment",
+    "parent": "Communication Services",
+    "name": "Interactive Home Entertainment",
+    "custom": {
+      "fullName": "Interactive Home Entertainment"
+    }
+  },
+  {
+    "id": "Research & Consulting Services",
+    "parent": "Industrials",
+    "name": "Research & Consulting Services",
+    "custom": {
+      "fullName": "Research & Consulting Services"
+    }
+  },
+  {
+    "id": "Personal Care Products",
+    "parent": "Consumer Defensive",
+    "name": "Personal Care Products",
+    "custom": {
+      "fullName": "Personal Care Products"
+    }
+  },
+  {
+    "id": "Reinsurance",
+    "parent": "Financial",
+    "name": "Reinsurance",
+    "custom": {
+      "fullName": "Reinsurance"
+    }
+  },
+  {
+    "id": "Self-Storage REITs",
+    "parent": "Real Estate",
+    "name": "Self-Storage REITs",
+    "custom": {
+      "fullName": "Self-Storage REITs"
+    }
+  },
+  {
+    "id": "Trading Companies & Distributors",
+    "parent": "Industrials",
+    "name": "Trading Companies & Distributors",
+    "custom": {
+      "fullName": "Trading Companies & Distributors"
+    }
+  },
+  {
+    "id": "Retail REITs",
+    "parent": "Real Estate",
+    "name": "Retail REITs",
+    "custom": {
+      "fullName": "Retail REITs"
+    }
+  },
+  {
+    "id": "Automobile Manufacturers",
+    "parent": "Consumer Cyclical",
+    "name": "Automobile Manufacturers",
+    "custom": {
+      "fullName": "Automobile Manufacturers"
+    }
+  },
+  {
+    "id": "Broadcasting",
+    "parent": "Communication Services",
+    "name": "Broadcasting",
+    "custom": {
+      "fullName": "Broadcasting"
+    }
+  },
+  {
+    "id": "Copper",
+    "parent": "Basic Materials",
+    "name": "Copper",
+    "custom": {
+      "fullName": "Copper"
+    }
+  },
+  {
+    "id": "Consumer Electronics",
+    "parent": "Technology",
+    "name": "Consumer Electronics",
+    "custom": {
+      "fullName": "Consumer Electronics"
+    }
+  },
+  {
+    "id": "Heavy Electrical Equipment",
+    "parent": "Industrials",
+    "name": "Heavy Electrical Equipment",
+    "custom": {
+      "fullName": "Heavy Electrical Equipment"
+    }
+  },
+  {
+    "id": "Distributors",
+    "parent": "Industrials",
+    "name": "Distributors",
+    "custom": {
+      "fullName": "Distributors"
+    }
+  },
+  {
+    "id": "Leisure Products",
+    "parent": "Consumer Cyclical",
+    "name": "Leisure Products",
+    "custom": {
+      "fullName": "Leisure Products"
+    }
+  },
+  {
+    "id": "Health Care Facilities",
+    "parent": "Healthcare",
+    "name": "Health Care Facilities",
+    "custom": {
+      "fullName": "Health Care Facilities"
+    }
+  },
+  {
+    "id": "Health Care REITs",
+    "parent": "Real Estate",
+    "name": "Health Care REITs",
+    "custom": {
+      "fullName": "Health Care REITs"
+    }
+  },
+  {
+    "id": "Home Improvement Retail",
+    "parent": "Consumer Cyclical",
+    "name": "Home Improvement Retail",
+    "custom": {
+      "fullName": "Home Improvement Retail"
+    }
+  },
+  {
+    "id": "Hotel & Resort REITs",
+    "parent": "Real Estate",
+    "name": "Hotel & Resort REITs",
+    "custom": {
+      "fullName": "Hotel & Resort REITs"
+    }
+  },
+  {
+    "id": "Advertising",
+    "parent": "Communication Services",
+    "name": "Advertising",
+    "custom": {
+      "fullName": "Advertising"
+    }
+  },
+  {
+    "id": "Single-Family Residential REITs",
+    "parent": "Real Estate",
+    "name": "Single-Family Residential REITs",
+    "custom": {
+      "fullName": "Single-Family Residential REITs"
+    }
+  },
+  {
+    "id": "Other Specialized REITs",
+    "parent": "Real Estate",
+    "name": "Other Specialized REITs",
+    "custom": {
+      "fullName": "Other Specialized REITs"
+    }
+  },
+  {
+    "id": "Cargo Ground Transportation",
+    "parent": "Industrials",
+    "name": "Cargo Ground Transportation",
+    "custom": {
+      "fullName": "Cargo Ground Transportation"
+    }
+  },
+  {
+    "id": "Electronic Manufacturing Services",
+    "parent": "Technology",
+    "name": "Electronic Manufacturing Services",
+    "custom": {
+      "fullName": "Electronic Manufacturing Services"
+    }
+  },
+  {
+    "id": "Construction & Engineering",
+    "parent": "Industrials",
+    "name": "Construction & Engineering",
+    "custom": {
+      "fullName": "Construction & Engineering"
+    }
+  },
+  {
+    "id": "Electronic Equipment & Instruments",
+    "parent": "Technology",
+    "name": "Electronic Equipment & Instruments",
+    "custom": {
+      "fullName": "Electronic Equipment & Instruments"
+    }
+  },
+  {
+    "id": "Oil & Gas Storage & Transportation",
+    "parent": "Energy",
+    "name": "Oil & Gas Storage & Transportation",
+    "custom": {
+      "fullName": "Oil & Gas Storage & Transportation"
+    }
+  },
+  {
+    "id": "Food Retail",
+    "parent": "Consumer Defensive",
+    "name": "Food Retail",
+    "custom": {
+      "fullName": "Food Retail"
+    }
+  },
+  {
+    "id": "Movies & Entertainment",
+    "parent": "Communication Services",
+    "name": "Movies & Entertainment",
+    "custom": {
+      "fullName": "Movies & Entertainment"
+    }
+  },
+  {
+    "id": "Apparel, Accessories & Luxury Goods",
+    "parent": "Consumer Cyclical",
+    "name": "Apparel, Accessories & Luxury Goods",
+    "custom": {
+      "fullName": "Apparel, Accessories & Luxury Goods"
+    }
+  },
+  {
+    "id": "Oil & Gas Refining & Marketing",
+    "parent": "Energy",
+    "name": "Oil & Gas Refining & Marketing",
+    "custom": {
+      "fullName": "Oil & Gas Refining & Marketing"
+    }
+  },
+  {
+    "id": "Construction Materials",
+    "parent": "Basic Materials",
+    "name": "Construction Materials",
+    "custom": {
+      "fullName": "Construction Materials"
+    }
+  },
+  {
+    "id": "Home Furnishings",
+    "parent": "Consumer Cyclical",
+    "name": "Home Furnishings",
+    "custom": {
+      "fullName": "Home Furnishings"
+    }
+  },
+  {
+    "id": "Brewers",
+    "parent": "Consumer Defensive",
+    "name": "Brewers",
+    "custom": {
+      "fullName": "Brewers"
+    }
+  },
+  {
+    "id": "Gold",
+    "parent": "Basic Materials",
+    "name": "Gold",
+    "custom": {
+      "fullName": "Gold"
+    }
+  },
+  {
+    "id": "Publishing",
+    "parent": "Communication Services",
+    "name": "Publishing",
+    "custom": {
+      "fullName": "Publishing"
+    }
+  },
+  {
+    "id": "Steel",
+    "parent": "Basic Materials",
+    "name": "Steel",
+    "custom": {
+      "fullName": "Steel"
+    }
+  },
+  {
+    "id": "Industrial REITs",
+    "parent": "Real Estate",
+    "name": "Industrial REITs",
+    "custom": {
+      "fullName": "Industrial REITs"
+    }
+  },
+  {
+    "id": "Environmental & Facilities Services",
+    "parent": "Industrials",
+    "name": "Environmental & Facilities Services",
+    "custom": {
+      "fullName": "Environmental & Facilities Services"
+    }
+  },
+  {
+    "id": "Apparel Retail",
+    "parent": "Consumer Cyclical",
+    "name": "Apparel Retail",
+    "custom": {
+      "fullName": "Apparel Retail"
+    }
+  },
+  {
+    "id": "Health Care Technology",
+    "parent": "Healthcare",
+    "name": "Health Care Technology",
+    "custom": {
+      "fullName": "Health Care Technology"
+    }
+  },
+  {
+    "id": "Food Distributors",
+    "parent": "Consumer Defensive",
+    "name": "Food Distributors",
+    "custom": {
+      "fullName": "Food Distributors"
+    }
+  },
+  {
+    "id": "Wireless Telecommunication Services",
+    "parent": "Communication Services",
+    "name": "Wireless Telecommunication Services",
+    "custom": {
+      "fullName": "Wireless Telecommunication Services"
+    }
+  },
+  {
+    "id": "Other Specialty Retail",
+    "parent": "Consumer Cyclical",
+    "name": "Other Specialty Retail",
+    "custom": {
+      "fullName": "Other Specialty Retail"
+    }
+  },
+  {
+    "id": "Passenger Ground Transportation",
+    "parent": "Industrials",
+    "name": "Passenger Ground Transportation",
+    "custom": {
+      "fullName": "Passenger Ground Transportation"
+    }
+  },
+  {
+    "id": "Drug Retail",
+    "parent": "Consumer Cyclical",
+    "name": "Drug Retail",
+    "custom": {
+      "fullName": "Drug Retail"
+    }
+  },
+  {
+    "id": "Timber REITs",
+    "parent": "Real Estate",
+    "name": "Timber REITs",
+    "custom": {
+      "fullName": "Timber REITs"
+    }
+  },
+  {
+    "name": "Symbol",
+    "id": "Symbol",
+    "value": null,
+    "parent": "Sector",
+    "colorValue": null,
+    "custom": {
+      "fullName": "Name",
+      "performance": "+NaN%"
+    }
+  },
+  {
+    "name": "MMM",
+    "id": "MMM",
+    "value": 83294183424,
+    "parent": "Industrial Conglomerates",
+    "colorValue": 17.902238748160187,
+    "custom": {
+      "fullName": "3M",
+      "performance": "+17.90%"
+    }
+  },
+  {
+    "name": "AOS",
+    "id": "AOS",
+    "value": 9758164992,
+    "parent": "Building Products",
+    "colorValue": -1.3341152323706154,
+    "custom": {
+      "fullName": "A. O. Smith",
+      "performance": "-1.33%"
+    }
+  },
+  {
+    "name": "ABT",
+    "id": "ABT",
+    "value": 221889478656,
+    "parent": "Health Care Equipment",
+    "colorValue": 13.102289806383173,
+    "custom": {
+      "fullName": "Abbott Laboratories",
+      "performance": "+13.10%"
+    }
+  },
+  {
+    "name": "ABBV",
+    "id": "ABBV",
+    "value": 324977033216,
+    "parent": "Biotechnology",
+    "colorValue": 3.4890264490714786,
+    "custom": {
+      "fullName": "AbbVie",
+      "performance": "+3.49%"
+    }
+  },
+  {
+    "name": "ACN",
+    "id": "ACN",
+    "value": 240778526720,
+    "parent": "IT Consulting & Other Services",
+    "colorValue": 9.42607805793228,
+    "custom": {
+      "fullName": "Accenture",
+      "performance": "+9.43%"
+    }
+  },
+  {
+    "name": "ADBE",
+    "id": "ADBE",
+    "value": 190421991424,
+    "parent": "Application Software",
+    "colorValue": -1.6258882792120217,
+    "custom": {
+      "fullName": "Adobe Inc.",
+      "performance": "-1.63%"
+    }
+  },
+  {
+    "name": "AMD",
+    "id": "AMD",
+    "value": 192886292480,
+    "parent": "Semiconductors",
+    "colorValue": -4.006954218064412,
+    "custom": {
+      "fullName": "Advanced Micro Devices",
+      "performance": "-4.01%"
+    }
+  },
+  {
+    "name": "AES",
+    "id": "AES",
+    "value": 7821297152,
+    "parent": "Independent Power Producers & Energy Traders",
+    "colorValue": -14.529914529914524,
+    "custom": {
+      "fullName": "AES Corporation",
+      "performance": "-14.53%"
+    }
+  },
+  {
+    "name": "AFL",
+    "id": "AFL",
+    "value": 59652595712,
+    "parent": "Life & Health Insurance",
+    "colorValue": 3.808971384377415,
+    "custom": {
+      "fullName": "Aflac",
+      "performance": "+3.81%"
+    }
+  },
+  {
+    "name": "A",
+    "id": "A",
+    "value": 43273355264,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": 12.78844722346286,
+    "custom": {
+      "fullName": "Agilent Technologies",
+      "performance": "+12.79%"
+    }
+  },
+  {
+    "name": "APD",
+    "id": "APD",
+    "value": 74554785792,
+    "parent": "Industrial Gases",
+    "colorValue": 15.590952972003851,
+    "custom": {
+      "fullName": "Air Products",
+      "performance": "+15.59%"
+    }
+  },
+  {
+    "name": "ABNB",
+    "id": "ABNB",
+    "value": 81951334400,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": -0.1826345027014756,
+    "custom": {
+      "fullName": "Airbnb",
+      "performance": "-0.18%"
+    }
+  },
+  {
+    "name": "AKAM",
+    "id": "AKAM",
+    "value": 15007678464,
+    "parent": "Internet Services & Infrastructure",
+    "colorValue": 4.44328280188186,
+    "custom": {
+      "fullName": "Akamai Technologies",
+      "performance": "+4.44%"
+    }
+  },
+  {
+    "name": "ALB",
+    "id": "ALB",
+    "value": 9895693312,
+    "parent": "Specialty Chemicals",
+    "colorValue": -2.195631970260224,
+    "custom": {
+      "fullName": "Albemarle Corporation",
+      "performance": "-2.20%"
+    }
+  },
+  {
+    "name": "ARE",
+    "id": "ARE",
+    "value": 16850505728,
+    "parent": "Office REITs",
+    "colorValue": -0.2050230650948261,
+    "custom": {
+      "fullName": "Alexandria Real Estate Equities",
+      "performance": "-0.21%"
+    }
+  },
+  {
+    "name": "ALGN",
+    "id": "ALGN",
+    "value": 16357241856,
+    "parent": "Health Care Supplies",
+    "colorValue": 5.0836890317011285,
+    "custom": {
+      "fullName": "Align Technology",
+      "performance": "+5.08%"
+    }
+  },
+  {
+    "name": "ALLE",
+    "id": "ALLE",
+    "value": 11538124800,
+    "parent": "Building Products",
+    "colorValue": 1.5687174778083737,
+    "custom": {
+      "fullName": "Allegion",
+      "performance": "+1.57%"
+    }
+  },
+  {
+    "name": "LNT",
+    "id": "LNT",
+    "value": 15108549632,
+    "parent": "Electric Utilities",
+    "colorValue": -0.43963476496448767,
+    "custom": {
+      "fullName": "Alliant Energy",
+      "performance": "-0.44%"
+    }
+  },
+  {
+    "name": "ALL",
+    "id": "ALL",
+    "value": 50929561600,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": -0.23860158721924352,
+    "custom": {
+      "fullName": "Allstate",
+      "performance": "-0.24%"
+    }
+  },
+  {
+    "name": "GOOGL",
+    "id": "GOOGL",
+    "value": 2507303813120,
+    "parent": "Interactive Media & Services",
+    "colorValue": 7.776016904384575,
+    "custom": {
+      "fullName": "Alphabet Inc. (Class A)",
+      "performance": "+7.78%"
+    }
+  },
+  {
+    "name": "MO",
+    "id": "MO",
+    "value": 88302649344,
+    "parent": "Tobacco",
+    "colorValue": -0.11474469305795042,
+    "custom": {
+      "fullName": "Altria",
+      "performance": "-0.11%"
+    }
+  },
+  {
+    "name": "AMZN",
+    "id": "AMZN",
+    "value": 2499205136384,
+    "parent": "Broadline Retail",
+    "colorValue": 8.336751903003792,
+    "custom": {
+      "fullName": "Amazon",
+      "performance": "+8.34%"
+    }
+  },
+  {
+    "name": "AMCR",
+    "id": "AMCR",
+    "value": 14092055552,
+    "parent": "Paper & Plastic Packaging Products & Materials",
+    "colorValue": 3.2943676939426196,
+    "custom": {
+      "fullName": "Amcor",
+      "performance": "+3.29%"
+    }
+  },
+  {
+    "name": "AMTM",
+    "id": "AMTM",
+    "value": 5102042624,
+    "parent": "Diversified Support Services",
+    "colorValue": -0.2853067047075714,
+    "custom": {
+      "fullName": "Amentum",
+      "performance": "-0.29%"
+    }
+  },
+  {
+    "name": "AEE",
+    "id": "AEE",
+    "value": 25144616960,
+    "parent": "Multi-Utilities",
+    "colorValue": 5.6764639892304265,
+    "custom": {
+      "fullName": "Ameren",
+      "performance": "+5.68%"
+    }
+  },
+  {
+    "name": "AEP",
+    "id": "AEP",
+    "value": 52383092736,
+    "parent": "Electric Utilities",
+    "colorValue": 6.646427409736523,
+    "custom": {
+      "fullName": "American Electric Power",
+      "performance": "+6.65%"
+    }
+  },
+  {
+    "name": "AXP",
+    "id": "AXP",
+    "value": 223902892032,
+    "parent": "Consumer Finance",
+    "colorValue": 6.961150982175938,
+    "custom": {
+      "fullName": "American Express",
+      "performance": "+6.96%"
+    }
+  },
+  {
+    "name": "AIG",
+    "id": "AIG",
+    "value": 45946826752,
+    "parent": "Multi-line Insurance",
+    "colorValue": 1.1813186813186807,
+    "custom": {
+      "fullName": "American International Group",
+      "performance": "+1.18%"
+    }
+  },
+  {
+    "name": "AMT",
+    "id": "AMT",
+    "value": 86425100288,
+    "parent": "Telecom Tower REITs",
+    "colorValue": 0.8396488741071872,
+    "custom": {
+      "fullName": "American Tower",
+      "performance": "+0.84%"
+    }
+  },
+  {
+    "name": "AWK",
+    "id": "AWK",
+    "value": 24291588096,
+    "parent": "Water Utilities",
+    "colorValue": 0.12049160575147055,
+    "custom": {
+      "fullName": "American Water Works",
+      "performance": "+0.12%"
+    }
+  },
+  {
+    "name": "AMP",
+    "id": "AMP",
+    "value": 52271230976,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 2.0528520181056784,
+    "custom": {
+      "fullName": "Ameriprise Financial",
+      "performance": "+2.05%"
+    }
+  },
+  {
+    "name": "AME",
+    "id": "AME",
+    "value": 42690203648,
+    "parent": "Electrical Components & Equipment",
+    "colorValue": 2.3854432486408585,
+    "custom": {
+      "fullName": "Ametek",
+      "performance": "+2.39%"
+    }
+  },
+  {
+    "name": "AMGN",
+    "id": "AMGN",
+    "value": 153422675968,
+    "parent": "Biotechnology",
+    "colorValue": 9.507366482504615,
+    "custom": {
+      "fullName": "Amgen",
+      "performance": "+9.51%"
+    }
+  },
+  {
+    "name": "APH",
+    "id": "APH",
+    "value": 85333073920,
+    "parent": "Electronic Components",
+    "colorValue": 1.915046796256297,
+    "custom": {
+      "fullName": "Amphenol",
+      "performance": "+1.92%"
+    }
+  },
+  {
+    "name": "ADI",
+    "id": "ADI",
+    "value": 105128370176,
+    "parent": "Semiconductors",
+    "colorValue": -0.26828579497318156,
+    "custom": {
+      "fullName": "Analog Devices",
+      "performance": "-0.27%"
+    }
+  },
+  {
+    "name": "ANSS",
+    "id": "ANSS",
+    "value": 30651224064,
+    "parent": "Application Software",
+    "colorValue": 3.9041887765689434,
+    "custom": {
+      "fullName": "Ansys",
+      "performance": "+3.90%"
+    }
+  },
+  {
+    "name": "AON",
+    "id": "AON",
+    "value": 80195756032,
+    "parent": "Insurance Brokers",
+    "colorValue": 3.2464639714890207,
+    "custom": {
+      "fullName": "Aon",
+      "performance": "+3.25%"
+    }
+  },
+  {
+    "name": "APA",
+    "id": "APA",
+    "value": 8112937984,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": -5.023819835426592,
+    "custom": {
+      "fullName": "APA Corporation",
+      "performance": "-5.02%"
+    }
+  },
+  {
+    "name": "AAPL",
+    "id": "AAPL",
+    "value": 3572851277824,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": -5.758326012299332,
+    "custom": {
+      "fullName": "Apple Inc.",
+      "performance": "-5.76%"
+    }
+  },
+  {
+    "name": "AMAT",
+    "id": "AMAT",
+    "value": 147683934208,
+    "parent": "Semiconductor Materials & Equipment",
+    "colorValue": 10.89589866568284,
+    "custom": {
+      "fullName": "Applied Materials",
+      "performance": "+10.90%"
+    }
+  },
+  {
+    "name": "APTV",
+    "id": "APTV",
+    "value": 14786111488,
+    "parent": "Automotive Parts & Equipment",
+    "colorValue": 3.2076719576719657,
+    "custom": {
+      "fullName": "Aptiv",
+      "performance": "+3.21%"
+    }
+  },
+  {
+    "name": "ACGL",
+    "id": "ACGL",
+    "value": 35584942080,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": 0.7796426637791001,
+    "custom": {
+      "fullName": "Arch Capital Group",
+      "performance": "+0.78%"
+    }
+  },
+  {
+    "name": "ADM",
+    "id": "ADM",
+    "value": 24515297280,
+    "parent": "Agricultural Products & Services",
+    "colorValue": 1.4053840063341125,
+    "custom": {
+      "fullName": "Archer Daniels Midland",
+      "performance": "+1.41%"
+    }
+  },
+  {
+    "name": "ANET",
+    "id": "ANET",
+    "value": 145162141696,
+    "parent": "Communications Equipment",
+    "colorValue": 4.252239211073919,
+    "custom": {
+      "fullName": "Arista Networks",
+      "performance": "+4.25%"
+    }
+  },
+  {
+    "name": "AJG",
+    "id": "AJG",
+    "value": 75395547136,
+    "parent": "Insurance Brokers",
+    "colorValue": 6.330808525629723,
+    "custom": {
+      "fullName": "Arthur J. Gallagher & Co.",
+      "performance": "+6.33%"
+    }
+  },
+  {
+    "name": "AIZ",
+    "id": "AIZ",
+    "value": 11036535808,
+    "parent": "Multi-line Insurance",
+    "colorValue": 0.923928336928993,
+    "custom": {
+      "fullName": "Assurant",
+      "performance": "+0.92%"
+    }
+  },
+  {
+    "name": "T",
+    "id": "T",
+    "value": 172367593472,
+    "parent": "Integrated Telecommunication Services",
+    "colorValue": 4.216073781291176,
+    "custom": {
+      "fullName": "AT&T",
+      "performance": "+4.22%"
+    }
+  },
+  {
+    "name": "ATO",
+    "id": "ATO",
+    "value": 22180255744,
+    "parent": "Gas Utilities",
+    "colorValue": 2.3264163136353706,
+    "custom": {
+      "fullName": "Atmos Energy",
+      "performance": "+2.33%"
+    }
+  },
+  {
+    "name": "ADSK",
+    "id": "ADSK",
+    "value": 67096567808,
+    "parent": "Application Software",
+    "colorValue": 5.33545353046655,
+    "custom": {
+      "fullName": "Autodesk",
+      "performance": "+5.34%"
+    }
+  },
+  {
+    "name": "ADP",
+    "id": "ADP",
+    "value": 123285987328,
+    "parent": "Human Resource & Employment Services",
+    "colorValue": 3.5117685238957304,
+    "custom": {
+      "fullName": "Automatic Data Processing",
+      "performance": "+3.51%"
+    }
+  },
+  {
+    "name": "AZO",
+    "id": "AZO",
+    "value": 56223895552,
+    "parent": "Automotive Retail",
+    "colorValue": 4.628669581511557,
+    "custom": {
+      "fullName": "AutoZone",
+      "performance": "+4.63%"
+    }
+  },
+  {
+    "name": "AVB",
+    "id": "AVB",
+    "value": 31506915328,
+    "parent": "Multi-Family Residential REITs",
+    "colorValue": 0.7000954675637551,
+    "custom": {
+      "fullName": "AvalonBay Communities",
+      "performance": "+0.70%"
+    }
+  },
+  {
+    "name": "AVY",
+    "id": "AVY",
+    "value": 14922736640,
+    "parent": "Paper & Plastic Packaging Products & Materials",
+    "colorValue": -0.7481430021909933,
+    "custom": {
+      "fullName": "Avery Dennison",
+      "performance": "-0.75%"
+    }
+  },
+  {
+    "name": "AXON",
+    "id": "AXON",
+    "value": 49731854336,
+    "parent": "Aerospace & Defense",
+    "colorValue": 9.735496029075229,
+    "custom": {
+      "fullName": "Axon Enterprise",
+      "performance": "+9.74%"
+    }
+  },
+  {
+    "name": "BKR",
+    "id": "BKR",
+    "value": 45696311296,
+    "parent": "Oil & Gas Equipment & Services",
+    "colorValue": 12.579229644076051,
+    "custom": {
+      "fullName": "Baker Hughes",
+      "performance": "+12.58%"
+    }
+  },
+  {
+    "name": "BALL",
+    "id": "BALL",
+    "value": 16622327808,
+    "parent": "Metal, Glass & Plastic Containers",
+    "colorValue": 1.033919825866135,
+    "custom": {
+      "fullName": "Ball Corporation",
+      "performance": "+1.03%"
+    }
+  },
+  {
+    "name": "BAC",
+    "id": "BAC",
+    "value": 352382812160,
+    "parent": "Diversified Banks",
+    "colorValue": 5.346985210466426,
+    "custom": {
+      "fullName": "Bank of America",
+      "performance": "+5.35%"
+    }
+  },
+  {
+    "name": "BAX",
+    "id": "BAX",
+    "value": 16624745472,
+    "parent": "Health Care Equipment",
+    "colorValue": 11.65980795610426,
+    "custom": {
+      "fullName": "Baxter International",
+      "performance": "+11.66%"
+    }
+  },
+  {
+    "name": "BDX",
+    "id": "BDX",
+    "value": 71805984768,
+    "parent": "Health Care Equipment",
+    "colorValue": 9.137391457662975,
+    "custom": {
+      "fullName": "Becton Dickinson",
+      "performance": "+9.14%"
+    }
+  },
+  {
+    "name": "BBY",
+    "id": "BBY",
+    "value": 18356525056,
+    "parent": "Computer & Electronics Retail",
+    "colorValue": 0.06993006993007259,
+    "custom": {
+      "fullName": "Best Buy",
+      "performance": "+0.07%"
+    }
+  },
+  {
+    "name": "TECH",
+    "id": "TECH",
+    "value": 11686507520,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": 2.1102318478411717,
+    "custom": {
+      "fullName": "Bio-Techne",
+      "performance": "+2.11%"
+    }
+  },
+  {
+    "name": "BIIB",
+    "id": "BIIB",
+    "value": 20973336576,
+    "parent": "Biotechnology",
+    "colorValue": -5.878890923358607,
+    "custom": {
+      "fullName": "Biogen",
+      "performance": "-5.88%"
+    }
+  },
+  {
+    "name": "BLK",
+    "id": "BLK",
+    "value": 166572376064,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 4.91557003638635,
+    "custom": {
+      "fullName": "BlackRock",
+      "performance": "+4.92%"
+    }
+  },
+  {
+    "name": "BX",
+    "id": "BX",
+    "value": 216281432064,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 2.7201020763252677,
+    "custom": {
+      "fullName": "Blackstone Inc.",
+      "performance": "+2.72%"
+    }
+  },
+  {
+    "name": "BK",
+    "id": "BK",
+    "value": 61670244352,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 11.844331641285969,
+    "custom": {
+      "fullName": "BNY Mellon",
+      "performance": "+11.84%"
+    }
+  },
+  {
+    "name": "BA",
+    "id": "BA",
+    "value": 132251615232,
+    "parent": "Aerospace & Defense",
+    "colorValue": -0.2711864406779603,
+    "custom": {
+      "fullName": "Boeing",
+      "performance": "-0.27%"
+    }
+  },
+  {
+    "name": "BKNG",
+    "id": "BKNG",
+    "value": 158014685184,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": -4.646547594607535,
+    "custom": {
+      "fullName": "Booking Holdings",
+      "performance": "-4.65%"
+    }
+  },
+  {
+    "name": "BWA",
+    "id": "BWA",
+    "value": 6976529920,
+    "parent": "Automotive Parts & Equipment",
+    "colorValue": 0.34602076124567294,
+    "custom": {
+      "fullName": "BorgWarner",
+      "performance": "+0.35%"
+    }
+  },
+  {
+    "name": "BSX",
+    "id": "BSX",
+    "value": 150861234176,
+    "parent": "Health Care Equipment",
+    "colorValue": 14.599193909538746,
+    "custom": {
+      "fullName": "Boston Scientific",
+      "performance": "+14.60%"
+    }
+  },
+  {
+    "name": "BMY",
+    "id": "BMY",
+    "value": 119946158080,
+    "parent": "Pharmaceuticals",
+    "colorValue": 4.225601131541726,
+    "custom": {
+      "fullName": "Bristol Myers Squibb",
+      "performance": "+4.23%"
+    }
+  },
+  {
+    "name": "AVGO",
+    "id": "AVGO",
+    "value": 1037172146176,
+    "parent": "Semiconductors",
+    "colorValue": -4.55917874396135,
+    "custom": {
+      "fullName": "Broadcom",
+      "performance": "-4.56%"
+    }
+  },
+  {
+    "name": "BR",
+    "id": "BR",
+    "value": 27845298176,
+    "parent": "Data Processing & Outsourced Services",
+    "colorValue": 5.365120084921932,
+    "custom": {
+      "fullName": "Broadridge Financial Solutions",
+      "performance": "+5.37%"
+    }
+  },
+  {
+    "name": "BRO",
+    "id": "BRO",
+    "value": 29928366080,
+    "parent": "Insurance Brokers",
+    "colorValue": 2.5877278964908847,
+    "custom": {
+      "fullName": "Brown & Brown",
+      "performance": "+2.59%"
+    }
+  },
+  {
+    "name": "BLDR",
+    "id": "BLDR",
+    "value": 19251419136,
+    "parent": "Building Products",
+    "colorValue": 17.03631148114461,
+    "custom": {
+      "fullName": "Builders FirstSource",
+      "performance": "+17.04%"
+    }
+  },
+  {
+    "name": "BG",
+    "id": "BG",
+    "value": 10629804032,
+    "parent": "Agricultural Products & Services",
+    "colorValue": -2.0961934156378725,
+    "custom": {
+      "fullName": "Bunge Global",
+      "performance": "-2.10%"
+    }
+  },
+  {
+    "name": "BXP",
+    "id": "BXP",
+    "value": 12904675328,
+    "parent": "Office REITs",
+    "colorValue": -1.6406670252824085,
+    "custom": {
+      "fullName": "BXP, Inc.",
+      "performance": "-1.64%"
+    }
+  },
+  {
+    "name": "CHRW",
+    "id": "CHRW",
+    "value": 11760215040,
+    "parent": "Air Freight & Logistics",
+    "colorValue": -3.70692992644212,
+    "custom": {
+      "fullName": "C.H. Robinson",
+      "performance": "-3.71%"
+    }
+  },
+  {
+    "name": "CDNS",
+    "id": "CDNS",
+    "value": 81626152960,
+    "parent": "Application Software",
+    "colorValue": -0.9452173334220779,
+    "custom": {
+      "fullName": "Cadence Design Systems",
+      "performance": "-0.95%"
+    }
+  },
+  {
+    "name": "CZR",
+    "id": "CZR",
+    "value": 7659904000,
+    "parent": "Casinos & Gaming",
+    "colorValue": 7.869539198084965,
+    "custom": {
+      "fullName": "Caesars Entertainment",
+      "performance": "+7.87%"
+    }
+  },
+  {
+    "name": "CPT",
+    "id": "CPT",
+    "value": 12130696192,
+    "parent": "Multi-Family Residential REITs",
+    "colorValue": -2.0079283005860153,
+    "custom": {
+      "fullName": "Camden Property Trust",
+      "performance": "-2.01%"
+    }
+  },
+  {
+    "name": "CPB",
+    "id": "CPB",
+    "value": 11557685248,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -7.42597898758357,
+    "custom": {
+      "fullName": "Campbell Soup Company",
+      "performance": "-7.43%"
+    }
+  },
+  {
+    "name": "COF",
+    "id": "COF",
+    "value": 77660372992,
+    "parent": "Consumer Finance",
+    "colorValue": 14.238447734410057,
+    "custom": {
+      "fullName": "Capital One",
+      "performance": "+14.24%"
+    }
+  },
+  {
+    "name": "CAH",
+    "id": "CAH",
+    "value": 29872300032,
+    "parent": "Health Care Distributors",
+    "colorValue": 4.557368732561089,
+    "custom": {
+      "fullName": "Cardinal Health",
+      "performance": "+4.56%"
+    }
+  },
+  {
+    "name": "KMX",
+    "id": "KMX",
+    "value": 13171431424,
+    "parent": "Automotive Retail",
+    "colorValue": 4.745596868884534,
+    "custom": {
+      "fullName": "CarMax",
+      "performance": "+4.75%"
+    }
+  },
+  {
+    "name": "CCL",
+    "id": "CCL",
+    "value": 37406797824,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": 11.035313001605136,
+    "custom": {
+      "fullName": "Carnival",
+      "performance": "+11.04%"
+    }
+  },
+  {
+    "name": "CARR",
+    "id": "CARR",
+    "value": 59190083584,
+    "parent": "Building Products",
+    "colorValue": -4.219162027541766,
+    "custom": {
+      "fullName": "Carrier Global",
+      "performance": "-4.22%"
+    }
+  },
+  {
+    "name": "CTLT",
+    "id": "CTLT",
+    "value": 11522381824,
+    "parent": "Pharmaceuticals",
+    "colorValue": 0,
+    "custom": {
+      "fullName": "Catalent",
+      "performance": "+0.00%"
+    }
+  },
+  {
+    "name": "CAT",
+    "id": "CAT",
+    "value": 179331973120,
+    "parent": "Construction Machinery & Heavy Transportation Equipment",
+    "colorValue": 2.3927665674275023,
+    "custom": {
+      "fullName": "Caterpillar Inc.",
+      "performance": "+2.39%"
+    }
+  },
+  {
+    "name": "CBOE",
+    "id": "CBOE",
+    "value": 21390489600,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": 4.570112589559881,
+    "custom": {
+      "fullName": "Cboe Global Markets",
+      "performance": "+4.57%"
+    }
+  },
+  {
+    "name": "CBRE",
+    "id": "CBRE",
+    "value": 44293046272,
+    "parent": "Real Estate Services",
+    "colorValue": 10.24449691522585,
+    "custom": {
+      "fullName": "CBRE Group",
+      "performance": "+10.24%"
+    }
+  },
+  {
+    "name": "CDW",
+    "id": "CDW",
+    "value": 26538192896,
+    "parent": "Technology Distributors",
+    "colorValue": 14.421971960468856,
+    "custom": {
+      "fullName": "CDW",
+      "performance": "+14.42%"
+    }
+  },
+  {
+    "name": "CE",
+    "id": "CE",
+    "value": 7765524480,
+    "parent": "Specialty Chemicals",
+    "colorValue": 2.644126571304743,
+    "custom": {
+      "fullName": "Celanese",
+      "performance": "+2.64%"
+    }
+  },
+  {
+    "name": "COR",
+    "id": "COR",
+    "value": 49280135168,
+    "parent": "Health Care Distributors",
+    "colorValue": 13.143136905821613,
+    "custom": {
+      "fullName": "Cencora",
+      "performance": "+13.14%"
+    }
+  },
+  {
+    "name": "CNC",
+    "id": "CNC",
+    "value": 32326504448,
+    "parent": "Managed Health Care",
+    "colorValue": 5.694948827996043,
+    "custom": {
+      "fullName": "Centene Corporation",
+      "performance": "+5.69%"
+    }
+  },
+  {
+    "name": "CNP",
+    "id": "CNP",
+    "value": 21226747904,
+    "parent": "Multi-Utilities",
+    "colorValue": 2.647336905137094,
+    "custom": {
+      "fullName": "CenterPoint Energy",
+      "performance": "+2.65%"
+    }
+  },
+  {
+    "name": "CF",
+    "id": "CF",
+    "value": 16046384128,
+    "parent": "Fertilizers & Agricultural Chemicals",
+    "colorValue": 8.075480543834974,
+    "custom": {
+      "fullName": "CF Industries",
+      "performance": "+8.08%"
+    }
+  },
+  {
+    "name": "CRL",
+    "id": "CRL",
+    "value": 8466620928,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": -10.747562296858074,
+    "custom": {
+      "fullName": "Charles River Laboratories",
+      "performance": "-10.75%"
+    }
+  },
+  {
+    "name": "SCHW",
+    "id": "SCHW",
+    "value": 151423926272,
+    "parent": "Investment Banking & Brokerage",
+    "colorValue": 11.768679908120514,
+    "custom": {
+      "fullName": "Charles Schwab Corporation",
+      "performance": "+11.77%"
+    }
+  },
+  {
+    "name": "CHTR",
+    "id": "CHTR",
+    "value": 49041612800,
+    "parent": "Cable & Satellite",
+    "colorValue": 0.7935350234851438,
+    "custom": {
+      "fullName": "Charter Communications",
+      "performance": "+0.79%"
+    }
+  },
+  {
+    "name": "CVX",
+    "id": "CVX",
+    "value": 278706323456,
+    "parent": "Integrated Oil & Gas",
+    "colorValue": 3.003314001656997,
+    "custom": {
+      "fullName": "Chevron Corporation",
+      "performance": "+3.00%"
+    }
+  },
+  {
+    "name": "CMG",
+    "id": "CMG",
+    "value": 79507120128,
+    "parent": "Restaurants",
+    "colorValue": -3.2338308457711373,
+    "custom": {
+      "fullName": "Chipotle Mexican Grill",
+      "performance": "-3.23%"
+    }
+  },
+  {
+    "name": "CB",
+    "id": "CB",
+    "value": 108943409152,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": -1.5997104596453187,
+    "custom": {
+      "fullName": "Chubb Limited",
+      "performance": "-1.60%"
+    }
+  },
+  {
+    "name": "CHD",
+    "id": "CHD",
+    "value": 25852188672,
+    "parent": "Household Products",
+    "colorValue": 0.7735650845191503,
+    "custom": {
+      "fullName": "Church & Dwight",
+      "performance": "+0.77%"
+    }
+  },
+  {
+    "name": "CI",
+    "id": "CI",
+    "value": 80551460864,
+    "parent": "Health Care Services",
+    "colorValue": 6.543782139494457,
+    "custom": {
+      "fullName": "Cigna",
+      "performance": "+6.54%"
+    }
+  },
+  {
+    "name": "CINF",
+    "id": "CINF",
+    "value": 21422972928,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": -4.627696590118287,
+    "custom": {
+      "fullName": "Cincinnati Financial",
+      "performance": "-4.63%"
+    }
+  },
+  {
+    "name": "CTAS",
+    "id": "CTAS",
+    "value": 80938819584,
+    "parent": "Diversified Support Services",
+    "colorValue": 9.78106185002737,
+    "custom": {
+      "fullName": "Cintas",
+      "performance": "+9.78%"
+    }
+  },
+  {
+    "name": "CSCO",
+    "id": "CSCO",
+    "value": 241355243520,
+    "parent": "Communications Equipment",
+    "colorValue": 2.3648648648648622,
+    "custom": {
+      "fullName": "Cisco",
+      "performance": "+2.36%"
+    }
+  },
+  {
+    "name": "C",
+    "id": "C",
+    "value": 153659228160,
+    "parent": "Diversified Banks",
+    "colorValue": 15.68404602926553,
+    "custom": {
+      "fullName": "Citigroup",
+      "performance": "+15.68%"
+    }
+  },
+  {
+    "name": "CFG",
+    "id": "CFG",
+    "value": 20956631040,
+    "parent": "Regional Banks",
+    "colorValue": 8.706581352833643,
+    "custom": {
+      "fullName": "Citizens Financial Group",
+      "performance": "+8.71%"
+    }
+  },
+  {
+    "name": "CLX",
+    "id": "CLX",
+    "value": 19641567232,
+    "parent": "Household Products",
+    "colorValue": -2.29665660981466,
+    "custom": {
+      "fullName": "Clorox",
+      "performance": "-2.30%"
+    }
+  },
+  {
+    "name": "CME",
+    "id": "CME",
+    "value": 85232820224,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": 1.8473065495414118,
+    "custom": {
+      "fullName": "CME Group",
+      "performance": "+1.85%"
+    }
+  },
+  {
+    "name": "CMS",
+    "id": "CMS",
+    "value": 19719809024,
+    "parent": "Multi-Utilities",
+    "colorValue": -0.9752438109527466,
+    "custom": {
+      "fullName": "CMS Energy",
+      "performance": "-0.98%"
+    }
+  },
+  {
+    "name": "KO",
+    "id": "KO",
+    "value": 275914555392,
+    "parent": "Soft Drinks & Non-alcoholic Beverages",
+    "colorValue": 1.959524574365562,
+    "custom": {
+      "fullName": "Coca-Cola Company (The)",
+      "performance": "+1.96%"
+    }
+  },
+  {
+    "name": "CTSH",
+    "id": "CTSH",
+    "value": 40960020480,
+    "parent": "IT Consulting & Other Services",
+    "colorValue": 7.425227568270472,
+    "custom": {
+      "fullName": "Cognizant",
+      "performance": "+7.43%"
+    }
+  },
+  {
+    "name": "CL",
+    "id": "CL",
+    "value": 70834855936,
+    "parent": "Household Products",
+    "colorValue": -4.630953690463088,
+    "custom": {
+      "fullName": "Colgate-Palmolive",
+      "performance": "-4.63%"
+    }
+  },
+  {
+    "name": "CMCSA",
+    "id": "CMCSA",
+    "value": 128483590144,
+    "parent": "Cable & Satellite",
+    "colorValue": -10.311750599520396,
+    "custom": {
+      "fullName": "Comcast",
+      "performance": "-10.31%"
+    }
+  },
+  {
+    "name": "CAG",
+    "id": "CAG",
+    "value": 12357814272,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -6.702702702702701,
+    "custom": {
+      "fullName": "Conagra Brands",
+      "performance": "-6.70%"
+    }
+  },
+  {
+    "name": "COP",
+    "id": "COP",
+    "value": 127842541568,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": -0.34284561863467117,
+    "custom": {
+      "fullName": "ConocoPhillips",
+      "performance": "-0.34%"
+    }
+  },
+  {
+    "name": "ED",
+    "id": "ED",
+    "value": 32476971008,
+    "parent": "Multi-Utilities",
+    "colorValue": 5.0543539168441,
+    "custom": {
+      "fullName": "Consolidated Edison",
+      "performance": "+5.05%"
+    }
+  },
+  {
+    "name": "STZ",
+    "id": "STZ",
+    "value": 33316921344,
+    "parent": "Distillers & Vintners",
+    "colorValue": -18.190045248868774,
+    "custom": {
+      "fullName": "Constellation Brands",
+      "performance": "-18.19%"
+    }
+  },
+  {
+    "name": "CEG",
+    "id": "CEG",
+    "value": 96526368768,
+    "parent": "Electric Utilities",
+    "colorValue": 34.09324571990524,
+    "custom": {
+      "fullName": "Constellation Energy",
+      "performance": "+34.09%"
+    }
+  },
+  {
+    "name": "COO",
+    "id": "COO",
+    "value": 19269740544,
+    "parent": "Health Care Supplies",
+    "colorValue": 5.025562928315011,
+    "custom": {
+      "fullName": "Cooper Companies (The)",
+      "performance": "+5.03%"
+    }
+  },
+  {
+    "name": "CPRT",
+    "id": "CPRT",
+    "value": 55817179136,
+    "parent": "Diversified Support Services",
+    "colorValue": 0.9409304756926279,
+    "custom": {
+      "fullName": "Copart",
+      "performance": "+0.94%"
+    }
+  },
+  {
+    "name": "GLW",
+    "id": "GLW",
+    "value": 44539285504,
+    "parent": "Electronic Components",
+    "colorValue": 9.595959595959586,
+    "custom": {
+      "fullName": "Corning Inc.",
+      "performance": "+9.60%"
+    }
+  },
+  {
+    "name": "CPAY",
+    "id": "CPAY",
+    "value": 26524338176,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": 12.431298386620172,
+    "custom": {
+      "fullName": "Corpay",
+      "performance": "+12.43%"
+    }
+  },
+  {
+    "name": "CTVA",
+    "id": "CTVA",
+    "value": 45464403968,
+    "parent": "Fertilizers & Agricultural Chemicals",
+    "colorValue": 14.589185393258418,
+    "custom": {
+      "fullName": "Corteva",
+      "performance": "+14.59%"
+    }
+  },
+  {
+    "name": "CSGP",
+    "id": "CSGP",
+    "value": 31402936320,
+    "parent": "Real Estate Services",
+    "colorValue": 6.998184103925116,
+    "custom": {
+      "fullName": "CoStar Group",
+      "performance": "+7.00%"
+    }
+  },
+  {
+    "name": "COST",
+    "id": "COST",
+    "value": 434967773184,
+    "parent": "Consumer Staples Merchandise Retail",
+    "colorValue": 6.942276839796132,
+    "custom": {
+      "fullName": "Costco",
+      "performance": "+6.94%"
+    }
+  },
+  {
+    "name": "CTRA",
+    "id": "CTRA",
+    "value": 20414255104,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": 8.535630383711824,
+    "custom": {
+      "fullName": "Coterra",
+      "performance": "+8.54%"
+    }
+  },
+  {
+    "name": "CRWD",
+    "id": "CRWD",
+    "value": 98049024000,
+    "parent": "Systems Software",
+    "colorValue": 16.340308627542658,
+    "custom": {
+      "fullName": "CrowdStrike",
+      "performance": "+16.34%"
+    }
+  },
+  {
+    "name": "CCI",
+    "id": "CCI",
+    "value": 38800912384,
+    "parent": "Telecom Tower REITs",
+    "colorValue": -1.6306743058616173,
+    "custom": {
+      "fullName": "Crown Castle",
+      "performance": "-1.63%"
+    }
+  },
+  {
+    "name": "CSX",
+    "id": "CSX",
+    "value": 63387160576,
+    "parent": "Rail Transportation",
+    "colorValue": 1.8593120545398025,
+    "custom": {
+      "fullName": "CSX Corporation",
+      "performance": "+1.86%"
+    }
+  },
+  {
+    "name": "CMI",
+    "id": "CMI",
+    "value": 48871088128,
+    "parent": "Construction Machinery & Heavy Transportation Equipment",
+    "colorValue": 2.1944922547332117,
+    "custom": {
+      "fullName": "Cummins",
+      "performance": "+2.19%"
+    }
+  },
+  {
+    "name": "CVS",
+    "id": "CVS",
+    "value": 71074996224,
+    "parent": "Health Care Services",
+    "colorValue": 25.81866785475606,
+    "custom": {
+      "fullName": "CVS Health",
+      "performance": "+25.82%"
+    }
+  },
+  {
+    "name": "DHI",
+    "id": "DHI",
+    "value": 45525630976,
+    "parent": "Homebuilding",
+    "colorValue": 1.4876269489343532,
+    "custom": {
+      "fullName": "D. R. Horton",
+      "performance": "+1.49%"
+    }
+  },
+  {
+    "name": "DHR",
+    "id": "DHR",
+    "value": 160172343296,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": -2.966673927248966,
+    "custom": {
+      "fullName": "Danaher Corporation",
+      "performance": "-2.97%"
+    }
+  },
+  {
+    "name": "DRI",
+    "id": "DRI",
+    "value": 22871781376,
+    "parent": "Restaurants",
+    "colorValue": 4.579784669773427,
+    "custom": {
+      "fullName": "Darden Restaurants",
+      "performance": "+4.58%"
+    }
+  },
+  {
+    "name": "DVA",
+    "id": "DVA",
+    "value": 14452628480,
+    "parent": "Health Care Services",
+    "colorValue": 17.82012704781008,
+    "custom": {
+      "fullName": "DaVita",
+      "performance": "+17.82%"
+    }
+  },
+  {
+    "name": "DAY",
+    "id": "DAY",
+    "value": 11155697664,
+    "parent": "Human Resource & Employment Services",
+    "colorValue": -2.6156387665198317,
+    "custom": {
+      "fullName": "Dayforce",
+      "performance": "-2.62%"
+    }
+  },
+  {
+    "name": "DECK",
+    "id": "DECK",
+    "value": 33895270400,
+    "parent": "Footwear",
+    "colorValue": -12.669259934019395,
+    "custom": {
+      "fullName": "Deckers Brands",
+      "performance": "-12.67%"
+    }
+  },
+  {
+    "name": "DE",
+    "id": "DE",
+    "value": 129791598592,
+    "parent": "Agricultural & Farm Machinery",
+    "colorValue": 12.475808354968143,
+    "custom": {
+      "fullName": "Deere & Company",
+      "performance": "+12.48%"
+    }
+  },
+  {
+    "name": "DELL",
+    "id": "DELL",
+    "value": 72282243072,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": -10.100659493231518,
+    "custom": {
+      "fullName": "Dell Technologies",
+      "performance": "-10.10%"
+    }
+  },
+  {
+    "name": "DAL",
+    "id": "DAL",
+    "value": 43408052224,
+    "parent": "Passenger Airlines",
+    "colorValue": 11.190082644628092,
+    "custom": {
+      "fullName": "Delta Air Lines",
+      "performance": "+11.19%"
+    }
+  },
+  {
+    "name": "DVN",
+    "id": "DVN",
+    "value": 22400288768,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": 4.185762297586327,
+    "custom": {
+      "fullName": "Devon Energy",
+      "performance": "+4.19%"
+    }
+  },
+  {
+    "name": "DXCM",
+    "id": "DXCM",
+    "value": 33915365376,
+    "parent": "Health Care Equipment",
+    "colorValue": 11.649736402211653,
+    "custom": {
+      "fullName": "Dexcom",
+      "performance": "+11.65%"
+    }
+  },
+  {
+    "name": "FANG",
+    "id": "FANG",
+    "value": 47991312384,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": 0.32350607336873655,
+    "custom": {
+      "fullName": "Diamondback Energy",
+      "performance": "+0.32%"
+    }
+  },
+  {
+    "name": "DLR",
+    "id": "DLR",
+    "value": 55402541056,
+    "parent": "Data Center REITs",
+    "colorValue": -7.596007443748942,
+    "custom": {
+      "fullName": "Digital Realty",
+      "performance": "-7.60%"
+    }
+  },
+  {
+    "name": "DFS",
+    "id": "DFS",
+    "value": 50536128512,
+    "parent": "Consumer Finance",
+    "colorValue": 16.082664665473658,
+    "custom": {
+      "fullName": "Discover Financial",
+      "performance": "+16.08%"
+    }
+  },
+  {
+    "name": "DG",
+    "id": "DG",
+    "value": 15627940864,
+    "parent": "Consumer Staples Merchandise Retail",
+    "colorValue": -6.278026905829585,
+    "custom": {
+      "fullName": "Dollar General",
+      "performance": "-6.28%"
+    }
+  },
+  {
+    "name": "DLTR",
+    "id": "DLTR",
+    "value": 15773111296,
+    "parent": "Consumer Staples Merchandise Retail",
+    "colorValue": -2.1216973578863136,
+    "custom": {
+      "fullName": "Dollar Tree",
+      "performance": "-2.12%"
+    }
+  },
+  {
+    "name": "D",
+    "id": "D",
+    "value": 46696157184,
+    "parent": "Multi-Utilities",
+    "colorValue": 3.2120311919792126,
+    "custom": {
+      "fullName": "Dominion Energy",
+      "performance": "+3.21%"
+    }
+  },
+  {
+    "name": "DPZ",
+    "id": "DPZ",
+    "value": 15509011456,
+    "parent": "Restaurants",
+    "colorValue": 6.994473032208885,
+    "custom": {
+      "fullName": "Domino's",
+      "performance": "+6.99%"
+    }
+  },
+  {
+    "name": "DOV",
+    "id": "DOV",
+    "value": 27943266304,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 8.571428571428578,
+    "custom": {
+      "fullName": "Dover Corporation",
+      "performance": "+8.57%"
+    }
+  },
+  {
+    "name": "DOW",
+    "id": "DOW",
+    "value": 27476086784,
+    "parent": "Commodity Chemicals",
+    "colorValue": -2.6912534263643293,
+    "custom": {
+      "fullName": "Dow Inc.",
+      "performance": "-2.69%"
+    }
+  },
+  {
+    "name": "DTE",
+    "id": "DTE",
+    "value": 24827267072,
+    "parent": "Multi-Utilities",
+    "colorValue": -0.7204968944099417,
+    "custom": {
+      "fullName": "DTE Energy",
+      "performance": "-0.72%"
+    }
+  },
+  {
+    "name": "DUK",
+    "id": "DUK",
+    "value": 86510256128,
+    "parent": "Electric Utilities",
+    "colorValue": 3.9446816409875627,
+    "custom": {
+      "fullName": "Duke Energy",
+      "performance": "+3.94%"
+    }
+  },
+  {
+    "name": "DD",
+    "id": "DD",
+    "value": 32098945024,
+    "parent": "Specialty Chemicals",
+    "colorValue": 0.7213114754098323,
+    "custom": {
+      "fullName": "DuPont",
+      "performance": "+0.72%"
+    }
+  },
+  {
+    "name": "EMN",
+    "id": "EMN",
+    "value": 11550730240,
+    "parent": "Specialty Chemicals",
+    "colorValue": 9.12176960140168,
+    "custom": {
+      "fullName": "Eastman Chemical Company",
+      "performance": "+9.12%"
+    }
+  },
+  {
+    "name": "ETN",
+    "id": "ETN",
+    "value": 129009090560,
+    "parent": "Electrical Components & Equipment",
+    "colorValue": -1.6361828426793645,
+    "custom": {
+      "fullName": "Eaton Corporation",
+      "performance": "-1.64%"
+    }
+  },
+  {
+    "name": "EBAY",
+    "id": "EBAY",
+    "value": 32342085632,
+    "parent": "Broadline Retail",
+    "colorValue": 8.926553672316386,
+    "custom": {
+      "fullName": "eBay",
+      "performance": "+8.93%"
+    }
+  },
+  {
+    "name": "ECL",
+    "id": "ECL",
+    "value": 70844301312,
+    "parent": "Specialty Chemicals",
+    "colorValue": 6.77278934790031,
+    "custom": {
+      "fullName": "Ecolab",
+      "performance": "+6.77%"
+    }
+  },
+  {
+    "name": "EIX",
+    "id": "EIX",
+    "value": 20906100736,
+    "parent": "Electric Utilities",
+    "colorValue": -32.36472945891784,
+    "custom": {
+      "fullName": "Edison International",
+      "performance": "-32.36%"
+    }
+  },
+  {
+    "name": "EW",
+    "id": "EW",
+    "value": 43185123328,
+    "parent": "Health Care Equipment",
+    "colorValue": -2.134269890584896,
+    "custom": {
+      "fullName": "Edwards Lifesciences",
+      "performance": "-2.13%"
+    }
+  },
+  {
+    "name": "EA",
+    "id": "EA",
+    "value": 32235974656,
+    "parent": "Interactive Home Entertainment",
+    "colorValue": -15.987696514012312,
+    "custom": {
+      "fullName": "Electronic Arts",
+      "performance": "-15.99%"
+    }
+  },
+  {
+    "name": "ELV",
+    "id": "ELV",
+    "value": 91771936768,
+    "parent": "Managed Health Care",
+    "colorValue": 7.264841420439146,
+    "custom": {
+      "fullName": "Elevance Health",
+      "performance": "+7.26%"
+    }
+  },
+  {
+    "name": "EMR",
+    "id": "EMR",
+    "value": 74010550272,
+    "parent": "Electrical Components & Equipment",
+    "colorValue": 4.857580892439265,
+    "custom": {
+      "fullName": "Emerson Electric",
+      "performance": "+4.86%"
+    }
+  },
+  {
+    "name": "ENPH",
+    "id": "ENPH",
+    "value": 8414464512,
+    "parent": "Semiconductor Materials & Equipment",
+    "colorValue": -9.318578916715209,
+    "custom": {
+      "fullName": "Enphase Energy",
+      "performance": "-9.32%"
+    }
+  },
+  {
+    "name": "ETR",
+    "id": "ETR",
+    "value": 34768400384,
+    "parent": "Electric Utilities",
+    "colorValue": 6.937483513584812,
+    "custom": {
+      "fullName": "Entergy",
+      "performance": "+6.94%"
+    }
+  },
+  {
+    "name": "EOG",
+    "id": "EOG",
+    "value": 70750584832,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": 2.618697993147339,
+    "custom": {
+      "fullName": "EOG Resources",
+      "performance": "+2.62%"
+    }
+  },
+  {
+    "name": "EPAM",
+    "id": "EPAM",
+    "value": 14404967424,
+    "parent": "IT Consulting & Other Services",
+    "colorValue": 8.61346334787444,
+    "custom": {
+      "fullName": "EPAM Systems",
+      "performance": "+8.61%"
+    }
+  },
+  {
+    "name": "EQT",
+    "id": "EQT",
+    "value": 30502488064,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": 10.86532205595315,
+    "custom": {
+      "fullName": "EQT Corporation",
+      "performance": "+10.87%"
+    }
+  },
+  {
+    "name": "EFX",
+    "id": "EFX",
+    "value": 34059530240,
+    "parent": "Research & Consulting Services",
+    "colorValue": 7.82028644300568,
+    "custom": {
+      "fullName": "Equifax",
+      "performance": "+7.82%"
+    }
+  },
+  {
+    "name": "EQIX",
+    "id": "EQIX",
+    "value": 88157405184,
+    "parent": "Data Center REITs",
+    "colorValue": -3.1000434833331587,
+    "custom": {
+      "fullName": "Equinix",
+      "performance": "-3.10%"
+    }
+  },
+  {
+    "name": "EQR",
+    "id": "EQR",
+    "value": 27622897664,
+    "parent": "Multi-Family Residential REITs",
+    "colorValue": -1.5746934225195228,
+    "custom": {
+      "fullName": "Equity Residential",
+      "performance": "-1.57%"
+    }
+  },
+  {
+    "name": "ERIE",
+    "id": "ERIE",
+    "value": 21070215168,
+    "parent": "Insurance Brokers",
+    "colorValue": -2.251170463091,
+    "custom": {
+      "fullName": "Erie Indemnity",
+      "performance": "-2.25%"
+    }
+  },
+  {
+    "name": "ESS",
+    "id": "ESS",
+    "value": 18952333312,
+    "parent": "Multi-Family Residential REITs",
+    "colorValue": -0.3047926008968626,
+    "custom": {
+      "fullName": "Essex Property Trust",
+      "performance": "-0.30%"
+    }
+  },
+  {
+    "name": "EL",
+    "id": "EL",
+    "value": 29949534208,
+    "parent": "Personal Care Products",
+    "colorValue": 11.269671912510004,
+    "custom": {
+      "fullName": "Estée Lauder Companies (The)",
+      "performance": "+11.27%"
+    }
+  },
+  {
+    "name": "EG",
+    "id": "EG",
+    "value": 14935493632,
+    "parent": "Reinsurance",
+    "colorValue": -4.124593058544388,
+    "custom": {
+      "fullName": "Everest Group",
+      "performance": "-4.12%"
+    }
+  },
+  {
+    "name": "EVRG",
+    "id": "EVRG",
+    "value": 14775976960,
+    "parent": "Electric Utilities",
+    "colorValue": 4.2567018683996825,
+    "custom": {
+      "fullName": "Evergy",
+      "performance": "+4.26%"
+    }
+  },
+  {
+    "name": "ES",
+    "id": "ES",
+    "value": 21134065664,
+    "parent": "Electric Utilities",
+    "colorValue": 0.4353125544140693,
+    "custom": {
+      "fullName": "Eversource Energy",
+      "performance": "+0.44%"
+    }
+  },
+  {
+    "name": "EXC",
+    "id": "EXC",
+    "value": 40193200128,
+    "parent": "Electric Utilities",
+    "colorValue": 6.269925611052071,
+    "custom": {
+      "fullName": "Exelon",
+      "performance": "+6.27%"
+    }
+  },
+  {
+    "name": "EXPE",
+    "id": "EXPE",
+    "value": 21940748288,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": -8.254172704341771,
+    "custom": {
+      "fullName": "Expedia Group",
+      "performance": "-8.25%"
+    }
+  },
+  {
+    "name": "EXPD",
+    "id": "EXPD",
+    "value": 15898474496,
+    "parent": "Air Freight & Logistics",
+    "colorValue": 2.536787938972648,
+    "custom": {
+      "fullName": "Expeditors International",
+      "performance": "+2.54%"
+    }
+  },
+  {
+    "name": "EXR",
+    "id": "EXR",
+    "value": 33966393344,
+    "parent": "Self-Storage REITs",
+    "colorValue": 2.941176470588239,
+    "custom": {
+      "fullName": "Extra Space Storage",
+      "performance": "+2.94%"
+    }
+  },
+  {
+    "name": "XOM",
+    "id": "XOM",
+    "value": 481570422784,
+    "parent": "Integrated Oil & Gas",
+    "colorValue": -0.6879241424188853,
+    "custom": {
+      "fullName": "ExxonMobil",
+      "performance": "-0.69%"
+    }
+  },
+  {
+    "name": "FFIV",
+    "id": "FFIV",
+    "value": 17245569024,
+    "parent": "Communications Equipment",
+    "colorValue": 18.208931482880658,
+    "custom": {
+      "fullName": "F5, Inc.",
+      "performance": "+18.21%"
+    }
+  },
+  {
+    "name": "FDS",
+    "id": "FDS",
+    "value": 18041812992,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": -1.2222037144998643,
+    "custom": {
+      "fullName": "FactSet",
+      "performance": "-1.22%"
+    }
+  },
+  {
+    "name": "FICO",
+    "id": "FICO",
+    "value": 45795053568,
+    "parent": "Application Software",
+    "colorValue": -5.895234890227186,
+    "custom": {
+      "fullName": "Fair Isaac",
+      "performance": "-5.90%"
+    }
+  },
+  {
+    "name": "FAST",
+    "id": "FAST",
+    "value": 41989955584,
+    "parent": "Trading Companies & Distributors",
+    "colorValue": 1.8495341398970913,
+    "custom": {
+      "fullName": "Fastenal",
+      "performance": "+1.85%"
+    }
+  },
+  {
+    "name": "FRT",
+    "id": "FRT",
+    "value": 9297924096,
+    "parent": "Retail REITs",
+    "colorValue": -2.965609647163919,
+    "custom": {
+      "fullName": "Federal Realty Investment Trust",
+      "performance": "-2.97%"
+    }
+  },
+  {
+    "name": "FDX",
+    "id": "FDX",
+    "value": 63794204672,
+    "parent": "Air Freight & Logistics",
+    "colorValue": -5.850780222514478,
+    "custom": {
+      "fullName": "FedEx",
+      "performance": "-5.85%"
+    }
+  },
+  {
+    "name": "FIS",
+    "id": "FIS",
+    "value": 43859701760,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": 0.8666584127770247,
+    "custom": {
+      "fullName": "Fidelity National Information Services",
+      "performance": "+0.87%"
+    }
+  },
+  {
+    "name": "FITB",
+    "id": "FITB",
+    "value": 29681231872,
+    "parent": "Regional Banks",
+    "colorValue": 4.801324503311261,
+    "custom": {
+      "fullName": "Fifth Third Bancorp",
+      "performance": "+4.80%"
+    }
+  },
+  {
+    "name": "FSLR",
+    "id": "FSLR",
+    "value": 17934356480,
+    "parent": "Semiconductors",
+    "colorValue": -4.9477984566500215,
+    "custom": {
+      "fullName": "First Solar",
+      "performance": "-4.95%"
+    }
+  },
+  {
+    "name": "FE",
+    "id": "FE",
+    "value": 22937415680,
+    "parent": "Electric Utilities",
+    "colorValue": 0.050276520864746155,
+    "custom": {
+      "fullName": "FirstEnergy",
+      "performance": "+0.05%"
+    }
+  },
+  {
+    "name": "FI",
+    "id": "FI",
+    "value": 122909253632,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": 5.169895823191513,
+    "custom": {
+      "fullName": "Fiserv",
+      "performance": "+5.17%"
+    }
+  },
+  {
+    "name": "FMC",
+    "id": "FMC",
+    "value": 6963352064,
+    "parent": "Fertilizers & Agricultural Chemicals",
+    "colorValue": 14.750051429746971,
+    "custom": {
+      "fullName": "FMC Corporation",
+      "performance": "+14.75%"
+    }
+  },
+  {
+    "name": "F",
+    "id": "F",
+    "value": 40060841984,
+    "parent": "Automobile Manufacturers",
+    "colorValue": 1.8181818181818152,
+    "custom": {
+      "fullName": "Ford Motor Company",
+      "performance": "+1.82%"
+    }
+  },
+  {
+    "name": "FTNT",
+    "id": "FTNT",
+    "value": 77319774208,
+    "parent": "Systems Software",
+    "colorValue": 6.773920406435215,
+    "custom": {
+      "fullName": "Fortinet",
+      "performance": "+6.77%"
+    }
+  },
+  {
+    "name": "FTV",
+    "id": "FTV",
+    "value": 28217362432,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 8.439999999999998,
+    "custom": {
+      "fullName": "Fortive",
+      "performance": "+8.44%"
+    }
+  },
+  {
+    "name": "FOXA",
+    "id": "FOXA",
+    "value": 22749509632,
+    "parent": "Broadcasting",
+    "colorValue": 5.351996706463567,
+    "custom": {
+      "fullName": "Fox Corporation (Class A)",
+      "performance": "+5.35%"
+    }
+  },
+  {
+    "name": "FOX",
+    "id": "FOX",
+    "value": 22786205696,
+    "parent": "Broadcasting",
+    "colorValue": 6.252732837778748,
+    "custom": {
+      "fullName": "Fox Corporation (Class B)",
+      "performance": "+6.25%"
+    }
+  },
+  {
+    "name": "BEN",
+    "id": "BEN",
+    "value": 11653382144,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 9.610645638245439,
+    "custom": {
+      "fullName": "Franklin Resources",
+      "performance": "+9.61%"
+    }
+  },
+  {
+    "name": "FCX",
+    "id": "FCX",
+    "value": 52648947712,
+    "parent": "Copper",
+    "colorValue": -5.856092436974782,
+    "custom": {
+      "fullName": "Freeport-McMoRan",
+      "performance": "-5.86%"
+    }
+  },
+  {
+    "name": "GRMN",
+    "id": "GRMN",
+    "value": 41448595456,
+    "parent": "Consumer Electronics",
+    "colorValue": 4.649471540773782,
+    "custom": {
+      "fullName": "Garmin",
+      "performance": "+4.65%"
+    }
+  },
+  {
+    "name": "IT",
+    "id": "IT",
+    "value": 41870815232,
+    "parent": "IT Consulting & Other Services",
+    "colorValue": 12.046153528598266,
+    "custom": {
+      "fullName": "Gartner",
+      "performance": "+12.05%"
+    }
+  },
+  {
+    "name": "GE",
+    "id": "GE",
+    "value": 218571079680,
+    "parent": "Aerospace & Defense",
+    "colorValue": 22.05168175550093,
+    "custom": {
+      "fullName": "GE Aerospace",
+      "performance": "+22.05%"
+    }
+  },
+  {
+    "name": "GEHC",
+    "id": "GEHC",
+    "value": 40341884928,
+    "parent": "Health Care Equipment",
+    "colorValue": 12.944487081094897,
+    "custom": {
+      "fullName": "GE HealthCare",
+      "performance": "+12.94%"
+    }
+  },
+  {
+    "name": "GEV",
+    "id": "GEV",
+    "value": 102785867776,
+    "parent": "Heavy Electrical Equipment",
+    "colorValue": 13.361505487489737,
+    "custom": {
+      "fullName": "GE Vernova",
+      "performance": "+13.36%"
+    }
+  },
+  {
+    "name": "GEN",
+    "id": "GEN",
+    "value": 17188493312,
+    "parent": "Systems Software",
+    "colorValue": -1.716581446311172,
+    "custom": {
+      "fullName": "Gen Digital",
+      "performance": "-1.72%"
+    }
+  },
+  {
+    "name": "GNRC",
+    "id": "GNRC",
+    "value": 8884731904,
+    "parent": "Electrical Components & Equipment",
+    "colorValue": -3.689132537891002,
+    "custom": {
+      "fullName": "Generac",
+      "performance": "-3.69%"
+    }
+  },
+  {
+    "name": "GD",
+    "id": "GD",
+    "value": 69472231424,
+    "parent": "Aerospace & Defense",
+    "colorValue": -2.4706819993168585,
+    "custom": {
+      "fullName": "General Dynamics",
+      "performance": "-2.47%"
+    }
+  },
+  {
+    "name": "GIS",
+    "id": "GIS",
+    "value": 33151031296,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -5.692331817469032,
+    "custom": {
+      "fullName": "General Mills",
+      "performance": "-5.69%"
+    }
+  },
+  {
+    "name": "GM",
+    "id": "GM",
+    "value": 49252614144,
+    "parent": "Automobile Manufacturers",
+    "colorValue": -7.152243288905579,
+    "custom": {
+      "fullName": "General Motors",
+      "performance": "-7.15%"
+    }
+  },
+  {
+    "name": "GPC",
+    "id": "GPC",
+    "value": 16162934784,
+    "parent": "Distributors",
+    "colorValue": -0.43679342240493757,
+    "custom": {
+      "fullName": "Genuine Parts Company",
+      "performance": "-0.44%"
+    }
+  },
+  {
+    "name": "GILD",
+    "id": "GILD",
+    "value": 121137438720,
+    "parent": "Biotechnology",
+    "colorValue": 5.228970444949657,
+    "custom": {
+      "fullName": "Gilead Sciences",
+      "performance": "+5.23%"
+    }
+  },
+  {
+    "name": "GPN",
+    "id": "GPN",
+    "value": 28719761408,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": 0.7049794752810923,
+    "custom": {
+      "fullName": "Global Payments",
+      "performance": "+0.70%"
+    }
+  },
+  {
+    "name": "GL",
+    "id": "GL",
+    "value": 10248857600,
+    "parent": "Life & Health Insurance",
+    "colorValue": 9.478120516499288,
+    "custom": {
+      "fullName": "Globe Life",
+      "performance": "+9.48%"
+    }
+  },
+  {
+    "name": "GDDY",
+    "id": "GDDY",
+    "value": 29977694208,
+    "parent": "Internet Services & Infrastructure",
+    "colorValue": 7.741804732228808,
+    "custom": {
+      "fullName": "GoDaddy",
+      "performance": "+7.74%"
+    }
+  },
+  {
+    "name": "GS",
+    "id": "GS",
+    "value": 200457388032,
+    "parent": "Investment Banking & Brokerage",
+    "colorValue": 11.83682022982082,
+    "custom": {
+      "fullName": "Goldman Sachs",
+      "performance": "+11.84%"
+    }
+  },
+  {
+    "name": "HAL",
+    "id": "HAL",
+    "value": 22858622976,
+    "parent": "Oil & Gas Equipment & Services",
+    "colorValue": -4.30305259286503,
+    "custom": {
+      "fullName": "Halliburton",
+      "performance": "-4.30%"
+    }
+  },
+  {
+    "name": "HIG",
+    "id": "HIG",
+    "value": 32337342464,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": 1.9652650822669024,
+    "custom": {
+      "fullName": "Hartford (The)",
+      "performance": "+1.97%"
+    }
+  },
+  {
+    "name": "HAS",
+    "id": "HAS",
+    "value": 8068737536,
+    "parent": "Leisure Products",
+    "colorValue": 3.451976390627807,
+    "custom": {
+      "fullName": "Hasbro",
+      "performance": "+3.45%"
+    }
+  },
+  {
+    "name": "HCA",
+    "id": "HCA",
+    "value": 83565207552,
+    "parent": "Health Care Facilities",
+    "colorValue": 9.915042478760636,
+    "custom": {
+      "fullName": "HCA Healthcare",
+      "performance": "+9.92%"
+    }
+  },
+  {
+    "name": "DOC",
+    "id": "DOC",
+    "value": 14450492416,
+    "parent": "Health Care REITs",
+    "colorValue": 1.9240256536753853,
+    "custom": {
+      "fullName": "Healthpeak Properties",
+      "performance": "+1.92%"
+    }
+  },
+  {
+    "name": "HSIC",
+    "id": "HSIC",
+    "value": 9933440000,
+    "parent": "Health Care Distributors",
+    "colorValue": 15.606936416184967,
+    "custom": {
+      "fullName": "Henry Schein",
+      "performance": "+15.61%"
+    }
+  },
+  {
+    "name": "HSY",
+    "id": "HSY",
+    "value": 30201485312,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -11.86891054030115,
+    "custom": {
+      "fullName": "Hershey Company (The)",
+      "performance": "-11.87%"
+    }
+  },
+  {
+    "name": "HES",
+    "id": "HES",
+    "value": 42837647360,
+    "parent": "Integrated Oil & Gas",
+    "colorValue": 4.525975490564627,
+    "custom": {
+      "fullName": "Hess Corporation",
+      "performance": "+4.53%"
+    }
+  },
+  {
+    "name": "HPE",
+    "id": "HPE",
+    "value": 27871844352,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": -0.7494145199063238,
+    "custom": {
+      "fullName": "Hewlett Packard Enterprise",
+      "performance": "-0.75%"
+    }
+  },
+  {
+    "name": "HLT",
+    "id": "HLT",
+    "value": 62424748032,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": 3.604952257646867,
+    "custom": {
+      "fullName": "Hilton Worldwide",
+      "performance": "+3.60%"
+    }
+  },
+  {
+    "name": "HOLX",
+    "id": "HOLX",
+    "value": 16283657216,
+    "parent": "Health Care Equipment",
+    "colorValue": 0.06935774726036503,
+    "custom": {
+      "fullName": "Hologic",
+      "performance": "+0.07%"
+    }
+  },
+  {
+    "name": "HD",
+    "id": "HD",
+    "value": 411748892672,
+    "parent": "Home Improvement Retail",
+    "colorValue": 5.910177639528011,
+    "custom": {
+      "fullName": "Home Depot (The)",
+      "performance": "+5.91%"
+    }
+  },
+  {
+    "name": "HON",
+    "id": "HON",
+    "value": 145694507008,
+    "parent": "Industrial Conglomerates",
+    "colorValue": -0.960644561512235,
+    "custom": {
+      "fullName": "Honeywell",
+      "performance": "-0.96%"
+    }
+  },
+  {
+    "name": "HRL",
+    "id": "HRL",
+    "value": 16459409408,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -4.430985017532676,
+    "custom": {
+      "fullName": "Hormel Foods",
+      "performance": "-4.43%"
+    }
+  },
+  {
+    "name": "HST",
+    "id": "HST",
+    "value": 11839519744,
+    "parent": "Hotel & Resort REITs",
+    "colorValue": -4.62328767123287,
+    "custom": {
+      "fullName": "Host Hotels & Resorts",
+      "performance": "-4.62%"
+    }
+  },
+  {
+    "name": "HWM",
+    "id": "HWM",
+    "value": 51424518144,
+    "parent": "Aerospace & Defense",
+    "colorValue": 15.73557648349638,
+    "custom": {
+      "fullName": "Howmet Aerospace",
+      "performance": "+15.74%"
+    }
+  },
+  {
+    "name": "HPQ",
+    "id": "HPQ",
+    "value": 30478436352,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": -0.39840637450199984,
+    "custom": {
+      "fullName": "HP Inc.",
+      "performance": "-0.40%"
+    }
+  },
+  {
+    "name": "HUBB",
+    "id": "HUBB",
+    "value": 22703159296,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 0.9835517677671953,
+    "custom": {
+      "fullName": "Hubbell Incorporated",
+      "performance": "+0.98%"
+    }
+  },
+  {
+    "name": "HUM",
+    "id": "HUM",
+    "value": 35308118016,
+    "parent": "Managed Health Care",
+    "colorValue": 15.57683969886879,
+    "custom": {
+      "fullName": "Humana",
+      "performance": "+15.58%"
+    }
+  },
+  {
+    "name": "HBAN",
+    "id": "HBAN",
+    "value": 25002608640,
+    "parent": "Regional Banks",
+    "colorValue": 5.716041794714196,
+    "custom": {
+      "fullName": "Huntington Bancshares",
+      "performance": "+5.72%"
+    }
+  },
+  {
+    "name": "HII",
+    "id": "HII",
+    "value": 7718645248,
+    "parent": "Aerospace & Defense",
+    "colorValue": 4.386939725882411,
+    "custom": {
+      "fullName": "Huntington Ingalls Industries",
+      "performance": "+4.39%"
+    }
+  },
+  {
+    "name": "IBM",
+    "id": "IBM",
+    "value": 238808203264,
+    "parent": "IT Consulting & Other Services",
+    "colorValue": 16.317154164581712,
+    "custom": {
+      "fullName": "IBM",
+      "performance": "+16.32%"
+    }
+  },
+  {
+    "name": "IEX",
+    "id": "IEX",
+    "value": 16985492480,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 7.1766448468632085,
+    "custom": {
+      "fullName": "IDEX Corporation",
+      "performance": "+7.18%"
+    }
+  },
+  {
+    "name": "IDXX",
+    "id": "IDXX",
+    "value": 34559438848,
+    "parent": "Health Care Equipment",
+    "colorValue": 2.082527089783285,
+    "custom": {
+      "fullName": "Idexx Laboratories",
+      "performance": "+2.08%"
+    }
+  },
+  {
+    "name": "ITW",
+    "id": "ITW",
+    "value": 76529950720,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 2.208550244518072,
+    "custom": {
+      "fullName": "Illinois Tool Works",
+      "performance": "+2.21%"
+    }
+  },
+  {
+    "name": "INCY",
+    "id": "INCY",
+    "value": 14286924800,
+    "parent": "Biotechnology",
+    "colorValue": 7.36933545678298,
+    "custom": {
+      "fullName": "Incyte",
+      "performance": "+7.37%"
+    }
+  },
+  {
+    "name": "IR",
+    "id": "IR",
+    "value": 37887229952,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 3.692239663939867,
+    "custom": {
+      "fullName": "Ingersoll Rand",
+      "performance": "+3.69%"
+    }
+  },
+  {
+    "name": "PODD",
+    "id": "PODD",
+    "value": 19526909952,
+    "parent": "Health Care Equipment",
+    "colorValue": 6.6304056383345475,
+    "custom": {
+      "fullName": "Insulet Corporation",
+      "performance": "+6.63%"
+    }
+  },
+  {
+    "name": "INTC",
+    "id": "INTC",
+    "value": 84131897344,
+    "parent": "Semiconductors",
+    "colorValue": -3.092269326683297,
+    "custom": {
+      "fullName": "Intel",
+      "performance": "-3.09%"
+    }
+  },
+  {
+    "name": "ICE",
+    "id": "ICE",
+    "value": 91770716160,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": 7.261257633715874,
+    "custom": {
+      "fullName": "Intercontinental Exchange",
+      "performance": "+7.26%"
+    }
+  },
+  {
+    "name": "IFF",
+    "id": "IFF",
+    "value": 22267344896,
+    "parent": "Specialty Chemicals",
+    "colorValue": 3.0041395623891263,
+    "custom": {
+      "fullName": "International Flavors & Fragrances",
+      "performance": "+3.00%"
+    }
+  },
+  {
+    "name": "IP",
+    "id": "IP",
+    "value": 19326308352,
+    "parent": "Paper & Plastic Packaging Products & Materials",
+    "colorValue": 3.363062058714237,
+    "custom": {
+      "fullName": "International Paper",
+      "performance": "+3.36%"
+    }
+  },
+  {
+    "name": "IPG",
+    "id": "IPG",
+    "value": 10680005632,
+    "parent": "Advertising",
+    "colorValue": 2.3197715917202073,
+    "custom": {
+      "fullName": "Interpublic Group of Companies (The)",
+      "performance": "+2.32%"
+    }
+  },
+  {
+    "name": "INTU",
+    "id": "INTU",
+    "value": 168372879360,
+    "parent": "Application Software",
+    "colorValue": -4.294351630867145,
+    "custom": {
+      "fullName": "Intuit",
+      "performance": "-4.29%"
+    }
+  },
+  {
+    "name": "ISRG",
+    "id": "ISRG",
+    "value": 203691655168,
+    "parent": "Health Care Equipment",
+    "colorValue": 9.563951260632992,
+    "custom": {
+      "fullName": "Intuitive Surgical",
+      "performance": "+9.56%"
+    }
+  },
+  {
+    "name": "IVZ",
+    "id": "IVZ",
+    "value": 8615040000,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 10.011441647597254,
+    "custom": {
+      "fullName": "Invesco",
+      "performance": "+10.01%"
+    }
+  },
+  {
+    "name": "INVH",
+    "id": "INVH",
+    "value": 19082676224,
+    "parent": "Single-Family Residential REITs",
+    "colorValue": -2.564904598060683,
+    "custom": {
+      "fullName": "Invitation Homes",
+      "performance": "-2.56%"
+    }
+  },
+  {
+    "name": "IQV",
+    "id": "IQV",
+    "value": 36546838528,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": 2.468067782810047,
+    "custom": {
+      "fullName": "IQVIA",
+      "performance": "+2.47%"
+    }
+  },
+  {
+    "name": "IRM",
+    "id": "IRM",
+    "value": 29806731264,
+    "parent": "Other Specialized REITs",
+    "colorValue": -3.367900294929128,
+    "custom": {
+      "fullName": "Iron Mountain",
+      "performance": "-3.37%"
+    }
+  },
+  {
+    "name": "JBHT",
+    "id": "JBHT",
+    "value": 17217028096,
+    "parent": "Cargo Ground Transportation",
+    "colorValue": 0.32813781788351243,
+    "custom": {
+      "fullName": "J.B. Hunt",
+      "performance": "+0.33%"
+    }
+  },
+  {
+    "name": "SJM",
+    "id": "SJM",
+    "value": 11374806016,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -2.9331638212858735,
+    "custom": {
+      "fullName": "J.M. Smucker Company (The)",
+      "performance": "-2.93%"
+    }
+  },
+  {
+    "name": "JBL",
+    "id": "JBL",
+    "value": 17789579264,
+    "parent": "Electronic Manufacturing Services",
+    "colorValue": 12.863099374565664,
+    "custom": {
+      "fullName": "Jabil",
+      "performance": "+12.86%"
+    }
+  },
+  {
+    "name": "JKHY",
+    "id": "JKHY",
+    "value": 12701484032,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": -0.6902452937820923,
+    "custom": {
+      "fullName": "Jack Henry & Associates",
+      "performance": "-0.69%"
+    }
+  },
+  {
+    "name": "J",
+    "id": "J",
+    "value": 17378502656,
+    "parent": "Construction & Engineering",
+    "colorValue": 4.87202514593623,
+    "custom": {
+      "fullName": "Jacobs Solutions",
+      "performance": "+4.87%"
+    }
+  },
+  {
+    "name": "JNJ",
+    "id": "JNJ",
+    "value": 368053878784,
+    "parent": "Pharmaceuticals",
+    "colorValue": 5.206748720785508,
+    "custom": {
+      "fullName": "Johnson & Johnson",
+      "performance": "+5.21%"
+    }
+  },
+  {
+    "name": "JCI",
+    "id": "JCI",
+    "value": 51490840576,
+    "parent": "Building Products",
+    "colorValue": -1.1782592170277546,
+    "custom": {
+      "fullName": "Johnson Controls",
+      "performance": "-1.18%"
+    }
+  },
+  {
+    "name": "JPM",
+    "id": "JPM",
+    "value": 747798462464,
+    "parent": "Diversified Banks",
+    "colorValue": 11.509740936965501,
+    "custom": {
+      "fullName": "JPMorgan Chase",
+      "performance": "+11.51%"
+    }
+  },
+  {
+    "name": "JNPR",
+    "id": "JNPR",
+    "value": 11541762048,
+    "parent": "Communications Equipment",
+    "colorValue": -6.915887850467298,
+    "custom": {
+      "fullName": "Juniper Networks",
+      "performance": "-6.92%"
+    }
+  },
+  {
+    "name": "K",
+    "id": "K",
+    "value": 28172167168,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": 0.9386192416944611,
+    "custom": {
+      "fullName": "Kellanova",
+      "performance": "+0.94%"
+    }
+  },
+  {
+    "name": "KVUE",
+    "id": "KVUE",
+    "value": 40818466816,
+    "parent": "Personal Care Products",
+    "colorValue": -0.28103044496488183,
+    "custom": {
+      "fullName": "Kenvue",
+      "performance": "-0.28%"
+    }
+  },
+  {
+    "name": "KDP",
+    "id": "KDP",
+    "value": 43542044672,
+    "parent": "Soft Drinks & Non-alcoholic Beverages",
+    "colorValue": -0.062266500622652626,
+    "custom": {
+      "fullName": "Keurig Dr Pepper",
+      "performance": "-0.06%"
+    }
+  },
+  {
+    "name": "KEY",
+    "id": "KEY",
+    "value": 19900084224,
+    "parent": "Regional Banks",
+    "colorValue": 4.900816802800466,
+    "custom": {
+      "fullName": "KeyCorp",
+      "performance": "+4.90%"
+    }
+  },
+  {
+    "name": "KEYS",
+    "id": "KEYS",
+    "value": 30837966848,
+    "parent": "Electronic Equipment & Instruments",
+    "colorValue": 11.031563219821951,
+    "custom": {
+      "fullName": "Keysight Technologies",
+      "performance": "+11.03%"
+    }
+  },
+  {
+    "name": "KMB",
+    "id": "KMB",
+    "value": 43124047872,
+    "parent": "Household Products",
+    "colorValue": -0.8165445665445614,
+    "custom": {
+      "fullName": "Kimberly-Clark",
+      "performance": "-0.82%"
+    }
+  },
+  {
+    "name": "KIM",
+    "id": "KIM",
+    "value": 15133119488,
+    "parent": "Retail REITs",
+    "colorValue": -4.182671788305593,
+    "custom": {
+      "fullName": "Kimco Realty",
+      "performance": "-4.18%"
+    }
+  },
+  {
+    "name": "KMI",
+    "id": "KMI",
+    "value": 61050662912,
+    "parent": "Oil & Gas Storage & Transportation",
+    "colorValue": 0.2919708029197148,
+    "custom": {
+      "fullName": "Kinder Morgan",
+      "performance": "+0.29%"
+    }
+  },
+  {
+    "name": "KKR",
+    "id": "KKR",
+    "value": 154171867136,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 12.953823270907982,
+    "custom": {
+      "fullName": "KKR",
+      "performance": "+12.95%"
+    }
+  },
+  {
+    "name": "KLAC",
+    "id": "KLAC",
+    "value": 98746982400,
+    "parent": "Semiconductor Materials & Equipment",
+    "colorValue": 17.15863645019996,
+    "custom": {
+      "fullName": "KLA Corporation",
+      "performance": "+17.16%"
+    }
+  },
+  {
+    "name": "KHC",
+    "id": "KHC",
+    "value": 36081635328,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -2.832953435363077,
+    "custom": {
+      "fullName": "Kraft Heinz",
+      "performance": "-2.83%"
+    }
+  },
+  {
+    "name": "KR",
+    "id": "KR",
+    "value": 44603072512,
+    "parent": "Food Retail",
+    "colorValue": 0.8013082583810335,
+    "custom": {
+      "fullName": "Kroger",
+      "performance": "+0.80%"
+    }
+  },
+  {
+    "name": "LHX",
+    "id": "LHX",
+    "value": 40211513344,
+    "parent": "Aerospace & Defense",
+    "colorValue": 0.8227125737112373,
+    "custom": {
+      "fullName": "L3Harris",
+      "performance": "+0.82%"
+    }
+  },
+  {
+    "name": "LH",
+    "id": "LH",
+    "value": 20893095936,
+    "parent": "Health Care Services",
+    "colorValue": 8.930751787894653,
+    "custom": {
+      "fullName": "LabCorp",
+      "performance": "+8.93%"
+    }
+  },
+  {
+    "name": "LRCX",
+    "id": "LRCX",
+    "value": 104146010112,
+    "parent": "Semiconductor Materials & Equipment",
+    "colorValue": 12.210992662328662,
+    "custom": {
+      "fullName": "Lam Research",
+      "performance": "+12.21%"
+    }
+  },
+  {
+    "name": "LW",
+    "id": "LW",
+    "value": 8549900800,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -10.309741134221158,
+    "custom": {
+      "fullName": "Lamb Weston",
+      "performance": "-10.31%"
+    }
+  },
+  {
+    "name": "LVS",
+    "id": "LVS",
+    "value": 33227941888,
+    "parent": "Casinos & Gaming",
+    "colorValue": -10.767133956386296,
+    "custom": {
+      "fullName": "Las Vegas Sands",
+      "performance": "-10.77%"
+    }
+  },
+  {
+    "name": "LDOS",
+    "id": "LDOS",
+    "value": 18951489536,
+    "parent": "Diversified Support Services",
+    "colorValue": -1.409135082604471,
+    "custom": {
+      "fullName": "Leidos",
+      "performance": "-1.41%"
+    }
+  },
+  {
+    "name": "LEN",
+    "id": "LEN",
+    "value": 34666786816,
+    "parent": "Homebuilding",
+    "colorValue": -3.761824448192414,
+    "custom": {
+      "fullName": "Lennar",
+      "performance": "-3.76%"
+    }
+  },
+  {
+    "name": "LLY",
+    "id": "LLY",
+    "value": 729417187328,
+    "parent": "Pharmaceuticals",
+    "colorValue": 5.062176165803114,
+    "custom": {
+      "fullName": "Lilly (Eli)",
+      "performance": "+5.06%"
+    }
+  },
+  {
+    "name": "LIN",
+    "id": "LIN",
+    "value": 212423606272,
+    "parent": "Industrial Gases",
+    "colorValue": 6.55647646117467,
+    "custom": {
+      "fullName": "Linde plc",
+      "performance": "+6.56%"
+    }
+  },
+  {
+    "name": "LYV",
+    "id": "LYV",
+    "value": 33363062784,
+    "parent": "Movies & Entertainment",
+    "colorValue": 11.722007722007728,
+    "custom": {
+      "fullName": "Live Nation Entertainment",
+      "performance": "+11.72%"
+    }
+  },
+  {
+    "name": "LKQ",
+    "id": "LKQ",
+    "value": 9719904256,
+    "parent": "Distributors",
+    "colorValue": 1.7414965986394573,
+    "custom": {
+      "fullName": "LKQ Corporation",
+      "performance": "+1.74%"
+    }
+  },
+  {
+    "name": "LMT",
+    "id": "LMT",
+    "value": 108971950080,
+    "parent": "Aerospace & Defense",
+    "colorValue": -4.731036753508666,
+    "custom": {
+      "fullName": "Lockheed Martin",
+      "performance": "-4.73%"
+    }
+  },
+  {
+    "name": "L",
+    "id": "L",
+    "value": 18506504192,
+    "parent": "Multi-line Insurance",
+    "colorValue": 0.8973904829377791,
+    "custom": {
+      "fullName": "Loews Corporation",
+      "performance": "+0.90%"
+    }
+  },
+  {
+    "name": "LOW",
+    "id": "LOW",
+    "value": 146831589376,
+    "parent": "Home Improvement Retail",
+    "colorValue": 5.364667747163699,
+    "custom": {
+      "fullName": "Lowe's",
+      "performance": "+5.36%"
+    }
+  },
+  {
+    "name": "LULU",
+    "id": "LULU",
+    "value": 50442936320,
+    "parent": "Apparel, Accessories & Luxury Goods",
+    "colorValue": 8.313067126905667,
+    "custom": {
+      "fullName": "Lululemon Athletica",
+      "performance": "+8.31%"
+    }
+  },
+  {
+    "name": "LYB",
+    "id": "LYB",
+    "value": 24584103936,
+    "parent": "Specialty Chemicals",
+    "colorValue": 1.925407297697599,
+    "custom": {
+      "fullName": "LyondellBasell",
+      "performance": "+1.93%"
+    }
+  },
+  {
+    "name": "MTB",
+    "id": "MTB",
+    "value": 33389940736,
+    "parent": "Regional Banks",
+    "colorValue": 7.036859741503122,
+    "custom": {
+      "fullName": "M&T Bank",
+      "performance": "+7.04%"
+    }
+  },
+  {
+    "name": "MPC",
+    "id": "MPC",
+    "value": 46829592576,
+    "parent": "Oil & Gas Refining & Marketing",
+    "colorValue": 4.451612903225812,
+    "custom": {
+      "fullName": "Marathon Petroleum",
+      "performance": "+4.45%"
+    }
+  },
+  {
+    "name": "MKTX",
+    "id": "MKTX",
+    "value": 8318722048,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": -2.3933817023535644,
+    "custom": {
+      "fullName": "MarketAxess",
+      "performance": "-2.39%"
+    }
+  },
+  {
+    "name": "MAR",
+    "id": "MAR",
+    "value": 80752926720,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": 4.176525417652534,
+    "custom": {
+      "fullName": "Marriott International",
+      "performance": "+4.18%"
+    }
+  },
+  {
+    "name": "MMC",
+    "id": "MMC",
+    "value": 106514538496,
+    "parent": "Insurance Brokers",
+    "colorValue": 2.104420695824113,
+    "custom": {
+      "fullName": "Marsh McLennan",
+      "performance": "+2.10%"
+    }
+  },
+  {
+    "name": "MLM",
+    "id": "MLM",
+    "value": 33255579648,
+    "parent": "Construction Materials",
+    "colorValue": 5.34753146176186,
+    "custom": {
+      "fullName": "Martin Marietta Materials",
+      "performance": "+5.35%"
+    }
+  },
+  {
+    "name": "MAS",
+    "id": "MAS",
+    "value": 17104579584,
+    "parent": "Building Products",
+    "colorValue": 9.246245004822942,
+    "custom": {
+      "fullName": "Masco",
+      "performance": "+9.25%"
+    }
+  },
+  {
+    "name": "MA",
+    "id": "MA",
+    "value": 517369167872,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": 5.48075279639932,
+    "custom": {
+      "fullName": "Mastercard",
+      "performance": "+5.48%"
+    }
+  },
+  {
+    "name": "MTCH",
+    "id": "MTCH",
+    "value": 8963949568,
+    "parent": "Interactive Media & Services",
+    "colorValue": 9.14093549373281,
+    "custom": {
+      "fullName": "Match Group",
+      "performance": "+9.14%"
+    }
+  },
+  {
+    "name": "MKC",
+    "id": "MKC",
+    "value": 20692699136,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": 1.2985309548793404,
+    "custom": {
+      "fullName": "McCormick & Company",
+      "performance": "+1.30%"
+    }
+  },
+  {
+    "name": "MCD",
+    "id": "MCD",
+    "value": 208049078272,
+    "parent": "Restaurants",
+    "colorValue": -0.41050053468556963,
+    "custom": {
+      "fullName": "McDonald's",
+      "performance": "-0.41%"
+    }
+  },
+  {
+    "name": "MCK",
+    "id": "MCK",
+    "value": 75497562112,
+    "parent": "Health Care Distributors",
+    "colorValue": 4.358582934147503,
+    "custom": {
+      "fullName": "McKesson Corporation",
+      "performance": "+4.36%"
+    }
+  },
+  {
+    "name": "MDT",
+    "id": "MDT",
+    "value": 116457578496,
+    "parent": "Health Care Equipment",
+    "colorValue": 13.695543314972456,
+    "custom": {
+      "fullName": "Medtronic",
+      "performance": "+13.70%"
+    }
+  },
+  {
+    "name": "MRK",
+    "id": "MRK",
+    "value": 249979011072,
+    "parent": "Pharmaceuticals",
+    "colorValue": -0.66344993968638,
+    "custom": {
+      "fullName": "Merck & Co.",
+      "performance": "-0.66%"
+    }
+  },
+  {
+    "name": "META",
+    "id": "META",
+    "value": 1740620562432,
+    "parent": "Interactive Media & Services",
+    "colorValue": 17.705931581014834,
+    "custom": {
+      "fullName": "Meta Platforms",
+      "performance": "+17.71%"
+    }
+  },
+  {
+    "name": "MET",
+    "id": "MET",
+    "value": 59901251584,
+    "parent": "Life & Health Insurance",
+    "colorValue": 5.654616511968747,
+    "custom": {
+      "fullName": "MetLife",
+      "performance": "+5.65%"
+    }
+  },
+  {
+    "name": "MTD",
+    "id": "MTD",
+    "value": 28793366528,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": 11.503007322175732,
+    "custom": {
+      "fullName": "Mettler Toledo",
+      "performance": "+11.50%"
+    }
+  },
+  {
+    "name": "MGM",
+    "id": "MGM",
+    "value": 10266075136,
+    "parent": "Casinos & Gaming",
+    "colorValue": -0.49062049062049556,
+    "custom": {
+      "fullName": "MGM Resorts",
+      "performance": "-0.49%"
+    }
+  },
+  {
+    "name": "MCHP",
+    "id": "MCHP",
+    "value": 29159641088,
+    "parent": "Semiconductors",
+    "colorValue": -5.3182214472537135,
+    "custom": {
+      "fullName": "Microchip Technology",
+      "performance": "-5.32%"
+    }
+  },
+  {
+    "name": "MU",
+    "id": "MU",
+    "value": 103061061632,
+    "parent": "Semiconductors",
+    "colorValue": 8.412547528517107,
+    "custom": {
+      "fullName": "Micron Technology",
+      "performance": "+8.41%"
+    }
+  },
+  {
+    "name": "MSFT",
+    "id": "MSFT",
+    "value": 3085547601920,
+    "parent": "Systems Software",
+    "colorValue": -1.5278766310794776,
+    "custom": {
+      "fullName": "Microsoft",
+      "performance": "-1.53%"
+    }
+  },
+  {
+    "name": "MAA",
+    "id": "MAA",
+    "value": 18302885888,
+    "parent": "Multi-Family Residential REITs",
+    "colorValue": -1.2874425826486258,
+    "custom": {
+      "fullName": "Mid-America Apartment Communities",
+      "performance": "-1.29%"
+    }
+  },
+  {
+    "name": "MRNA",
+    "id": "MRNA",
+    "value": 15169524736,
+    "parent": "Biotechnology",
+    "colorValue": -5.194805194805187,
+    "custom": {
+      "fullName": "Moderna",
+      "performance": "-5.19%"
+    }
+  },
+  {
+    "name": "MHK",
+    "id": "MHK",
+    "value": 7719735296,
+    "parent": "Home Furnishings",
+    "colorValue": 2.6609586166372887,
+    "custom": {
+      "fullName": "Mohawk Industries",
+      "performance": "+2.66%"
+    }
+  },
+  {
+    "name": "MOH",
+    "id": "MOH",
+    "value": 17755451392,
+    "parent": "Managed Health Care",
+    "colorValue": 6.651778045009453,
+    "custom": {
+      "fullName": "Molina Healthcare",
+      "performance": "+6.65%"
+    }
+  },
+  {
+    "name": "TAP",
+    "id": "TAP",
+    "value": 11286548480,
+    "parent": "Brewers",
+    "colorValue": -4.4836008374040475,
+    "custom": {
+      "fullName": "Molson Coors Beverage Company",
+      "performance": "-4.48%"
+    }
+  },
+  {
+    "name": "MDLZ",
+    "id": "MDLZ",
+    "value": 77543653376,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -2.913108990457048,
+    "custom": {
+      "fullName": "Mondelez International",
+      "performance": "-2.91%"
+    }
+  },
+  {
+    "name": "MPWR",
+    "id": "MPWR",
+    "value": 31090909184,
+    "parent": "Semiconductors",
+    "colorValue": 7.718438397836735,
+    "custom": {
+      "fullName": "Monolithic Power Systems",
+      "performance": "+7.72%"
+    }
+  },
+  {
+    "name": "MNST",
+    "id": "MNST",
+    "value": 47371448320,
+    "parent": "Soft Drinks & Non-alcoholic Beverages",
+    "colorValue": -7.324961948249621,
+    "custom": {
+      "fullName": "Monster Beverage",
+      "performance": "-7.32%"
+    }
+  },
+  {
+    "name": "MCO",
+    "id": "MCO",
+    "value": 90514014208,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": 5.507319855504149,
+    "custom": {
+      "fullName": "Moody's Corporation",
+      "performance": "+5.51%"
+    }
+  },
+  {
+    "name": "MS",
+    "id": "MS",
+    "value": 222457004032,
+    "parent": "Investment Banking & Brokerage",
+    "colorValue": 10.109767737830106,
+    "custom": {
+      "fullName": "Morgan Stanley",
+      "performance": "+10.11%"
+    }
+  },
+  {
+    "name": "MOS",
+    "id": "MOS",
+    "value": 8859118592,
+    "parent": "Fertilizers & Agricultural Chemicals",
+    "colorValue": 13.466232709519945,
+    "custom": {
+      "fullName": "Mosaic Company (The)",
+      "performance": "+13.47%"
+    }
+  },
+  {
+    "name": "MSI",
+    "id": "MSI",
+    "value": 78421524480,
+    "parent": "Communications Equipment",
+    "colorValue": 1.5187244445405927,
+    "custom": {
+      "fullName": "Motorola Solutions",
+      "performance": "+1.52%"
+    }
+  },
+  {
+    "name": "MSCI",
+    "id": "MSCI",
+    "value": 46769639424,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": -0.539991000149999,
+    "custom": {
+      "fullName": "MSCI",
+      "performance": "-0.54%"
+    }
+  },
+  {
+    "name": "NDAQ",
+    "id": "NDAQ",
+    "value": 47325573120,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": 6.506273444573795,
+    "custom": {
+      "fullName": "Nasdaq, Inc.",
+      "performance": "+6.51%"
+    }
+  },
+  {
+    "name": "NTAP",
+    "id": "NTAP",
+    "value": 24823662592,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": 5.186078566505854,
+    "custom": {
+      "fullName": "NetApp",
+      "performance": "+5.19%"
+    }
+  },
+  {
+    "name": "NFLX",
+    "id": "NFLX",
+    "value": 417815920640,
+    "parent": "Movies & Entertainment",
+    "colorValue": 9.585782883812765,
+    "custom": {
+      "fullName": "Netflix",
+      "performance": "+9.59%"
+    }
+  },
+  {
+    "name": "NEM",
+    "id": "NEM",
+    "value": 49055805440,
+    "parent": "Gold",
+    "colorValue": 14.77700161203654,
+    "custom": {
+      "fullName": "Newmont",
+      "performance": "+14.78%"
+    }
+  },
+  {
+    "name": "NWSA",
+    "id": "NWSA",
+    "value": 16623195136,
+    "parent": "Publishing",
+    "colorValue": 2.1060275962236816,
+    "custom": {
+      "fullName": "News Corp (Class A)",
+      "performance": "+2.11%"
+    }
+  },
+  {
+    "name": "NWS",
+    "id": "NWS",
+    "value": 16625808384,
+    "parent": "Publishing",
+    "colorValue": 4.0092014459415015,
+    "custom": {
+      "fullName": "News Corp (Class B)",
+      "performance": "+4.01%"
+    }
+  },
+  {
+    "name": "NEE",
+    "id": "NEE",
+    "value": 147155976192,
+    "parent": "Multi-Utilities",
+    "colorValue": -0.18133630910865595,
+    "custom": {
+      "fullName": "NextEra Energy",
+      "performance": "-0.18%"
+    }
+  },
+  {
+    "name": "NKE",
+    "id": "NKE",
+    "value": 115859849216,
+    "parent": "Apparel, Accessories & Luxury Goods",
+    "colorValue": 1.625479053786182,
+    "custom": {
+      "fullName": "Nike, Inc.",
+      "performance": "+1.63%"
+    }
+  },
+  {
+    "name": "NI",
+    "id": "NI",
+    "value": 17410856960,
+    "parent": "Multi-Utilities",
+    "colorValue": 1.4689880304678977,
+    "custom": {
+      "fullName": "NiSource",
+      "performance": "+1.47%"
+    }
+  },
+  {
+    "name": "NDSN",
+    "id": "NDSN",
+    "value": 12571875328,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 5.247562607532016,
+    "custom": {
+      "fullName": "Nordson Corporation",
+      "performance": "+5.25%"
+    }
+  },
+  {
+    "name": "NSC",
+    "id": "NSC",
+    "value": 57779748864,
+    "parent": "Rail Transportation",
+    "colorValue": 8.777162334895621,
+    "custom": {
+      "fullName": "Norfolk Southern Railway",
+      "performance": "+8.78%"
+    }
+  },
+  {
+    "name": "NTRS",
+    "id": "NTRS",
+    "value": 22005471232,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 9.551219512195129,
+    "custom": {
+      "fullName": "Northern Trust",
+      "performance": "+9.55%"
+    }
+  },
+  {
+    "name": "NOC",
+    "id": "NOC",
+    "value": 70630760448,
+    "parent": "Aerospace & Defense",
+    "colorValue": 3.8313196530929616,
+    "custom": {
+      "fullName": "Northrop Grumman",
+      "performance": "+3.83%"
+    }
+  },
+  {
+    "name": "NCLH",
+    "id": "NCLH",
+    "value": 12465722368,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": 10.18266614846483,
+    "custom": {
+      "fullName": "Norwegian Cruise Line Holdings",
+      "performance": "+10.18%"
+    }
+  },
+  {
+    "name": "NRG",
+    "id": "NRG",
+    "value": 20750862336,
+    "parent": "Independent Power Producers & Energy Traders",
+    "colorValue": 13.544668587896254,
+    "custom": {
+      "fullName": "NRG Energy",
+      "performance": "+13.54%"
+    }
+  },
+  {
+    "name": "NUE",
+    "id": "NUE",
+    "value": 30157031424,
+    "parent": "Steel",
+    "colorValue": 10.041984405792146,
+    "custom": {
+      "fullName": "Nucor",
+      "performance": "+10.04%"
+    }
+  },
+  {
+    "name": "NVDA",
+    "id": "NVDA",
+    "value": 3052683657216,
+    "parent": "Semiconductors",
+    "colorValue": -10.589023754561024,
+    "custom": {
+      "fullName": "Nvidia",
+      "performance": "-10.59%"
+    }
+  },
+  {
+    "name": "NVR",
+    "id": "NVR",
+    "value": 24919658496,
+    "parent": "Homebuilding",
+    "colorValue": -1.9895095917543846,
+    "custom": {
+      "fullName": "NVR, Inc.",
+      "performance": "-1.99%"
+    }
+  },
+  {
+    "name": "NXPI",
+    "id": "NXPI",
+    "value": 53004234752,
+    "parent": "Semiconductors",
+    "colorValue": 0.3367813326918533,
+    "custom": {
+      "fullName": "NXP Semiconductors",
+      "performance": "+0.34%"
+    }
+  },
+  {
+    "name": "ORLY",
+    "id": "ORLY",
+    "value": 74727776256,
+    "parent": "Automotive Retail",
+    "colorValue": 9.160060718502287,
+    "custom": {
+      "fullName": "O'Reilly Auto Parts",
+      "performance": "+9.16%"
+    }
+  },
+  {
+    "name": "OXY",
+    "id": "OXY",
+    "value": 43773702144,
+    "parent": "Oil & Gas Exploration & Production",
+    "colorValue": -5.58591378263509,
+    "custom": {
+      "fullName": "Occidental Petroleum",
+      "performance": "-5.59%"
+    }
+  },
+  {
+    "name": "ODFL",
+    "id": "ODFL",
+    "value": 39627362304,
+    "parent": "Cargo Ground Transportation",
+    "colorValue": 5.221088435374154,
+    "custom": {
+      "fullName": "Old Dominion",
+      "performance": "+5.22%"
+    }
+  },
+  {
+    "name": "OMC",
+    "id": "OMC",
+    "value": 17052585984,
+    "parent": "Advertising",
+    "colorValue": 0.8716875871687586,
+    "custom": {
+      "fullName": "Omnicom Group",
+      "performance": "+0.87%"
+    }
+  },
+  {
+    "name": "ON",
+    "id": "ON",
+    "value": 22286215168,
+    "parent": "Semiconductors",
+    "colorValue": -16.98651863600316,
+    "custom": {
+      "fullName": "ON Semiconductor",
+      "performance": "-16.99%"
+    }
+  },
+  {
+    "name": "OKE",
+    "id": "OKE",
+    "value": 56645545984,
+    "parent": "Oil & Gas Storage & Transportation",
+    "colorValue": -3.2171314741035895,
+    "custom": {
+      "fullName": "ONEOK",
+      "performance": "-3.22%"
+    }
+  },
+  {
+    "name": "ORCL",
+    "id": "ORCL",
+    "value": 475651014656,
+    "parent": "Application Software",
+    "colorValue": 2.052328372539616,
+    "custom": {
+      "fullName": "Oracle Corporation",
+      "performance": "+2.05%"
+    }
+  },
+  {
+    "name": "OTIS",
+    "id": "OTIS",
+    "value": 38116569088,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 3.0342295648418123,
+    "custom": {
+      "fullName": "Otis Worldwide",
+      "performance": "+3.03%"
+    }
+  },
+  {
+    "name": "PCAR",
+    "id": "PCAR",
+    "value": 58145472512,
+    "parent": "Construction Machinery & Heavy Transportation Equipment",
+    "colorValue": 6.594885598923284,
+    "custom": {
+      "fullName": "Paccar",
+      "performance": "+6.59%"
+    }
+  },
+  {
+    "name": "PKG",
+    "id": "PKG",
+    "value": 19097909248,
+    "parent": "Paper & Plastic Packaging Products & Materials",
+    "colorValue": -5.539021898458668,
+    "custom": {
+      "fullName": "Packaging Corporation of America",
+      "performance": "-5.54%"
+    }
+  },
+  {
+    "name": "PLTR",
+    "id": "PLTR",
+    "value": 187913879552,
+    "parent": "Internet Services & Infrastructure",
+    "colorValue": 9.070474679360043,
+    "custom": {
+      "fullName": "Palantir Technologies",
+      "performance": "+9.07%"
+    }
+  },
+  {
+    "name": "PANW",
+    "id": "PANW",
+    "value": 121016401920,
+    "parent": "Systems Software",
+    "colorValue": 1.3519454825236203,
+    "custom": {
+      "fullName": "Palo Alto Networks",
+      "performance": "+1.35%"
+    }
+  },
+  {
+    "name": "PARA",
+    "id": "PARA",
+    "value": 7728977920,
+    "parent": "Movies & Entertainment",
+    "colorValue": 4.01529636711281,
+    "custom": {
+      "fullName": "Paramount Global",
+      "performance": "+4.02%"
+    }
+  },
+  {
+    "name": "PH",
+    "id": "PH",
+    "value": 91011473408,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 11.166139961951478,
+    "custom": {
+      "fullName": "Parker Hannifin",
+      "performance": "+11.17%"
+    }
+  },
+  {
+    "name": "PAYX",
+    "id": "PAYX",
+    "value": 53170503680,
+    "parent": "Human Resource & Employment Services",
+    "colorValue": 5.313079446583932,
+    "custom": {
+      "fullName": "Paychex",
+      "performance": "+5.31%"
+    }
+  },
+  {
+    "name": "PAYC",
+    "id": "PAYC",
+    "value": 11968324608,
+    "parent": "Human Resource & Employment Services",
+    "colorValue": 1.2635995511538292,
+    "custom": {
+      "fullName": "Paycom",
+      "performance": "+1.26%"
+    }
+  },
+  {
+    "name": "PYPL",
+    "id": "PYPL",
+    "value": 89797091328,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": 3.784417106033983,
+    "custom": {
+      "fullName": "PayPal",
+      "performance": "+3.78%"
+    }
+  },
+  {
+    "name": "PNR",
+    "id": "PNR",
+    "value": 17131151360,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 3.020667726550086,
+    "custom": {
+      "fullName": "Pentair",
+      "performance": "+3.02%"
+    }
+  },
+  {
+    "name": "PEP",
+    "id": "PEP",
+    "value": 208405790720,
+    "parent": "Soft Drinks & Non-alcoholic Beverages",
+    "colorValue": -0.9009601473102752,
+    "custom": {
+      "fullName": "PepsiCo",
+      "performance": "-0.90%"
+    }
+  },
+  {
+    "name": "PFE",
+    "id": "PFE",
+    "value": 150288580608,
+    "parent": "Pharmaceuticals",
+    "colorValue": -0.03769317753487208,
+    "custom": {
+      "fullName": "Pfizer",
+      "performance": "-0.04%"
+    }
+  },
+  {
+    "name": "PCG",
+    "id": "PCG",
+    "value": 34328428544,
+    "parent": "Multi-Utilities",
+    "colorValue": -22.447968285431116,
+    "custom": {
+      "fullName": "PG&E Corporation",
+      "performance": "-22.45%"
+    }
+  },
+  {
+    "name": "PM",
+    "id": "PM",
+    "value": 202438852608,
+    "parent": "Tobacco",
+    "colorValue": 8.184461985874528,
+    "custom": {
+      "fullName": "Philip Morris International",
+      "performance": "+8.18%"
+    }
+  },
+  {
+    "name": "PSX",
+    "id": "PSX",
+    "value": 48679014400,
+    "parent": "Oil & Gas Refining & Marketing",
+    "colorValue": 3.458263846221362,
+    "custom": {
+      "fullName": "Phillips 66",
+      "performance": "+3.46%"
+    }
+  },
+  {
+    "name": "PNW",
+    "id": "PNW",
+    "value": 9887351808,
+    "parent": "Multi-Utilities",
+    "colorValue": 2.5834611301167842,
+    "custom": {
+      "fullName": "Pinnacle West",
+      "performance": "+2.58%"
+    }
+  },
+  {
+    "name": "PNC",
+    "id": "PNC",
+    "value": 79563538432,
+    "parent": "Diversified Banks",
+    "colorValue": 4.200155561317083,
+    "custom": {
+      "fullName": "PNC Financial Services",
+      "performance": "+4.20%"
+    }
+  },
+  {
+    "name": "POOL",
+    "id": "POOL",
+    "value": 13100605440,
+    "parent": "Distributors",
+    "colorValue": 0.970845310025225,
+    "custom": {
+      "fullName": "Pool Corporation",
+      "performance": "+0.97%"
+    }
+  },
+  {
+    "name": "PPG",
+    "id": "PPG",
+    "value": 26768158720,
+    "parent": "Specialty Chemicals",
+    "colorValue": -3.4072833821682775,
+    "custom": {
+      "fullName": "PPG Industries",
+      "performance": "-3.41%"
+    }
+  },
+  {
+    "name": "PPL",
+    "id": "PPL",
+    "value": 24795791360,
+    "parent": "Electric Utilities",
+    "colorValue": 3.5120147874306857,
+    "custom": {
+      "fullName": "PPL Corporation",
+      "performance": "+3.51%"
+    }
+  },
+  {
+    "name": "PFG",
+    "id": "PFG",
+    "value": 18858457088,
+    "parent": "Life & Health Insurance",
+    "colorValue": 6.510786720062016,
+    "custom": {
+      "fullName": "Principal Financial Group",
+      "performance": "+6.51%"
+    }
+  },
+  {
+    "name": "PG",
+    "id": "PG",
+    "value": 389221646336,
+    "parent": "Personal Care Products",
+    "colorValue": -0.9901580674023243,
+    "custom": {
+      "fullName": "Procter & Gamble",
+      "performance": "-0.99%"
+    }
+  },
+  {
+    "name": "PGR",
+    "id": "PGR",
+    "value": 144367271936,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": 2.8504653395100306,
+    "custom": {
+      "fullName": "Progressive Corporation",
+      "performance": "+2.85%"
+    }
+  },
+  {
+    "name": "PLD",
+    "id": "PLD",
+    "value": 110446362624,
+    "parent": "Industrial REITs",
+    "colorValue": 12.819299905392619,
+    "custom": {
+      "fullName": "Prologis",
+      "performance": "+12.82%"
+    }
+  },
+  {
+    "name": "PRU",
+    "id": "PRU",
+    "value": 42982227968,
+    "parent": "Life & Health Insurance",
+    "colorValue": 1.8813802412891285,
+    "custom": {
+      "fullName": "Prudential Financial",
+      "performance": "+1.88%"
+    }
+  },
+  {
+    "name": "PTC",
+    "id": "PTC",
+    "value": 23286478848,
+    "parent": "Application Software",
+    "colorValue": 5.226518736063515,
+    "custom": {
+      "fullName": "PTC Inc.",
+      "performance": "+5.23%"
+    }
+  },
+  {
+    "name": "PEG",
+    "id": "PEG",
+    "value": 41621716992,
+    "parent": "Electric Utilities",
+    "colorValue": -1.1243934193395535,
+    "custom": {
+      "fullName": "Public Service Enterprise Group",
+      "performance": "-1.12%"
+    }
+  },
+  {
+    "name": "PSA",
+    "id": "PSA",
+    "value": 52288626688,
+    "parent": "Self-Storage REITs",
+    "colorValue": -0.32059845044081603,
+    "custom": {
+      "fullName": "Public Storage",
+      "performance": "-0.32%"
+    }
+  },
+  {
+    "name": "PHM",
+    "id": "PHM",
+    "value": 23334230016,
+    "parent": "Homebuilding",
+    "colorValue": 4.481175390266295,
+    "custom": {
+      "fullName": "PulteGroup",
+      "performance": "+4.48%"
+    }
+  },
+  {
+    "name": "QRVO",
+    "id": "QRVO",
+    "value": 7750066688,
+    "parent": "Semiconductors",
+    "colorValue": 18.661518661518656,
+    "custom": {
+      "fullName": "Qorvo",
+      "performance": "+18.66%"
+    }
+  },
+  {
+    "name": "QCOM",
+    "id": "QCOM",
+    "value": 191155077120,
+    "parent": "Semiconductors",
+    "colorValue": 12.569977867465175,
+    "custom": {
+      "fullName": "Qualcomm",
+      "performance": "+12.57%"
+    }
+  },
+  {
+    "name": "PWR",
+    "id": "PWR",
+    "value": 45406924800,
+    "parent": "Construction & Engineering",
+    "colorValue": -2.6704635342509087,
+    "custom": {
+      "fullName": "Quanta Services",
+      "performance": "-2.67%"
+    }
+  },
+  {
+    "name": "DGX",
+    "id": "DGX",
+    "value": 18041307136,
+    "parent": "Health Care Services",
+    "colorValue": 8.113482699191291,
+    "custom": {
+      "fullName": "Quest Diagnostics",
+      "performance": "+8.11%"
+    }
+  },
+  {
+    "name": "RL",
+    "id": "RL",
+    "value": 15505945600,
+    "parent": "Apparel, Accessories & Luxury Goods",
+    "colorValue": 8.104597800675384,
+    "custom": {
+      "fullName": "Ralph Lauren Corporation",
+      "performance": "+8.10%"
+    }
+  },
+  {
+    "name": "RJF",
+    "id": "RJF",
+    "value": 34471006208,
+    "parent": "Investment Banking & Brokerage",
+    "colorValue": 8.465846906585963,
+    "custom": {
+      "fullName": "Raymond James Financial",
+      "performance": "+8.47%"
+    }
+  },
+  {
+    "name": "O",
+    "id": "O",
+    "value": 47821529088,
+    "parent": "Retail REITs",
+    "colorValue": 2.302939524433634,
+    "custom": {
+      "fullName": "Realty Income",
+      "performance": "+2.30%"
+    }
+  },
+  {
+    "name": "REG",
+    "id": "REG",
+    "value": 13118127104,
+    "parent": "Retail REITs",
+    "colorValue": -2.8269985121060506,
+    "custom": {
+      "fullName": "Regency Centers",
+      "performance": "-2.83%"
+    }
+  },
+  {
+    "name": "REGN",
+    "id": "REGN",
+    "value": 73953771520,
+    "parent": "Biotechnology",
+    "colorValue": -5.524125054398947,
+    "custom": {
+      "fullName": "Regeneron Pharmaceuticals",
+      "performance": "-5.52%"
+    }
+  },
+  {
+    "name": "RF",
+    "id": "RF",
+    "value": 22394408960,
+    "parent": "Regional Banks",
+    "colorValue": 4.761904761904766,
+    "custom": {
+      "fullName": "Regions Financial Corporation",
+      "performance": "+4.76%"
+    }
+  },
+  {
+    "name": "RSG",
+    "id": "RSG",
+    "value": 67913273344,
+    "parent": "Environmental & Facilities Services",
+    "colorValue": 7.798985982702057,
+    "custom": {
+      "fullName": "Republic Services",
+      "performance": "+7.80%"
+    }
+  },
+  {
+    "name": "RMD",
+    "id": "RMD",
+    "value": 34670276608,
+    "parent": "Health Care Equipment",
+    "colorValue": 3.2751760024487337,
+    "custom": {
+      "fullName": "ResMed",
+      "performance": "+3.28%"
+    }
+  },
+  {
+    "name": "RVTY",
+    "id": "RVTY",
+    "value": 15350273024,
+    "parent": "Health Care Equipment",
+    "colorValue": 13.009586954573958,
+    "custom": {
+      "fullName": "Revvity",
+      "performance": "+13.01%"
+    }
+  },
+  {
+    "name": "ROK",
+    "id": "ROK",
+    "value": 31471777792,
+    "parent": "Electrical Components & Equipment",
+    "colorValue": -2.575317540851679,
+    "custom": {
+      "fullName": "Rockwell Automation",
+      "performance": "-2.58%"
+    }
+  },
+  {
+    "name": "ROL",
+    "id": "ROL",
+    "value": 24079620096,
+    "parent": "Environmental & Facilities Services",
+    "colorValue": 6.796116504854366,
+    "custom": {
+      "fullName": "Rollins, Inc.",
+      "performance": "+6.80%"
+    }
+  },
+  {
+    "name": "ROP",
+    "id": "ROP",
+    "value": 61726375936,
+    "parent": "Electronic Equipment & Instruments",
+    "colorValue": 10.733865538135992,
+    "custom": {
+      "fullName": "Roper Technologies",
+      "performance": "+10.73%"
+    }
+  },
+  {
+    "name": "ROST",
+    "id": "ROST",
+    "value": 49674108928,
+    "parent": "Apparel Retail",
+    "colorValue": -0.46935942354730475,
+    "custom": {
+      "fullName": "Ross Stores",
+      "performance": "-0.47%"
+    }
+  },
+  {
+    "name": "RCL",
+    "id": "RCL",
+    "value": 71688740864,
+    "parent": "Hotels, Resorts & Cruise Lines",
+    "colorValue": 15.566344444926104,
+    "custom": {
+      "fullName": "Royal Caribbean Group",
+      "performance": "+15.57%"
+    }
+  },
+  {
+    "name": "RTX",
+    "id": "RTX",
+    "value": 171675009024,
+    "parent": "Aerospace & Defense",
+    "colorValue": 11.43276875216038,
+    "custom": {
+      "fullName": "RTX Corporation",
+      "performance": "+11.43%"
+    }
+  },
+  {
+    "name": "SPGI",
+    "id": "SPGI",
+    "value": 161793507328,
+    "parent": "Financial Exchanges & Data",
+    "colorValue": 4.694496315483002,
+    "custom": {
+      "fullName": "S&P Global",
+      "performance": "+4.69%"
+    }
+  },
+  {
+    "name": "CRM",
+    "id": "CRM",
+    "value": 328796405760,
+    "parent": "Application Software",
+    "colorValue": 2.204408817635272,
+    "custom": {
+      "fullName": "Salesforce",
+      "performance": "+2.20%"
+    }
+  },
+  {
+    "name": "SBAC",
+    "id": "SBAC",
+    "value": 21242243072,
+    "parent": "Telecom Tower REITs",
+    "colorValue": -3.0618253189401416,
+    "custom": {
+      "fullName": "SBA Communications",
+      "performance": "-3.06%"
+    }
+  },
+  {
+    "name": "SLB",
+    "id": "SLB",
+    "value": 57463042048,
+    "parent": "Oil & Gas Equipment & Services",
+    "colorValue": 5.059989567031814,
+    "custom": {
+      "fullName": "Schlumberger",
+      "performance": "+5.06%"
+    }
+  },
+  {
+    "name": "STX",
+    "id": "STX",
+    "value": 20806629376,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": 11.644073687869305,
+    "custom": {
+      "fullName": "Seagate Technology",
+      "performance": "+11.64%"
+    }
+  },
+  {
+    "name": "SRE",
+    "id": "SRE",
+    "value": 52527775744,
+    "parent": "Multi-Utilities",
+    "colorValue": -5.460556315549467,
+    "custom": {
+      "fullName": "Sempra",
+      "performance": "-5.46%"
+    }
+  },
+  {
+    "name": "NOW",
+    "id": "NOW",
+    "value": 210282233856,
+    "parent": "Systems Software",
+    "colorValue": -3.9372901180998277,
+    "custom": {
+      "fullName": "ServiceNow",
+      "performance": "-3.94%"
+    }
+  },
+  {
+    "name": "SHW",
+    "id": "SHW",
+    "value": 90203668480,
+    "parent": "Specialty Chemicals",
+    "colorValue": 5.362868825934757,
+    "custom": {
+      "fullName": "Sherwin-Williams",
+      "performance": "+5.36%"
+    }
+  },
+  {
+    "name": "SPG",
+    "id": "SPG",
+    "value": 65279733760,
+    "parent": "Retail REITs",
+    "colorValue": 0.9581325126299318,
+    "custom": {
+      "fullName": "Simon Property Group",
+      "performance": "+0.96%"
+    }
+  },
+  {
+    "name": "SWKS",
+    "id": "SWKS",
+    "value": 14267370496,
+    "parent": "Semiconductors",
+    "colorValue": 0.0902119981957581,
+    "custom": {
+      "fullName": "Skyworks Solutions",
+      "performance": "+0.09%"
+    }
+  },
+  {
+    "name": "SW",
+    "id": "SW",
+    "value": 27615082496,
+    "parent": "Paper & Plastic Packaging Products & Materials",
+    "colorValue": -1.4296323802450726,
+    "custom": {
+      "fullName": "Smurfit WestRock",
+      "performance": "-1.43%"
+    }
+  },
+  {
+    "name": "SNA",
+    "id": "SNA",
+    "value": 18641752064,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 4.61588311535288,
+    "custom": {
+      "fullName": "Snap-on",
+      "performance": "+4.62%"
+    }
+  },
+  {
+    "name": "SOLV",
+    "id": "SOLV",
+    "value": 12794382336,
+    "parent": "Health Care Technology",
+    "colorValue": 12.110202845897668,
+    "custom": {
+      "fullName": "Solventum",
+      "performance": "+12.11%"
+    }
+  },
+  {
+    "name": "SO",
+    "id": "SO",
+    "value": 91982331904,
+    "parent": "Electric Utilities",
+    "colorValue": 1.9800777453838798,
+    "custom": {
+      "fullName": "Southern Company",
+      "performance": "+1.98%"
+    }
+  },
+  {
+    "name": "LUV",
+    "id": "LUV",
+    "value": 18417924096,
+    "parent": "Passenger Airlines",
+    "colorValue": -8.655562165377741,
+    "custom": {
+      "fullName": "Southwest Airlines",
+      "performance": "-8.66%"
+    }
+  },
+  {
+    "name": "SWK",
+    "id": "SWK",
+    "value": 13577223168,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 9.689874206003221,
+    "custom": {
+      "fullName": "Stanley Black & Decker",
+      "performance": "+9.69%"
+    }
+  },
+  {
+    "name": "SBUX",
+    "id": "SBUX",
+    "value": 123816919040,
+    "parent": "Restaurants",
+    "colorValue": 18.005479452054804,
+    "custom": {
+      "fullName": "Starbucks",
+      "performance": "+18.01%"
+    }
+  },
+  {
+    "name": "STT",
+    "id": "STT",
+    "value": 29344403456,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 3.5354049923586333,
+    "custom": {
+      "fullName": "State Street Corporation",
+      "performance": "+3.54%"
+    }
+  },
+  {
+    "name": "STLD",
+    "id": "STLD",
+    "value": 19899973632,
+    "parent": "Steel",
+    "colorValue": 12.387130709213638,
+    "custom": {
+      "fullName": "Steel Dynamics",
+      "performance": "+12.39%"
+    }
+  },
+  {
+    "name": "STE",
+    "id": "STE",
+    "value": 21779765248,
+    "parent": "Health Care Equipment",
+    "colorValue": 7.3409223584354955,
+    "custom": {
+      "fullName": "Steris",
+      "performance": "+7.34%"
+    }
+  },
+  {
+    "name": "SYK",
+    "id": "SYK",
+    "value": 149166014464,
+    "parent": "Health Care Equipment",
+    "colorValue": 8.676572698236358,
+    "custom": {
+      "fullName": "Stryker Corporation",
+      "performance": "+8.68%"
+    }
+  },
+  {
+    "name": "SMCI",
+    "id": "SMCI",
+    "value": 16700313600,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": -6.430446194225724,
+    "custom": {
+      "fullName": "Supermicro",
+      "performance": "-6.43%"
+    }
+  },
+  {
+    "name": "SYF",
+    "id": "SYF",
+    "value": 26784935936,
+    "parent": "Consumer Finance",
+    "colorValue": 6.123076923076929,
+    "custom": {
+      "fullName": "Synchrony Financial",
+      "performance": "+6.12%"
+    }
+  },
+  {
+    "name": "SNPS",
+    "id": "SNPS",
+    "value": 81227644928,
+    "parent": "Application Software",
+    "colorValue": 8.266029339047305,
+    "custom": {
+      "fullName": "Synopsys",
+      "performance": "+8.27%"
+    }
+  },
+  {
+    "name": "SYY",
+    "id": "SYY",
+    "value": 35674652672,
+    "parent": "Food Distributors",
+    "colorValue": -4.629871828407,
+    "custom": {
+      "fullName": "Sysco",
+      "performance": "-4.63%"
+    }
+  },
+  {
+    "name": "TMUS",
+    "id": "TMUS",
+    "value": 266652794880,
+    "parent": "Wireless Telecommunication Services",
+    "colorValue": 5.545236261495949,
+    "custom": {
+      "fullName": "T-Mobile US",
+      "performance": "+5.55%"
+    }
+  },
+  {
+    "name": "TROW",
+    "id": "TROW",
+    "value": 25974831104,
+    "parent": "Asset Management & Custody Banks",
+    "colorValue": 3.3866831726943127,
+    "custom": {
+      "fullName": "T. Rowe Price",
+      "performance": "+3.39%"
+    }
+  },
+  {
+    "name": "TTWO",
+    "id": "TTWO",
+    "value": 32580564992,
+    "parent": "Interactive Home Entertainment",
+    "colorValue": 0.7768361581920786,
+    "custom": {
+      "fullName": "Take-Two Interactive",
+      "performance": "+0.78%"
+    }
+  },
+  {
+    "name": "TPR",
+    "id": "TPR",
+    "value": 16997646336,
+    "parent": "Apparel, Accessories & Luxury Goods",
+    "colorValue": 11.64855349762743,
+    "custom": {
+      "fullName": "Tapestry, Inc.",
+      "performance": "+11.65%"
+    }
+  },
+  {
+    "name": "TRGP",
+    "id": "TRGP",
+    "value": 42914799616,
+    "parent": "Oil & Gas Storage & Transportation",
+    "colorValue": 10.25210084033614,
+    "custom": {
+      "fullName": "Targa Resources",
+      "performance": "+10.25%"
+    }
+  },
+  {
+    "name": "TGT",
+    "id": "TGT",
+    "value": 63192018944,
+    "parent": "Consumer Staples Merchandise Retail",
+    "colorValue": 2.0195295162006137,
+    "custom": {
+      "fullName": "Target Corporation",
+      "performance": "+2.02%"
+    }
+  },
+  {
+    "name": "TEL",
+    "id": "TEL",
+    "value": 44147294208,
+    "parent": "Electronic Manufacturing Services",
+    "colorValue": 3.497237182625726,
+    "custom": {
+      "fullName": "TE Connectivity",
+      "performance": "+3.50%"
+    }
+  },
+  {
+    "name": "TDY",
+    "id": "TDY",
+    "value": 23829153792,
+    "parent": "Electronic Equipment & Instruments",
+    "colorValue": 10.169564561652983,
+    "custom": {
+      "fullName": "Teledyne Technologies",
+      "performance": "+10.17%"
+    }
+  },
+  {
+    "name": "TFX",
+    "id": "TFX",
+    "value": 8371012608,
+    "parent": "Health Care Equipment",
+    "colorValue": 1.2698055961344081,
+    "custom": {
+      "fullName": "Teleflex",
+      "performance": "+1.27%"
+    }
+  },
+  {
+    "name": "TER",
+    "id": "TER",
+    "value": 18857674752,
+    "parent": "Semiconductor Materials & Equipment",
+    "colorValue": -8.044790343074965,
+    "custom": {
+      "fullName": "Teradyne",
+      "performance": "-8.04%"
+    }
+  },
+  {
+    "name": "TSLA",
+    "id": "TSLA",
+    "value": 1301403926528,
+    "parent": "Automobile Manufacturers",
+    "colorValue": 0.18819334389858552,
+    "custom": {
+      "fullName": "Tesla, Inc.",
+      "performance": "+0.19%"
+    }
+  },
+  {
+    "name": "TXN",
+    "id": "TXN",
+    "value": 168404385792,
+    "parent": "Semiconductors",
+    "colorValue": -1.5465841821769386,
+    "custom": {
+      "fullName": "Texas Instruments",
+      "performance": "-1.55%"
+    }
+  },
+  {
+    "name": "TXT",
+    "id": "TXT",
+    "value": 14193523712,
+    "parent": "Aerospace & Defense",
+    "colorValue": 0.02614720878547553,
+    "custom": {
+      "fullName": "Textron",
+      "performance": "+0.03%"
+    }
+  },
+  {
+    "name": "TMO",
+    "id": "TMO",
+    "value": 228639375360,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": 14.901101435903346,
+    "custom": {
+      "fullName": "Thermo Fisher Scientific",
+      "performance": "+14.90%"
+    }
+  },
+  {
+    "name": "TJX",
+    "id": "TJX",
+    "value": 140283920384,
+    "parent": "Apparel Retail",
+    "colorValue": 3.2944292691002435,
+    "custom": {
+      "fullName": "TJX Companies",
+      "performance": "+3.29%"
+    }
+  },
+  {
+    "name": "TSCO",
+    "id": "TSCO",
+    "value": 29038841856,
+    "parent": "Other Specialty Retail",
+    "colorValue": 2.450056539766297,
+    "custom": {
+      "fullName": "Tractor Supply",
+      "performance": "+2.45%"
+    }
+  },
+  {
+    "name": "TT",
+    "id": "TT",
+    "value": 82430582784,
+    "parent": "Building Products",
+    "colorValue": -1.7869229727900426,
+    "custom": {
+      "fullName": "Trane Technologies",
+      "performance": "-1.79%"
+    }
+  },
+  {
+    "name": "TDG",
+    "id": "TDG",
+    "value": 75841175552,
+    "parent": "Aerospace & Defense",
+    "colorValue": 6.7909222902594495,
+    "custom": {
+      "fullName": "TransDigm Group",
+      "performance": "+6.79%"
+    }
+  },
+  {
+    "name": "TRV",
+    "id": "TRV",
+    "value": 55557787648,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": 1.7808958445763712,
+    "custom": {
+      "fullName": "Travelers Companies (The)",
+      "performance": "+1.78%"
+    }
+  },
+  {
+    "name": "TRMB",
+    "id": "TRMB",
+    "value": 18424567808,
+    "parent": "Electronic Equipment & Instruments",
+    "colorValue": 6.085479762241717,
+    "custom": {
+      "fullName": "Trimble Inc.",
+      "performance": "+6.09%"
+    }
+  },
+  {
+    "name": "TFC",
+    "id": "TFC",
+    "value": 63191261184,
+    "parent": "Diversified Banks",
+    "colorValue": 9.774089442139223,
+    "custom": {
+      "fullName": "Truist Financial",
+      "performance": "+9.77%"
+    }
+  },
+  {
+    "name": "TYL",
+    "id": "TYL",
+    "value": 25749350400,
+    "parent": "Application Software",
+    "colorValue": 4.335460599334073,
+    "custom": {
+      "fullName": "Tyler Technologies",
+      "performance": "+4.34%"
+    }
+  },
+  {
+    "name": "TSN",
+    "id": "TSN",
+    "value": 20120213504,
+    "parent": "Packaged Foods & Meats",
+    "colorValue": -1.6538997214484605,
+    "custom": {
+      "fullName": "Tyson Foods",
+      "performance": "-1.65%"
+    }
+  },
+  {
+    "name": "USB",
+    "id": "USB",
+    "value": 74536796160,
+    "parent": "Diversified Banks",
+    "colorValue": -0.10453690152623282,
+    "custom": {
+      "fullName": "U.S. Bancorp",
+      "performance": "-0.10%"
+    }
+  },
+  {
+    "name": "UBER",
+    "id": "UBER",
+    "value": 140766707712,
+    "parent": "Passenger Ground Transportation",
+    "colorValue": 10.825596816976118,
+    "custom": {
+      "fullName": "Uber",
+      "performance": "+10.83%"
+    }
+  },
+  {
+    "name": "UDR",
+    "id": "UDR",
+    "value": 15680049152,
+    "parent": "Multi-Family Residential REITs",
+    "colorValue": -3.8470398525685203,
+    "custom": {
+      "fullName": "UDR, Inc.",
+      "performance": "-3.85%"
+    }
+  },
+  {
+    "name": "ULTA",
+    "id": "ULTA",
+    "value": 19112425472,
+    "parent": "Other Specialty Retail",
+    "colorValue": -5.237624445313045,
+    "custom": {
+      "fullName": "Ulta Beauty",
+      "performance": "-5.24%"
+    }
+  },
+  {
+    "name": "UNP",
+    "id": "UNP",
+    "value": 150224420864,
+    "parent": "Rail Transportation",
+    "colorValue": 8.66076126995264,
+    "custom": {
+      "fullName": "Union Pacific Corporation",
+      "performance": "+8.66%"
+    }
+  },
+  {
+    "name": "UAL",
+    "id": "UAL",
+    "value": 34808233984,
+    "parent": "Passenger Airlines",
+    "colorValue": 9.001029866117415,
+    "custom": {
+      "fullName": "United Airlines Holdings",
+      "performance": "+9.00%"
+    }
+  },
+  {
+    "name": "UPS",
+    "id": "UPS",
+    "value": 97480458240,
+    "parent": "Air Freight & Logistics",
+    "colorValue": -9.41316415543219,
+    "custom": {
+      "fullName": "United Parcel Service",
+      "performance": "-9.41%"
+    }
+  },
+  {
+    "name": "URI",
+    "id": "URI",
+    "value": 49506701312,
+    "parent": "Trading Companies & Distributors",
+    "colorValue": 7.611719947759907,
+    "custom": {
+      "fullName": "United Rentals",
+      "performance": "+7.61%"
+    }
+  },
+  {
+    "name": "UNH",
+    "id": "UNH",
+    "value": 502079356928,
+    "parent": "Managed Health Care",
+    "colorValue": 7.2411339105681405,
+    "custom": {
+      "fullName": "UnitedHealth Group",
+      "performance": "+7.24%"
+    }
+  },
+  {
+    "name": "UHS",
+    "id": "UHS",
+    "value": 12438473728,
+    "parent": "Health Care Facilities",
+    "colorValue": 5.094192397726014,
+    "custom": {
+      "fullName": "Universal Health Services",
+      "performance": "+5.09%"
+    }
+  },
+  {
+    "name": "VLO",
+    "id": "VLO",
+    "value": 42105802752,
+    "parent": "Oil & Gas Refining & Marketing",
+    "colorValue": 8.4917203687087,
+    "custom": {
+      "fullName": "Valero Energy",
+      "performance": "+8.49%"
+    }
+  },
+  {
+    "name": "VTR",
+    "id": "VTR",
+    "value": 25346854912,
+    "parent": "Health Care REITs",
+    "colorValue": 2.5980641874681627,
+    "custom": {
+      "fullName": "Ventas",
+      "performance": "+2.60%"
+    }
+  },
+  {
+    "name": "VLTO",
+    "id": "VLTO",
+    "value": 25569173504,
+    "parent": "Environmental & Facilities Services",
+    "colorValue": 1.5120274914089409,
+    "custom": {
+      "fullName": "Veralto",
+      "performance": "+1.51%"
+    }
+  },
+  {
+    "name": "VRSN",
+    "id": "VRSN",
+    "value": 20661499904,
+    "parent": "Internet Services & Infrastructure",
+    "colorValue": 3.8848086586780015,
+    "custom": {
+      "fullName": "Verisign",
+      "performance": "+3.88%"
+    }
+  },
+  {
+    "name": "VRSK",
+    "id": "VRSK",
+    "value": 40589692928,
+    "parent": "Research & Consulting Services",
+    "colorValue": 4.3604545619576625,
+    "custom": {
+      "fullName": "Verisk Analytics",
+      "performance": "+4.36%"
+    }
+  },
+  {
+    "name": "VZ",
+    "id": "VZ",
+    "value": 165817319424,
+    "parent": "Integrated Telecommunication Services",
+    "colorValue": -1.5003750937734468,
+    "custom": {
+      "fullName": "Verizon",
+      "performance": "-1.50%"
+    }
+  },
+  {
+    "name": "VRTX",
+    "id": "VRTX",
+    "value": 118895984640,
+    "parent": "Biotechnology",
+    "colorValue": 14.646138564688359,
+    "custom": {
+      "fullName": "Vertex Pharmaceuticals",
+      "performance": "+14.65%"
+    }
+  },
+  {
+    "name": "VTRS",
+    "id": "VTRS",
+    "value": 13463695360,
+    "parent": "Pharmaceuticals",
+    "colorValue": -9.397590361445785,
+    "custom": {
+      "fullName": "Viatris",
+      "performance": "-9.40%"
+    }
+  },
+  {
+    "name": "VICI",
+    "id": "VICI",
+    "value": 31382640640,
+    "parent": "Hotel & Resort REITs",
+    "colorValue": 1.917151660390273,
+    "custom": {
+      "fullName": "Vici Properties",
+      "performance": "+1.92%"
+    }
+  },
+  {
+    "name": "V",
+    "id": "V",
+    "value": 662322937856,
+    "parent": "Transaction & Payment Processing Services",
+    "colorValue": 8.150866978863432,
+    "custom": {
+      "fullName": "Visa Inc.",
+      "performance": "+8.15%"
+    }
+  },
+  {
+    "name": "VST",
+    "id": "VST",
+    "value": 57168171008,
+    "parent": "Electric Utilities",
+    "colorValue": 21.87567998839486,
+    "custom": {
+      "fullName": "Vistra Corp.",
+      "performance": "+21.88%"
+    }
+  },
+  {
+    "name": "VMC",
+    "id": "VMC",
+    "value": 36204523520,
+    "parent": "Construction Materials",
+    "colorValue": 6.577770866539656,
+    "custom": {
+      "fullName": "Vulcan Materials Company",
+      "performance": "+6.58%"
+    }
+  },
+  {
+    "name": "WRB",
+    "id": "WRB",
+    "value": 22290688000,
+    "parent": "Property & Casualty Insurance",
+    "colorValue": 0.5297334244702583,
+    "custom": {
+      "fullName": "W. R. Berkley Corporation",
+      "performance": "+0.53%"
+    }
+  },
+  {
+    "name": "GWW",
+    "id": "GWW",
+    "value": 51752243200,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 0.8177980171718722,
+    "custom": {
+      "fullName": "W. W. Grainger",
+      "performance": "+0.82%"
+    }
+  },
+  {
+    "name": "WAB",
+    "id": "WAB",
+    "value": 35739369472,
+    "parent": "Construction Machinery & Heavy Transportation Equipment",
+    "colorValue": 9.668231446806258,
+    "custom": {
+      "fullName": "Wabtec",
+      "performance": "+9.67%"
+    }
+  },
+  {
+    "name": "WBA",
+    "id": "WBA",
+    "value": 8883492864,
+    "parent": "Drug Retail",
+    "colorValue": 10.182207931404065,
+    "custom": {
+      "fullName": "Walgreens Boots Alliance",
+      "performance": "+10.18%"
+    }
+  },
+  {
+    "name": "WMT",
+    "id": "WMT",
+    "value": 792493817856,
+    "parent": "Consumer Staples Merchandise Retail",
+    "colorValue": 8.644161593801885,
+    "custom": {
+      "fullName": "Walmart",
+      "performance": "+8.64%"
+    }
+  },
+  {
+    "name": "DIS",
+    "id": "DIS",
+    "value": 205133807616,
+    "parent": "Movies & Entertainment",
+    "colorValue": 1.535698248765162,
+    "custom": {
+      "fullName": "Walt Disney Company (The)",
+      "performance": "+1.54%"
+    }
+  },
+  {
+    "name": "WBD",
+    "id": "WBD",
+    "value": 26052601856,
+    "parent": "Broadcasting",
+    "colorValue": -1.2298959318826943,
+    "custom": {
+      "fullName": "Warner Bros. Discovery",
+      "performance": "-1.23%"
+    }
+  },
+  {
+    "name": "WM",
+    "id": "WM",
+    "value": 88404877312,
+    "parent": "Environmental & Facilities Services",
+    "colorValue": 9.15307993458546,
+    "custom": {
+      "fullName": "Waste Management",
+      "performance": "+9.15%"
+    }
+  },
+  {
+    "name": "WAT",
+    "id": "WAT",
+    "value": 24669624320,
+    "parent": "Life Sciences Tools & Services",
+    "colorValue": 11.995255808938486,
+    "custom": {
+      "fullName": "Waters Corporation",
+      "performance": "+12.00%"
+    }
+  },
+  {
+    "name": "WEC",
+    "id": "WEC",
+    "value": 31401297920,
+    "parent": "Electric Utilities",
+    "colorValue": 5.5508294342832825,
+    "custom": {
+      "fullName": "WEC Energy Group",
+      "performance": "+5.55%"
+    }
+  },
+  {
+    "name": "WFC",
+    "id": "WFC",
+    "value": 259234676736,
+    "parent": "Diversified Banks",
+    "colorValue": 12.1867881548975,
+    "custom": {
+      "fullName": "Wells Fargo",
+      "performance": "+12.19%"
+    }
+  },
+  {
+    "name": "WELL",
+    "id": "WELL",
+    "value": 84984725504,
+    "parent": "Health Care REITs",
+    "colorValue": 8.291676584940085,
+    "custom": {
+      "fullName": "Welltower",
+      "performance": "+8.29%"
+    }
+  },
+  {
+    "name": "WST",
+    "id": "WST",
+    "value": 24735868928,
+    "parent": "Health Care Supplies",
+    "colorValue": 4.270973256807916,
+    "custom": {
+      "fullName": "West Pharmaceutical Services",
+      "performance": "+4.27%"
+    }
+  },
+  {
+    "name": "WDC",
+    "id": "WDC",
+    "value": 22515961856,
+    "parent": "Technology Hardware, Storage & Peripherals",
+    "colorValue": 9.223545195371445,
+    "custom": {
+      "fullName": "Western Digital",
+      "performance": "+9.22%"
+    }
+  },
+  {
+    "name": "WY",
+    "id": "WY",
+    "value": 22247942144,
+    "parent": "Timber REITs",
+    "colorValue": 8.774422735346368,
+    "custom": {
+      "fullName": "Weyerhaeuser",
+      "performance": "+8.77%"
+    }
+  },
+  {
+    "name": "WMB",
+    "id": "WMB",
+    "value": 67569725440,
+    "parent": "Oil & Gas Storage & Transportation",
+    "colorValue": 2.420546932742059,
+    "custom": {
+      "fullName": "Williams Companies",
+      "performance": "+2.42%"
+    }
+  },
+  {
+    "name": "WTW",
+    "id": "WTW",
+    "value": 33195433984,
+    "parent": "Insurance Brokers",
+    "colorValue": 5.211658791980586,
+    "custom": {
+      "fullName": "Willis Towers Watson",
+      "performance": "+5.21%"
+    }
+  },
+  {
+    "name": "WYNN",
+    "id": "WYNN",
+    "value": 9537432576,
+    "parent": "Casinos & Gaming",
+    "colorValue": 0.8008356545960976,
+    "custom": {
+      "fullName": "Wynn Resorts",
+      "performance": "+0.80%"
+    }
+  },
+  {
+    "name": "XEL",
+    "id": "XEL",
+    "value": 38589059072,
+    "parent": "Multi-Utilities",
+    "colorValue": -0.47393364928908943,
+    "custom": {
+      "fullName": "Xcel Energy",
+      "performance": "-0.47%"
+    }
+  },
+  {
+    "name": "XYL",
+    "id": "XYL",
+    "value": 30134896640,
+    "parent": "Industrial Machinery & Supplies & Components",
+    "colorValue": 6.91260127564214,
+    "custom": {
+      "fullName": "Xylem Inc.",
+      "performance": "+6.91%"
+    }
+  },
+  {
+    "name": "YUM",
+    "id": "YUM",
+    "value": 36418895872,
+    "parent": "Restaurants",
+    "colorValue": -2.7280858676207487,
+    "custom": {
+      "fullName": "Yum! Brands",
+      "performance": "-2.73%"
+    }
+  },
+  {
+    "name": "ZBRA",
+    "id": "ZBRA",
+    "value": 20216264704,
+    "parent": "Electronic Equipment & Instruments",
+    "colorValue": 1.4810211796385402,
+    "custom": {
+      "fullName": "Zebra Technologies",
+      "performance": "+1.48%"
+    }
+  },
+  {
+    "name": "ZBH",
+    "id": "ZBH",
+    "value": 21794621440,
+    "parent": "Health Care Equipment",
+    "colorValue": 3.644797879390333,
+    "custom": {
+      "fullName": "Zimmer Biomet",
+      "performance": "+3.64%"
+    }
+  },
+  {
+    "name": "ZTS",
+    "id": "ZTS",
+    "value": 77104095232,
+    "parent": "Pharmaceuticals",
+    "colorValue": 4.891671269870495,
+    "custom": {
+      "fullName": "Zoetis",
+      "performance": "+4.89%"
+    }
+  }
+]

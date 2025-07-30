@@ -5,16 +5,296 @@ document.getElementById("index").addEventListener("change", function (ev) {
   let url = `https://www.nseindia.com/api/equity-stockIndices?index=${ev.target.value}`;
   window.open(url, "_blank");
 });
+// treemap start
+const renderChart = (data) => {
+  Highcharts.chart("db-container", {
+    chart: {
+      backgroundColor: "#252931",
+    },
+    series: [
+      {
+        name: "All",
+        type: "treemap",
+        layoutAlgorithm: "squarified",
+        allowDrillToNode: true,
+        animationLimit: 1000,
+        borderColor: "#252931",
+        color: "#252931",
+        opacity: 0.01,
+        nodeSizeBy: "leaf",
+        dataLabels: {
+          enabled: false,
+          allowOverlap: true,
+          style: {
+            fontSize: "0.9em",
+            textOutline: "none",
+          },
+        },
+        levels: [
+          {
+            level: 1,
+            dataLabels: {
+              enabled: true,
+              headers: true,
+              align: "left",
+              style: {
+                fontWeight: "bold",
+                fontSize: "0.7em",
+                lineClamp: 1,
+                textTransform: "uppercase",
+              },
+              padding: 3,
+            },
+            borderWidth: 3,
+            levelIsConstant: false,
+          },
+          {
+            level: 2,
+            dataLabels: {
+              enabled: true,
+              headers: true,
+              align: "center",
+              shape: "callout",
+              backgroundColor: "gray",
+              borderWidth: 1,
+              borderColor: "#252931",
+              padding: 0,
+              style: {
+                color: "white",
+                fontWeight: "normal",
+                fontSize: "0.6em",
+                lineClamp: 1,
+                textOutline: "none",
+                textTransform: "uppercase",
+              },
+            },
+            groupPadding: 1,
+
+            // The companies
+          },
+          {
+            level: 3,
+            dataLabels: {
+              enabled: true,
+              align: "center",
+              format:
+                '{point.name}<br><span style="font-size: 0.7em">' +
+                "{point.custom.performance}</span>",
+              style: {
+                color: "white",
+              },
+            },
+          },
+        ],
+        accessibility: {
+          exposeAsGroupOnly: true,
+        },
+        breadcrumbs: {
+          buttonTheme: {
+            style: {
+              color: "silver",
+            },
+            states: {
+              hover: {
+                fill: "#333",
+              },
+              select: {
+                style: {
+                  color: "white",
+                },
+              },
+            },
+          },
+        },
+        data,
+      },
+    ],
+    title: {
+      text: "S&P 500 Companies",
+      align: "left",
+      style: {
+        color: "white",
+      },
+    },
+    subtitle: {
+      text: 'Click points to drill down. Source: <a href="http://okfn.org/">okfn.org</a>.',
+      align: "left",
+      style: {
+        color: "silver",
+      },
+    },
+    tooltip: {
+      followPointer: true,
+      outside: true,
+      headerFormat:
+        '<span style="font-size: 0.9em">' +
+        "{point.custom.fullName}</span><br/>",
+      pointFormat:
+        "<b>Market Cap:</b>" +
+        " USD {(divide point.value 1000000000):.1f} bln<br/>" +
+        "{#if point.custom.performance}" +
+        "<b>1 month performance:</b> {point.custom.performance}{/if}",
+    },
+    colorAxis: {
+      minColor: "#f73539",
+      maxColor: "#2ecc59",
+      stops: [
+        [0, "#f73539"],
+        [0.5, "#414555"],
+        [1, "#2ecc59"],
+      ],
+      min: -10,
+      max: 10,
+      gridLineWidth: 0,
+      labels: {
+        overflow: "allow",
+        format: "{#gt value 0}+{value}{else}{value}{/gt}%",
+        style: {
+          color: "white",
+        },
+      },
+    },
+    legend: {
+      itemStyle: {
+        color: "white",
+      },
+    },
+    exporting: {
+      sourceWidth: 1200,
+      sourceHeight: 1200,
+      buttons: {
+        fullscreen: {
+          text: '<i class="fa fa-arrows-alt"></i> Fullscreen',
+          onclick: function () {
+            this.fullscreen.toggle();
+          },
+        },
+        contextButton: {
+          menuItems: [
+            "downloadPNG",
+            "downloadJPEG",
+            "downloadPDF",
+            "downloadSVG",
+          ],
+          text: '<i class="fa fa-share-alt"></i> Export',
+          symbol: void 0,
+          y: -2,
+        },
+      },
+    },
+    navigation: {
+      buttonOptions: {
+        theme: {
+          fill: "#252931",
+          style: {
+            color: "silver",
+            whiteSpace: "nowrap",
+          },
+          states: {
+            hover: {
+              fill: "#333",
+              style: {
+                color: "white",
+              },
+            },
+          },
+        },
+        symbolStroke: "silver",
+        useHTML: true,
+        y: -2,
+      },
+    },
+  });
+};
+Highcharts.addEvent(Highcharts.Series, "drawDataLabels", function () {
+  if (this.type === "treemap") {
+    this.points.forEach((point) => {
+      // Color the level 2 headers with the combined performance of
+      // its children
+      if (point.node.level === 2 && Number.isFinite(point.value)) {
+        const previousValue = point.node.children.reduce(
+          (acc, child) =>
+            acc +
+            (child.point.value || 0) -
+            ((child.point.value || 0) * (child.point.colorValue || 0)) / 100,
+          0
+        );
+
+        // Percentage change from previous value to point.value
+        const perf =
+          (100 * (point.value - previousValue)) / (previousValue || 1);
+
+        point.custom = {
+          performance: (perf < 0 ? "" : "+") + perf.toFixed(2) + "%",
+        };
+
+        if (point.dlOptions) {
+          point.dlOptions.backgroundColor = this.colorAxis.toColor(perf);
+        }
+      }
+
+      // Set font size based on area of the point
+      if (point.node.level === 3 && point.shapeArgs) {
+        const area = point.shapeArgs.width * point.shapeArgs.height;
+        point.dlOptions.style.fontSize = `${Math.min(32, 7 + Math.round(area * 0.0008))}px`;
+      }
+    });
+  }
+});
+
+// treemap end
 document
   .getElementById("exampleFormControlTextarea1")
   .addEventListener("change", function (ev) {
     debugger;
     data = JSON.parse(ev.target.value);
+    var r1 = R.filter((d1) => d1.priority == 0)(data.data);
+    var r2 = R.groupBy((d) => d.meta.industry)(r1);
+
+    var newDt = [
+      {
+        name: "NSE",
+        id: "NSE",
+
+        custom: {
+          fullName: "NSE",
+        },
+      },
+    ];
+
+    R.forEachObjIndexed((v, k) => {
+      newDt.push({
+        name: k,
+        id: k,
+        parent: "NSE",
+        custom: {
+          fullName: k,
+        },
+      });
+      var xx = v.map((d1) => {
+        return {
+          name: d1.identifier,
+          id: d1.identifier,
+          value: d1.ffmc,
+          parent: k,
+          colorValue: d1.pChange,
+          custom: {
+            fullName: d1.meta.companyName,
+            performance: `${d1.pChange > 0 ? "+" : ""}${d1.pChange}%`,
+          },
+        };
+      });
+      newDt.push(...xx);
+    })(r2);
+
+    renderChart(newDt);
+    console.log(newDt);
     if (data.name != undefined) {
       const f = R.filter((d1) => d1.priority == 0);
       const g = R.groupBy((d1) => d1.meta.industry);
       //   const r = R.reduce( (a,b)=>{ a.push( R.sort((a1,b1) => a1.ffmc < b1.ffmc )(b)); return a; },[])
       var z = R.flow(data.data, [f]);
+
       data.data = z;
     } else {
       data.data = data.data.map((d) => {
@@ -54,7 +334,7 @@ document
         ) {
           data.data = R.sort(
             R.ascend(R.path(dataTablesParameters.order[0].name.split("."))),
-            data.data,
+            data.data
           );
         } else if (
           dataTablesParameters.order.length > 0 &&
@@ -62,7 +342,7 @@ document
         ) {
           data.data = R.sort(
             R.descend(R.path(dataTablesParameters.order[0].name.split("."))),
-            data.data,
+            data.data
           );
         }
         callback({
@@ -73,7 +353,7 @@ document
               ? R.filter((d) => d.priority == 0)(R.clone(data.data))
               : R.filter((d) => d.priority == 0)(R.clone(data.data)).splice(
                   dataTablesParameters.start,
-                  dataTablesParameters.length,
+                  dataTablesParameters.length
                 ),
         });
       },
@@ -228,7 +508,7 @@ document.getElementById("clear").addEventListener("click", function () {
   debugger;
   dynamicConditionArr = [];
   data = JSON.parse(
-    document.getElementById("exampleFormControlTextarea1").value,
+    document.getElementById("exampleFormControlTextarea1").value
   );
   const f = R.filter((d1) => d1.priority == 0);
   var z = R.flow(data.data, [f]);
@@ -293,7 +573,7 @@ function _download(_jsonData) {
   }
   var max = R.pipe(
     R.filter((d) => d.priority == 0),
-    R.sort(R.descend(R.prop("lastPrice"))),
+    R.sort(R.descend(R.prop("lastPrice")))
   )(_jsonData)[0];
   let x = _jsonData.map((rd) => {
     return [
@@ -348,7 +628,7 @@ document.getElementById("up").addEventListener("change", function (event) {
           obj = R.assocPath(
             header.trim().split("."),
             currentLine[index].trim() || "",
-            obj,
+            obj
           );
         } catch (err) {
           obj[header.trim()] = "";
@@ -361,7 +641,7 @@ document.getElementById("up").addEventListener("change", function (event) {
     $("#exampleFormControlTextarea1").val(
       JSON.stringify({
         data: result,
-      }),
+      })
     );
     //table.draw();
     //console.log(result);
