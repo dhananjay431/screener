@@ -101,7 +101,7 @@
         </div>
         <div
           class="col-12 col-md-2 col-sm-2 col-lg-2"
-          x-data="{ drop:[{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVE',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }"
+          x-data="{ drop:[{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVol',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }"
         >
           <select id="get1" class="form-select">
             <template x-for="post in drop">
@@ -173,9 +173,19 @@
       <div class="row">
         <div
           class="col-12 col-md-2 col-sm-2 col-lg-2"
-          x-data="{ drop:[{title: '-Select-', data: 'pChange'},{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVE',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }"
+          x-data="{ drop:[{title: '-Select-', data: 'ffmc'},{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVol',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }"
         >
-          <select id="highchartsTreeMap" class="form-select">
+          <select id="highchartsTreeMap1" class="form-select">
+            <template x-for="post in drop">
+              <option x-bind:value="post.data" x-text="post.title"></option>
+            </template>
+          </select>
+        </div>
+        <div
+          class="col-12 col-md-2 col-sm-2 col-lg-2"
+          x-data="{ drop:[{title: '-Select-', data: 'pChange'},{title: 'Symbol', data: 'symbol'}, {title: 'Industry',data:'meta.industry'}, { title: 'LastPrice', data: 'lastPrice' }, { title: 'PreviousClose', data: 'previousClose' }, {  title: 'Change', data: 'change' }, { title: 'Change%', data: 'pChange' }, { title: 'FFMC',data: 'ffmc',}, {  title: 'YearHigh', data: 'yearHigh' }, { title: 'YearLow', data: 'yearLow' }, {title: 'TTVol',data: 'totalTradedVolume'}, {title: 'TTV',data: 'totalTradedValue'}, {title: 'WKH',data: 'nearWKH'}, {title: 'WKL',data: 'nearWKL'}, {title: '365d%', data: 'perChange365d' }, {title: '30d%', data: 'perChange30d' }] }"
+        >
+          <select id="highchartsTreeMap2" class="form-select">
             <template x-for="post in drop">
               <option x-bind:value="post.data" x-text="post.title"></option>
             </template>

@@ -235,12 +235,12 @@ function renderChartRender(data) {
       return {
         name: d1.symbol,
         id: d1.symbol,
-        value: d1.ffmc,
+        value: d1[document.getElementById("highchartsTreeMap1").value],
         parent: k,
-        colorValue: d1[document.getElementById("highchartsTreeMap").value],
+        colorValue: d1[document.getElementById("highchartsTreeMap2").value],
         custom: {
           fullName: d1.meta.companyName,
-          performance: `${d1[document.getElementById("highchartsTreeMap").value] > 0 ? "+" : ""}${d1[document.getElementById("highchartsTreeMap").value]}%`,
+          performance: `${d1[document.getElementById("highchartsTreeMap2").value] > 0 ? "+" : ""}${d1[document.getElementById("highchartsTreeMap2").value]}%`,
         },
       };
     });
@@ -481,7 +481,12 @@ document
           <option value="eq"> = </option>
            */
 document
-  .getElementById("highchartsTreeMap")
+  .getElementById("highchartsTreeMap2")
+  .addEventListener("change", function () {
+    renderChartRender(data);
+  });
+document
+  .getElementById("highchartsTreeMap1")
   .addEventListener("change", function () {
     renderChartRender(data);
   });
