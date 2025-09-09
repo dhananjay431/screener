@@ -260,7 +260,7 @@ Highcharts.addEvent(Highcharts.Series, "drawDataLabels", function () {
             acc +
             (child.point.value || 0) -
             ((child.point.value || 0) * (child.point.colorValue || 0)) / 100,
-          0
+          0,
         );
 
         // Percentage change from previous value to point.value
@@ -290,7 +290,13 @@ document
   .getElementById("exampleFormControlTextarea1")
   .addEventListener("change", function (ev) {
     data = JSON.parse(ev.target.value);
-
+ data.data = data.data.map((d) => {
+    
+     
+          d.gapUp = Number((((d.open - d.previousClose) / d.previousClose) * 100).toFixed(2));
+         
+        return d;
+      });
     renderChartRender(data);
 
     if (data.name != undefined) {
@@ -303,7 +309,7 @@ document
     } else {
       data.data = data.data.map((d) => {
         d.priority = 0;
-        (d.lastPrice = Number(d.lastPrice)),
+        ((d.lastPrice = Number(d.lastPrice)),
           (d.previousClose = Number(d.previousClose)),
           (d.change = Number(d.change)),
           (d.pChange = Number(d.pChange)),
@@ -316,7 +322,8 @@ document
           (d.nearWKL = Number(d.nearWKL)),
           (d.perChange365d = Number(d.perChange365d)),
           (d.perChange30d = Number(d.perChange30d)),
-          (d.QT = Number(d.QT));
+          (d.gapUp = Number((((d.open - d.previousClose) / d.previousClose) * 100).toFixed(2)))
+          (d.QT = Number(d.QT)));
         return d;
       });
     }
@@ -337,7 +344,7 @@ document
         ) {
           data.data = R.sort(
             R.ascend(R.path(dataTablesParameters.order[0].name.split("."))),
-            data.data
+            data.data,
           );
         } else if (
           dataTablesParameters.order.length > 0 &&
@@ -345,7 +352,7 @@ document
         ) {
           data.data = R.sort(
             R.descend(R.path(dataTablesParameters.order[0].name.split("."))),
-            data.data
+            data.data,
           );
         }
         callback({
@@ -356,7 +363,7 @@ document
               ? R.filter((d) => d.priority == 0)(R.clone(data.data))
               : R.filter((d) => d.priority == 0)(R.clone(data.data)).splice(
                   dataTablesParameters.start,
-                  dataTablesParameters.length
+                  dataTablesParameters.length,
                 ),
         });
       },
@@ -468,7 +475,15 @@ document
         },
         { name: "perChange365d", title: "365d%", data: "perChange365d" },
         { name: "perChange30d", title: "30d%", data: "perChange30d" },
+        {
+      name: "gapUp",
+          title: "gapUp",
+          data: "gapUp",
+          
+        
+        },
       ],
+
       data: data.data,
     });
   });
@@ -512,7 +527,7 @@ document.getElementById("add").addEventListener("click", function () {
   if (condi == "eqstr") {
     // dynamicConditionArr.push(R.filter((d) => d[prop] == value));
     dynamicConditionArr.push(
-      R.filter((d) => value == R.path(prop.split("."), d))
+      R.filter((d) => value == R.path(prop.split("."), d)),
     );
   }
 });
@@ -524,7 +539,7 @@ document.getElementById("search").addEventListener("click", function () {
 document.getElementById("clear").addEventListener("click", function () {
   dynamicConditionArr = [];
   data = JSON.parse(
-    document.getElementById("exampleFormControlTextarea1").value
+    document.getElementById("exampleFormControlTextarea1").value,
   );
   const f = R.filter((d1) => d1.priority == 0);
   var z = R.flow(data.data, [f]);
@@ -534,6 +549,43 @@ document.getElementById("clear").addEventListener("click", function () {
 });
 document.getElementById("download").addEventListener("click", function () {
   _download(data.data);
+});
+
+document.getElementById("dbup").addEventListener("click", () => {
+  let s1 = "previousClose";
+  let s2 = "open";
+  let con = "gt";
+
+   data = JSON.parse(
+    document.getElementById("exampleFormControlTextarea1").value,
+  );
+
+  let x = [];
+  x[0] = R.filter((item) => item.priority == 0);
+  debugger;
+  if (con == "gt") {
+    x[1] = R.filter((item) => item[s1] < item[s2]);
+  } else if (con == "gte") {
+    x[1] = R.filter((item) => item[s1] <= item[s2]);
+  } else if (con == "lt") {
+    x[1] = R.filter((item) => item[s1] > item[s2]);
+  } else if (con == "lte") {
+    x[1] = R.filter((item) => item[s1] >= item[s2]);
+  } else if (con == "eq") {
+    x[1] = R.filter((item) => item[s1] == item[s2]);
+  }
+
+  x[2] = R.map((d) => {
+    d.gap = ((d.open - d.previousClose) / d.previousClose) * 100;
+    return d;
+  });
+
+  x[3] = R.sort((a, b) => (a.gap < b.gap ? 1 : -1));
+  x[4] = R.filter((item) => item.open < item.lastPrice);
+
+  data.data = R.pipe(...x)(data.data);
+  renderChartRender(data);
+  table.draw();
 });
 
 function _download(_jsonData) {
@@ -590,7 +642,7 @@ function _download(_jsonData) {
   }
   var max = R.pipe(
     R.filter((d) => d.priority == 0),
-    R.sort(R.descend(R.prop("lastPrice")))
+    R.sort(R.descend(R.prop("lastPrice"))),
   )(_jsonData)[0];
   let x = _jsonData.map((rd) => {
     return [
@@ -645,7 +697,7 @@ document.getElementById("up").addEventListener("change", function (event) {
           obj = R.assocPath(
             header.trim().split("."),
             currentLine[index].trim() || "",
-            obj
+            obj,
           );
         } catch (err) {
           obj[header.trim()] = "";
@@ -658,7 +710,7 @@ document.getElementById("up").addEventListener("change", function (event) {
     $("#exampleFormControlTextarea1").val(
       JSON.stringify({
         data: result,
-      })
+      }),
     );
   };
 
