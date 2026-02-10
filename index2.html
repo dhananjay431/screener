@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/hollowcandlestick.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        #container {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        function getRandomint(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+
+        }
+
+
+
+
+        async function getData() {
+            return new Promise((resolve, reject) => {
+                let num = 1000;
+                let arr = [];
+                for (let i = 0; i < 1000000; i++) {
+                    const bit = Math.random() < 0.5 ? 0 : 1;
+                    for (let j = 0; j < getRandomint(1, 5); j++) {
+                        let per = bit == 0 ? getRandomint(-50, 0) / 100 : getRandomint(0, 50) / 100;
+                        num = num + (num * per) / 100;
+
+                        num > 1 && arr.push(Number(Number(num).toFixed(2)))
+
+
+                    }
+                }
+                let ohlcdata = _.chunk(arr, 4).map((item, i) => {
+                    let item2 = _.sortBy(item).reverse();
+
+                    // let t = new Date("01-01-2020").getTime() + i * 24 * 60 * 60 * 1000; // one day in ms 
+                    let t = new Date("01-01-2020").getTime() + i * 1000; // one day in ms 
+                    item2.unshift(t)
+                    // // 0 [1 2] [3 4]
+                    if (item2[1] > item2[2]) {
+                        let t = item2[1]
+                        item2[1] = item2[2]
+                        item2[2] = t
+                    }
+
+                    if (item2[3] > item2[4]) {
+                        let t = item2[3]
+                        item2[3] = item2[4]
+                        item2[4] = t
+                    }
+
+                    // o h l c 
+
+
+
+                    return item2
+                })
+
+                // .map((dt, i, all) => {
+                //     debugger
+                //     if (i > 0 && all[i - 1][4] < dt[4]) {
+                //         let t = dt[1]
+                //         dt[1] = dt[4]
+                //         dt[4] = t
+                //     }
+                //     return dt
+                // })
+                resolve(ohlcdata);
+            }).then((data) => {
+                data.pop();
+                console.log(data)
+                return Highcharts.stockChart('container', {
+                    title: {
+                        text: 'AAPL Stock Price'
+                    },
+                    rangeSelector: {
+                        selected: 1
+                    },
+                    navigator: {
+                        series: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    series: [{
+                        type: 'hollowcandlestick',
+                        name: 'Hollow Candlestick',
+                        data: data
+                    }]
+                });
+                // return Highcharts.stockChart('container', {
+
+                //     plotOptions: {
+
+                //         candlestick: {
+                //             color: 'pink',
+                //             lineColor: 'red',
+                //             upColor: 'lightgreen',
+                //             upLineColor: 'green'
+                //         }
+                //     },
+
+                //     rangeSelector: {
+                //         selected: 5
+                //     },
+
+                //     series: [{
+                //         type: 'candlestick',
+                //         name: 'test',
+                //         data: data
+                //     }]
+                // });
+            })
+
+
+        }
+        getData().then((data) => {
+            console.log(data)
+        })
+
+
+    </script>
+</body>
+
+</html>
